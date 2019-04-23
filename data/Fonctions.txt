@@ -1,0 +1,28 @@
+Mask and Material --> Command /tag @s add TpOption
+Painbrush mode
+  Normal -->/function raytracer:paintmode/normal
+  Ground -->/function raytracer:paintmode/ground
+  Above Ground -->/function raytracer:paintmode/up
+Current radius -->Afficher scoreboard brushRad
+Change the brush radius
+  1-->/function raytracer:brushsizeoption/1
+  2-->/function raytracer:brushsizeoption/2
+  3-->/function raytracer:brushsizeoption/3
+  4-->/function raytracer:brushsizeoption/4
+  5-->/function raytracer:brushsizeoption/5
+  6-->/function raytracer:brushsizeoption/6
+  7-->/function raytracer:brushsizeoption/7
+Get Items
+  All-->/function raytracer:getitem
+  Clean-->/give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"clean\",\"color\":\"gray\"}"}}
+  Push-->/give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"push\",\"color\":\"dark_red\"}"}}
+  Pull-->/give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"pull\",\"color\":\"dark_green\"}"}}
+  Smooth-->/give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"smooth\",\"color\":\"blue\"}"}}
+  Melt-->/give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"melt\",\"color\":\"red\"}"}}
+  Lift-->/give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"lift\",\"color\":\"green\"}"}}
+  Painbrush-->/give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"paintbrush\",\"color\":\"dark_purple\"}"}}
+  Tree-->/give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"tree\",\"color\":\"green\"}"}}
+Tree Brush option
+  Oak-->/function raytracer:tree/oak
+  Birch-->/function raytracer:tree/birch
+  Spruce-->/function raytracer:tree/spruce
