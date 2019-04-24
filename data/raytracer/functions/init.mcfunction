@@ -43,24 +43,11 @@ execute as @a run scoreboard players operation @s brushRad = @s brushRad
 tag @a[scores={brushRad=0}] add oak
 scoreboard players set @a[scores={brushRad=0}] brushRad 3
 
-tellraw @a ["",{"text":"===============","color":"yellow"},{"text":"[","color":"gold"},{"text":"vanilla terraforming pack","color":"dark_blue"},{"text":"]","color":"gold"},{"text":"===============","color":"yellow"},{"text":"\n"},{"text":"Vanilla terraforming pack is installed on this world.\nFor more information click here:","color":"dark_aqua"},{"text":"\n"},{"text":"https://www.planetminecraft.com/member/hubiug/","color":"dark_red","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/member/hubiug/"}},{"text":"\n"},{"text":"to display the options type ","color":"dark_aqua"},{"text":"/function vtpcommands:option","color":"gold","clickEvent":{"action":"suggest_command","value":"/function vtpcommands:option"},"hoverEvent":{"action":"show_text","value":"click"}},{"text":"\n"},{"text":"=====================================================","color":"yellow"}]
+#Vanilla terraforming pack
+#Vanilla terraforming pack is installed on this world
 
 
+tellraw @s ["",{"text":"==================================\n","color":"dark_gray"},{"text":"Vanilla terraforming pack\n","color":"none"},{"text":"Vanilla terraforming pack is installed on this world\n","color":"none"},{"text":"I'ts a fork. URL:","color":"none"},{"text":"Original project\n","color":"gold","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/mod/vanilla-terraforming-pack-datapack-4124905/"}},{"text":"URL: ","color":"none"},{"text":"My Project\n","color":"gold","clickEvent":{"action":"open_url","value":"https://github.com/A2va/VTP"}},{"text":"Option:","color":"none"},{"text":"/function vtp:option","color":"red","clickEvent":{"action":"run_command","value":"/function vtpcommands:option"}},{"text":"\n==================================\n","color":"dark_gray"}]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#tellraw @a ["",{"text":"===============","color":"yellow"},{"text":"[","color":"gold"},{"text":"vanilla terraforming pack","color":"dark_blue"},{"text":"]","color":"gold"},{"text":"===============","color":"yellow"},{"text":"\n"},{"text":"Vanilla terraforming pack is installed on this world.\nFor more information click here:","color":"dark_aqua"},{"text":"\n"},{"text":"https://www.planetminecraft.com/member/hubiug/","color":"dark_red","clickEvent":{"action":"open_url","value":"https://#www.planetminecraft.com/member/hubiug/"}},{"text":"\n"},{"text":"to display the options type ","color":"dark_aqua"},{"text":"/function vtpcommands:option","color":"gold","clickEvent":{"action":"suggest_command","value":"/function vtpcommands:option"},"hoverEvent":{"action":"show_text","value":"click"}},{"text":"\n"},{"text":"=====================================================","color":"yellow"}]
