@@ -1,1 +1,1 @@
-give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"pull\",\"color\":\"dark_green\"}"}}
+give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Pull\",\"color\":\"dark_green\"}"}}
