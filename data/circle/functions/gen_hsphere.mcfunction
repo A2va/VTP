@@ -39,9 +39,9 @@ execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run scoreboa
 execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run function circle:hsphere_gen/gen
 
 
-title @a times 0 100 20
-title @a subtitle ["",{"score":{"name":"blockCount","objective":"blockCount"},"color":"yellow"},{"text":" blocks changed","color":"yellow"}]
-title @a title {"text":"completed","color":"gold"}
+tellraw @a ["",{"text":"Completed","color":"gold"}]
+tellraw @a ["",{"text":"Block Count: "},{"score":{"name":"blockCount","objective":"blockCount"}}]
+
 playsound minecraft:block.note.pling master @a ~ ~ ~ 1 1 1
 
 bossbar set minecraft:percentbar visible false

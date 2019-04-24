@@ -24,13 +24,11 @@ execute as @e[type=armor_stand,name=diskGen,sort=nearest,limit=1] run scoreboard
 scoreboard players operation diskOpI percent *= 4 percent
 
 
-
-
 execute as @e[type=armor_stand,name=diskGen,sort=nearest,limit=1] run function circle:disk_gen/gen
 
-title @a times 0 100 20
-title @a subtitle ["",{"score":{"name":"blockCount","objective":"blockCount"},"color":"yellow"},{"text":" blocks changed","color":"yellow"}]
-title @a title {"text":"completed","color":"gold"}
+tellraw @a ["",{"text":"Completed","color":"gold"}]
+tellraw @a ["",{"text":"Block Count: "},{"score":{"name":"blockCount","objective":"blockCount"}}]
+
 playsound minecraft:block.note.pling master @a ~ ~ ~ 1 1 1
 
 bossbar set minecraft:percentbar visible false

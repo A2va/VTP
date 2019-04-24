@@ -38,10 +38,9 @@ execute as @e[type=armor_stand,name=circleGen,tag=Z+] at @s run function circle:
 scoreboard players set temp percent 0
 execute as @e[type=armor_stand,name=circleGen,tag=Z-] at @s run function circle:circle_gen/gen_zm
 
-title @a times 0 100 20
-title @a subtitle ["",{"score":{"name":"blockCount","objective":"blockCount"},"color":"yellow"},{"text":" blocks changed","color":"yellow"}]
-title @a title {"text":"completed","color":"gold"}
 
+tellraw @a ["",{"text":"Completed","color":"gold"}]
+tellraw @a ["",{"text":"Block Count: "},{"score":{"name":"blockCount","objective":"blockCount"}}]
 
 
 playsound minecraft:block.note.pling master @a ~ ~ ~ 1 1 1
