@@ -6,11 +6,12 @@ summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"circleGen\"}",Tags:[Z-],Marker
 summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"debugChunk\"}",Marker:1,NoGravity:1,Invisible:1}
 
 
+
 scoreboard players operation @e[type=armor_stand,name=circleGen,sort=nearest,limit=4] Rad = @s circle
 execute as @e[type=armor_stand,name=circleGen,sort=nearest,limit=4] run scoreboard players operation @s tempRad = @s Rad
 
 
-
+bossbar set minecraft:percentbar visible true
 
 execute as @e[type=armor_stand,name=circleGen,tag=X+] at @s run function circle:dist_tp/dist_tp_xp
 execute as @e[type=armor_stand,name=circleGen,tag=X-] at @s run function circle:dist_tp/dist_tp_xm
@@ -40,7 +41,13 @@ execute as @e[type=armor_stand,name=circleGen,tag=Z-] at @s run function circle:
 title @a times 0 100 20
 title @a subtitle ["",{"score":{"name":"blockCount","objective":"blockCount"},"color":"yellow"},{"text":" blocks changed","color":"yellow"}]
 title @a title {"text":"completed","color":"gold"}
+
+
+
 playsound minecraft:block.note.pling master @a ~ ~ ~ 1 1 1
+
+bossbar set minecraft:percentbar visible false
+bossbar set minecraft:percentbar value 0
 
 scoreboard players set blockCount blockCount 0
 scoreboard players set temp percent 0

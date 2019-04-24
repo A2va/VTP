@@ -5,11 +5,10 @@ scoreboard players operation temp percent = percentDisk percent
 scoreboard players operation temp percent *= 100 percent
 scoreboard players operation temp percent /= sphereOpI percent
 
-title @a times 0 40 0
-title @a subtitle ["",{"score":{"name":"temp","objective":"percent"},"color":"yellow"},{"text":" %","color":"yellow"}]
-title @a title {"text":"generating sphere","color":"gold"}
 
 
+execute store result bossbar minecraft:percentbar value run scoreboard players get temp percent
+bossbar set minecraft:percentbar name ["",{"text":"Percent - "},{"score":{"name":"temp","objective":"percent"}},{"text":"%"}]
 
 scoreboard players operation @s circlePos1sqr = @s circlePos1
 scoreboard players operation @s circlePos1sqr *= @s circlePos1
@@ -78,19 +77,3 @@ scoreboard players operation @s operation -= @s circlePos3
 
 
 execute as @s at @s if entity @s[scores={operation=0..}] run function circle:sphere_gen/gen
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -9,10 +9,10 @@ scoreboard players operation temp percent = percentDisk percent
 scoreboard players operation temp percent *= 100 percent
 scoreboard players operation temp percent /= diskOpI percent
 
-title @a times 0 40 0
-title @a subtitle ["",{"score":{"name":"temp","objective":"percent"},"color":"yellow"},{"text":" %","color":"yellow"}]
-title @a title {"text":"generating disk","color":"gold"}
 
+
+execute store result bossbar minecraft:percentbar value run scoreboard players get temp percent
+bossbar set minecraft:percentbar name ["",{"text":"Percent - "},{"score":{"name":"temp","objective":"percent"}},{"text":"%"}]
 
 
 scoreboard players operation @s circlePos1sqr = @s circlePos1

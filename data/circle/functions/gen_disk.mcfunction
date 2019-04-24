@@ -3,6 +3,9 @@ summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"diskGen\"}",Tags:[X+],Marker:1
 
 scoreboard players operation @e[type=armor_stand,name=diskGen,sort=nearest,limit=1] Rad = @s disk
 
+bossbar set minecraft:percentbar visible true
+
+
 execute as @e[type=armor_stand,name=diskGen,sort=nearest,limit=1] run scoreboard players operation @s tempRad = @s Rad
 execute as @e[type=armor_stand,name=diskGen] at @s run function circle:dist_tp/dist_tp_xm
 execute as @e[type=armor_stand,name=diskGen,sort=nearest,limit=1] run scoreboard players operation @s tempRad = @s Rad
@@ -29,6 +32,9 @@ title @a times 0 100 20
 title @a subtitle ["",{"score":{"name":"blockCount","objective":"blockCount"},"color":"yellow"},{"text":" blocks changed","color":"yellow"}]
 title @a title {"text":"completed","color":"gold"}
 playsound minecraft:block.note.pling master @a ~ ~ ~ 1 1 1
+
+bossbar set minecraft:percentbar visible false
+bossbar set minecraft:percentbar value 0
 
 scoreboard players set blockCount blockCount 0
 scoreboard players set diskOpI percent 0

@@ -25,11 +25,8 @@ scoreboard players set 100 percent 100
 scoreboard players set 4 percent 4
 
 
-
-
-
+bossbar add minecraft:percentbar "Percent"
+bossbar set minecraft:percentbar visible false
+bossbar set minecraft:percentbar players @a
 
 gamerule maxCommandChainLength 2147483647
-
-
-

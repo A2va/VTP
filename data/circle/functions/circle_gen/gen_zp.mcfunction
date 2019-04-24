@@ -15,6 +15,11 @@ title @a title {"text":"generating circle","color":"gold"}
 
 
 
+execute store result bossbar minecraft:percentbar value run scoreboard players get percentCircle percent
+bossbar set minecraft:percentbar name ["",{"text":"Percent - "},{"score":{"name":"percentCircle","objective":"percent"}},{"text":"%"}]
+
+
+
 scoreboard players operation @s circlePos1sqr = @s circlePos1
 scoreboard players operation @s circlePos1sqr *= @s circlePos1
 
