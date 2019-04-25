@@ -1,8 +1,3 @@
-
-
-
-
-
 scoreboard players add percentDisk percent 1
 
 scoreboard players operation temp percent = percentDisk percent

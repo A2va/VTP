@@ -6,7 +6,6 @@ scoreboard players operation temp percent *= 100 percent
 scoreboard players operation temp percent /= sphereOpI percent
 
 
-
 execute store result bossbar minecraft:percentbar value run scoreboard players get temp percent
 bossbar set minecraft:percentbar name ["",{"text":"Percent - "},{"score":{"name":"temp","objective":"percent"}},{"text":"%"}]
 

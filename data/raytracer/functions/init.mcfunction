@@ -1,4 +1,4 @@
-scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add click_vtp minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add rayTimer dummy
 scoreboard objectives add smooth dummy
 scoreboard objectives add brushRad dummy
@@ -9,7 +9,7 @@ scoreboard objectives add waterI dummy
 scoreboard objectives add blockCount dummy
 
 
-gamerule sendCommandFeedback false
+
 
 kill @e[type=armor_stand,tag=option]
 

@@ -9,9 +9,6 @@ scoreboard players operation temp percent /= @s Rad
 scoreboard players operation temp percent /= 4 percent
 
 scoreboard players operation percentCircle percent += temp percent
-title @a times 0 40 0
-title @a subtitle ["",{"score":{"name":"percentCircle","objective":"percent"},"color":"yellow"},{"text":" %","color":"yellow"}]
-title @a title {"text":"generating circle","color":"gold"}
 
 
 
