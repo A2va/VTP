@@ -29,13 +29,13 @@ execute as @e[type=armor_stand,name=circleGen,sort=nearest,limit=4] run scoreboa
 
 
 
-scoreboard players set temp percent 0
+scoreboard players set temp percent_vtp 0
 execute as @e[type=armor_stand,name=circleGen,tag=X+] at @s run function circle:circle_gen/gen_xp
-scoreboard players set temp percent 0
+scoreboard players set temp percent_vtp 0
 execute as @e[type=armor_stand,name=circleGen,tag=X-] at @s run function circle:circle_gen/gen_xm
-scoreboard players set temp percent 0
+scoreboard players set temp percent_vtp 0
 execute as @e[type=armor_stand,name=circleGen,tag=Z+] at @s run function circle:circle_gen/gen_zp
-scoreboard players set temp percent 0
+scoreboard players set temp percent_vtp 0
 execute as @e[type=armor_stand,name=circleGen,tag=Z-] at @s run function circle:circle_gen/gen_zm
 
 
@@ -49,8 +49,8 @@ bossbar set minecraft:percentbar visible false
 bossbar set minecraft:percentbar value 0
 
 scoreboard players set blockCount blockCount 0
-scoreboard players set temp percent 0
-scoreboard players set percentCircle percent 0
+scoreboard players set temp percent_vtp 0
+scoreboard players set percentCircle percent_vtp 0
 
 kill @e[type=armor_stand,name=circleGen]
 kill @e[type=armor_stand,name=debugChunk]

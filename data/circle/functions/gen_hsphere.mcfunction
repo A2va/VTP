@@ -22,12 +22,12 @@ execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run scoreboa
 execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run scoreboard players operation @s circlePos3 -= @s Rad
 
 
-execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run scoreboard players operation sphereTemp percent = @s Rad
-execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run scoreboard players operation sphereTemp percent += @s Rad
-execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run scoreboard players add sphereTemp percent 1
-execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run scoreboard players operation sphereOpI percent = sphereTemp percent
-execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run scoreboard players operation sphereOpI percent *= sphereTemp percent
-execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run scoreboard players operation sphereOpI percent *= sphereTemp percent
+execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run scoreboard players operation sphereTemp percent_vtp = @s Rad
+execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run scoreboard players operation sphereTemp percent_vtp += @s Rad
+execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run scoreboard players add sphereTemp percent_vtp 1
+execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run scoreboard players operation sphereOpI percent_vtp = sphereTemp percent_vtp
+execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run scoreboard players operation sphereOpI percent_vtp *= sphereTemp percent_vtp
+execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run scoreboard players operation sphereOpI percent_vtp *= sphereTemp percent_vtp
 
 execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run scoreboard players set @s HsphereRad 0
 execute as @e[type=armor_stand,name=sphereGen,sort=nearest,limit=1] run scoreboard players operation @s HsphereRad -= @s Rad
@@ -48,9 +48,9 @@ bossbar set minecraft:percentbar visible false
 bossbar set minecraft:percentbar value 0
 
 scoreboard players set blockCount blockCount 0
-scoreboard players set sphereOpI percent 0
-scoreboard players set temp percent 0
-scoreboard players set percentDisk percent 0
+scoreboard players set sphereOpI percent_vtp 0
+scoreboard players set temp percent_vtp 0
+scoreboard players set percentDisk percent_vtp 0
 
 kill @e[type=armor_stand,name=sphereGen]
 kill @e[type=armor_stand,name=debugChunk]

@@ -18,10 +18,10 @@ execute as @e[type=armor_stand,name=diskGen,sort=nearest,limit=1] run scoreboard
 execute as @e[type=armor_stand,name=diskGen,sort=nearest,limit=1] run scoreboard players operation @s circlePos1 -= @s Rad
 execute as @e[type=armor_stand,name=diskGen,sort=nearest,limit=1] run scoreboard players operation @s circlePos2 -= @s Rad
 
-execute as @e[type=armor_stand,name=diskGen,sort=nearest,limit=1] run scoreboard players operation diskOpI percent = @s Rad
-scoreboard players add diskOpI percent 1
-execute as @e[type=armor_stand,name=diskGen,sort=nearest,limit=1] run scoreboard players operation diskOpI percent *= @s Rad
-scoreboard players operation diskOpI percent *= 4 percent
+execute as @e[type=armor_stand,name=diskGen,sort=nearest,limit=1] run scoreboard players operation diskOpI percent_vtp = @s Rad
+scoreboard players add diskOpI percent_vtp 1
+execute as @e[type=armor_stand,name=diskGen,sort=nearest,limit=1] run scoreboard players operation diskOpI percent_vtp *= @s Rad
+scoreboard players operation diskOpI percent_vtp *= 4 percent_vtp
 
 
 execute as @e[type=armor_stand,name=diskGen,sort=nearest,limit=1] run function circle:disk_gen/gen
@@ -35,9 +35,9 @@ bossbar set minecraft:percentbar visible false
 bossbar set minecraft:percentbar value 0
 
 scoreboard players set blockCount blockCount 0
-scoreboard players set diskOpI percent 0
-scoreboard players set temp percent 0
-scoreboard players set percentDisk percent 0
+scoreboard players set diskOpI percent_vtp 0
+scoreboard players set temp percent_vtp 0
+scoreboard players set percentDisk percent_vtp 0
 
 
 
