@@ -20,9 +20,9 @@ scoreboard objectives add operation dummy
 scoreboard objectives add HsphereRad dummy
 
 
-scoreboard objectives add percent dummy
-scoreboard players set 100 percent 100
-scoreboard players set 4 percent 4
+scoreboard objectives add percent_vtp dummy
+scoreboard players set 100 percent_vtp 100
+scoreboard players set 4 percent_vtp 4
 
 
 bossbar add minecraft:percentbar "Percent"
