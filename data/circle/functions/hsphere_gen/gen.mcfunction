@@ -1,14 +1,14 @@
 
-scoreboard players add percentDisk percent_vtp 1
+scoreboard players add percentDisk percent 1
 
-scoreboard players operation temp percent_vtp = percentDisk percent_vtp
-scoreboard players operation temp percent_vtp *= 100 percent_vtp
-scoreboard players operation temp percent_vtp /= sphereOpI percent_vtp
+scoreboard players operation temp percent = percentDisk percent
+scoreboard players operation temp percent *= 100 percent
+scoreboard players operation temp percent /= sphereOpI percent
 
 
 
-execute store result bossbar minecraft:percentbar value run scoreboard players get temp percent_vtp
-bossbar set minecraft:percentbar name ["",{"text":"Percent - "},{"score":{"name":"temp","objective":"percent_vtp"}},{"text":"%"}]
+execute store result bossbar minecraft:percentbar value run scoreboard players get temp percent
+bossbar set minecraft:percentbar name ["",{"text":"Percent - "},{"score":{"name":"temp","objective":"percent"}},{"text":"%"}]
 
 scoreboard players operation @s circlePos1sqr = @s circlePos1
 scoreboard players operation @s circlePos1sqr *= @s circlePos1

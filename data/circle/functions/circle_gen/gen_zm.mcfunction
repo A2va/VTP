@@ -1,19 +1,19 @@
 spreadplayers ~ ~ 0 1 false @e[type=armor_stand,name=debugChunk]
 
-scoreboard players operation percentCircle percent_vtp -= temp percent_vtp
+scoreboard players operation percentCircle percent -= temp percent
 
-scoreboard players operation temp percent_vtp = @s circlePos2
-scoreboard players operation temp percent_vtp *= 100 percent_vtp
-scoreboard players operation temp percent_vtp /= @s Rad
-scoreboard players operation temp percent_vtp /= 4 percent_vtp
+scoreboard players operation temp percent = @s circlePos2
+scoreboard players operation temp percent *= 100 percent
+scoreboard players operation temp percent /= @s Rad
+scoreboard players operation temp percent /= 4 percent
 
-scoreboard players operation percentCircle percent_vtp += temp percent_vtp
-
-
+scoreboard players operation percentCircle percent += temp percent
 
 
-execute store result bossbar minecraft:percentbar value run scoreboard players get percentCircle percent_vtp
-bossbar set minecraft:percentbar name ["",{"text":"Percent - "},{"score":{"name":"percentCircle","objective":"percent_vtp"}},{"text":"%"}]
+
+
+execute store result bossbar minecraft:percentbar value run scoreboard players get percentCircle percent
+bossbar set minecraft:percentbar name ["",{"text":"Percent - "},{"score":{"name":"percentCircle","objective":"percent"}},{"text":"%"}]
 
 
 
