@@ -16,6 +16,7 @@ execute as @a[scores={click_vtp=1..},tag=oak,nbt={SelectedItem:{id:"minecraft:ca
 execute as @a[scores={click_vtp=1..},tag=birch,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Tree\",\"color\":\"green\"}"}}}}] at @s run tag @e[type=armor_stand,name=ray,distance=0..2,limit=1] add birch
 execute as @a[scores={click_vtp=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Tree\",\"color\":\"green\"}"}}}}] at @s run tag @e[type=armor_stand,name=ray,distance=0..2,limit=1] add noClean
 
+execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:"{\"text\":\"BlingEdit\"}"}}}}] at @s run tag @e[type=armor_stand,name=ray,distance=0..2,limit=1] add noClean
 
 execute as @a[scores={click_vtp=1..}] at @s run scoreboard players operation @e[type=armor_stand,name=ray,distance=0..2,limit=1] brushRad = @s brushRad
 
@@ -29,13 +30,6 @@ scoreboard players set @e[type=armor_stand,name=ray] rayTimer 512
 execute as @e[type=armor_stand,name=ray] at @s run function raytracer:raytracer
 
 kill @e[type=armor_stand,name=ray]
-
-
-
-
-
-
-
 
 
 execute positioned 0 255 0 as @a[tag=TpOption,distance=15..] store result score @s PlayerPosX run data get entity @s Pos[0]
@@ -59,12 +53,6 @@ tag @a[tag=TpOption] remove TpOption
 
 scoreboard players enable @a Option
 scoreboard players set @a Option 0
-
-
-
-
-
-
 
 
 
