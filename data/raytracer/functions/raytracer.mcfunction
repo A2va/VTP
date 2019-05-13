@@ -5,11 +5,20 @@ execute as @s at @s if block ^ ^ ^1 #raytracer:transparent run tp @s ^ ^ ^1
 #execute as @s at @s unless block ^ ^ ^1 #raytracer:transparent run summon fireball ~ ~ ~ {ExplosionPower:5,direction:[0.0,-10.0,0.0],power:[0.0,0.0,0.0]}
 execute as @s at @s unless block ^ ^ ^1 #raytracer:transparent run scoreboard players set @s rayTimer 0
 
-execute as @s[scores={brushRad=1},tag=!noClean] at @s run function raytracer:brushsize/clean_r1
-execute as @s[scores={brushRad=2},tag=!noClean] at @s run function raytracer:brushsize/clean_r2
-execute as @s[scores={brushRad=3},tag=!noClean] at @s run function raytracer:brushsize/clean_r3
-execute as @s[scores={brushRad=5},tag=!noClean] at @s run function raytracer:brushsize/clean_r5
-execute as @s[scores={brushRad=7},tag=!noClean] at @s run function raytracer:brushsize/clean_r7
+#Voir pour noClean
+execute as @s[scores={brushRad=1},tag=clean] at @s run function raytracer:brushsize/clean_r1
+execute as @s[scores={brushRad=2},tag=clean] at @s run function raytracer:brushsize/clean_r2
+execute as @s[scores={brushRad=3},tag=clean] at @s run function raytracer:brushsize/clean_r3
+execute as @s[scores={brushRad=5},tag=clean] at @s run function raytracer:brushsize/clean_r5
+execute as @s[scores={brushRad=7},tag=clean] at @s run function raytracer:brushsize/clean_r7
+
+
+
+#execute as @s[scores={brushRad=1},tag=!noClean] at @s run function raytracer:brushsize/clean_r1
+#execute as @s[scores={brushRad=2},tag=!noClean] at @s run function raytracer:brushsize/clean_r2
+#execute as @s[scores={brushRad=3},tag=!noClean] at @s run function raytracer:brushsize/clean_r3
+#execute as @s[scores={brushRad=5},tag=!noClean] at @s run function raytracer:brushsize/clean_r5
+#execute as @s[scores={brushRad=7},tag=!noClean] at @s run function raytracer:brushsize/clean_r7
 
 execute as @s[tag=push,scores={brushRad=1}] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:brushsize/push_r1
 execute as @s[tag=pull,scores={brushRad=1}] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:brushsize/pull_r1
