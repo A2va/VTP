@@ -2,8 +2,13 @@ function rand:rand
 
 scoreboard players operation rand% rand %= Noak Rconst
 
-
-
+#For NONE => anthing
+#For CLOCKWISE_90         => posZ(NONE) -> posX(CLOCKWISE_90) positif
+#                            posX(NONE) -> posZ(CLOCKWISE_90)
+#For CLOCKWISE_180        => posZ(NONE) -> posZ(CLOCKWISE_180) positif
+#                            posX(NONE) -> posX(CLOCKWISE_180) positif
+#For COUNTERCLOCKWISE_90  => posZ(NONE) -> posX(COUNTERCLOCKWISE_90)
+#                            posX(NONE) -> posZ(COUNTERCLOCKWISE_90) positif
 
 execute as @s at @s if score rand% rand matches -9 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", posX: -14, mode: "LOAD", posY: 0, sizeX: 32, posZ: -15, name: "raytracer:oak/small/oak_small_3",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 execute as @s at @s if score rand% rand matches -8 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", posX: -14, mode: "LOAD", posY: 0, sizeX: 32, posZ: -15, name: "raytracer:oak/small/oak_small_5",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
