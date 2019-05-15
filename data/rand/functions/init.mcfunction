@@ -5,7 +5,8 @@ scoreboard objectives add Rconst dummy
 
 scoreboard players set Nspruce Rconst 28
 scoreboard players set Nbirch Rconst 6
-scoreboard players set Noak Rconst 10
+scoreboard players set Noak Rconst 21
+scoreboard players set Noak_custom Rconst 10
 
 
 scoreboard players set prem1 Rconst 1812433253
