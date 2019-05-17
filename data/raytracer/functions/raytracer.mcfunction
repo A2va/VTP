@@ -76,6 +76,8 @@ execute as @s[tag=tree,tag=birch] at @s unless block ^ ^ ^1 #raytracer:transpare
 #spruce
 execute as @s[tag=tree,tag=spruce_custom] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/spruce_custom
 execute as @s[tag=tree,tag=spruce] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/spruce
+#Acacia
+execute as @s[tag=tree,tag=acacia] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/acacia
 
 
 

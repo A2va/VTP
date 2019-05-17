@@ -5,6 +5,7 @@ tag @s remove oak_custom
 tag @s remove spruce
 tag @s remove spruce_custom
 tag @s remove birch_custom
+tag @s remove acacia
 
 tag @s add birch
 tellraw @s {"text":"Birch selected","color":"yellow"}

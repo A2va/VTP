@@ -27,6 +27,8 @@ execute as @a[scores={click_vtp=1..},tag=birch,nbt={SelectedItem:{id:"minecraft:
 #Spruce
 execute as @a[scores={click_vtp=1..},tag=spruce_custom,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Tree\",\"color\":\"green\"}"}}}}] at @s run tag @e[type=armor_stand,name=ray,distance=0..2,limit=1] add spruce_custom
 execute as @a[scores={click_vtp=1..},tag=spruce,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Tree\",\"color\":\"green\"}"}}}}] at @s run tag @e[type=armor_stand,name=ray,distance=0..2,limit=1] add spruce
+#Acacia
+execute as @a[scores={click_vtp=1..},tag=acacia,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Tree\",\"color\":\"green\"}"}}}}] at @s run tag @e[type=armor_stand,name=ray,distance=0..2,limit=1] add acacia
 
 
 #NoClean
