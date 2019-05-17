@@ -64,7 +64,7 @@ execute as @s[tag=paintbrush,scores={brushRad=7}] at @s unless block ^ ^ ^1 #ray
 
 
 
-execute as @s[tag=tree,tag=spruce] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/spruce
+
 #Tree Oak
 execute as @s[tag=tree,tag=oak_custom] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak_custom
 execute as @s[tag=tree,tag=oak_big] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak_big
@@ -73,8 +73,9 @@ execute as @s[tag=tree,tag=oak] at @s unless block ^ ^ ^1 #raytracer:transparent
 #Birch
 execute as @s[tag=tree,tag=birch_custom] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/birch_custom
 execute as @s[tag=tree,tag=birch] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/birch
-
-
+#spruce
+execute as @s[tag=tree,tag=spruce_custom] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/spruce_custom
+execute as @s[tag=tree,tag=spruce] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/spruce
 
 
 
