@@ -1,6 +1,6 @@
 function rand:rand
 
-scoreboard players operation rand% rand %= Noak Rconst
+scoreboard players operation rand% rand %= Nbirch Rconst
 
 #For NONE => anthing
 #For CLOCKWISE_90         => posZ(NONE) -> posX(CLOCKWISE_90) positif
