@@ -7,6 +7,21 @@ setblock 3 255 0 air
 
 fill -3 253 -6 3 254 6 air
 
+#Remove tag
+tag @a remove VTP
+tag @a remove oak
+tag @a remove oak_small
+tag @a remove oak_big
+tag @a remove oak_custom
+tag @a remove spruce
+tag @a remove spruce_custom
+tag @a remove birch
+tag @a remove birch_custom
+tag @a remove dark_oak
+tag @a remove jungle
+tag @a remove jungle_big
+tag @a remove jungle_small
+tag @a remove acacia
 #Remove scoreboard
 
 tellraw @a ["",{"text":"Deleting the scoreboard","color":"dark_red","bold":true}]

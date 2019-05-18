@@ -40,7 +40,7 @@ summon armor_stand 0.5 254 0.5 {CustomName:"{\"text\":\"randMaterial\"}",Marker:
 scoreboard players enable @a Option
 
 execute as @a run scoreboard players operation @s brushRad = @s brushRad
-tag @a[scores={brushRad=0}] add oak
+
 scoreboard players set @a[scores={brushRad=0}] brushRad 3
 
 
