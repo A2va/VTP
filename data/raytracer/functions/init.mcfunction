@@ -9,8 +9,6 @@ scoreboard objectives add waterI dummy
 scoreboard objectives add blockCount dummy
 
 
-
-
 kill @e[type=armor_stand,tag=option]
 
 
@@ -18,7 +16,7 @@ execute positioned 0 255 0 as @a[distance=15..] store result score @s PlayerPosX
 execute positioned 0 255 0 as @a[distance=15..] store result score @s PlayerPosY run data get entity @s Pos[1]
 execute positioned 0 255 0 as @a[distance=15..] store result score @s PlayerPosZ run data get entity @s Pos[2]
 
-setworldspawn 0 254 0
+#setworldspawn 0 254 0
 
 fill -3 253 -6 3 254 6 white_concrete keep
 fill -2 254 -5 2 254 -1 air replace white_concrete

@@ -1,0 +1,1 @@
+tellraw @a[tag=VTP] ["",{"text":"Settings:\n"},{"text":"Fast paintbrush: "},{"text":"[On] ","color":"green","clickEvent":{"action":"run_command","value":"/function raytracer:settings/fastpaintbrush_on"}},{"text":"[Off]","color":"red","clickEvent":{"action":"run_command","value":"/function raytracer:settings/fastpaintbrush_off"}}]

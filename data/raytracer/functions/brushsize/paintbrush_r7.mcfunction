@@ -2103,13 +2103,17 @@ summon armor_stand ~7 ~3 ~1 {CustomName:"{\"text\":\"paintbrush\"}",Marker:1,Inv
 summon armor_stand ~7 ~3 ~2 {CustomName:"{\"text\":\"paintbrush\"}",Marker:1,Invisible:1,NoGravity:1}
 
 
-execute if entity @s[tag=!ground,tag=!top] as @e[type=armor_stand,name=paintbrush] at @s run function raytracer:paintbrushtick
-execute if entity @s[tag=ground] as @e[type=armor_stand,name=paintbrush] at @s run function raytracer:paintbrushtickground
-execute if entity @s[tag=top] as @e[type=armor_stand,name=paintbrush] at @s run function raytracer:paintbrushticktop
+execute if entity @s[tag=!ground,tag=!top,tag=!paintbrush_fast] as @e[type=armor_stand,name=paintbrush] at @s run function raytracer:brushsize/paintbrush/paintbrushtick
+execute if entity @s[tag=!ground,tag=!top,tag=paintbrush_fast] as @e[type=armor_stand,name=paintbrush] at @s run function raytracer:brushsize/paintbrush/paintbrushtick_fast
+
+execute if entity @s[tag=ground,tag=!paintbrush_fast] as @e[type=armor_stand,name=paintbrush] at @s run function raytracer:brushsize/paintbrush/paintbrushtickground
+execute if entity @s[tag=ground,tag=paintbrush_fast] as @e[type=armor_stand,name=paintbrush] at @s run function raytracer:brushsize/paintbrush/paintbrushtickground_fast
+
+execute if entity @s[tag=top,tag=!paintbrush_fast] as @e[type=armor_stand,name=paintbrush] at @s run function raytracer:brushsize/paintbrush/paintbrushticktop
+execute if entity @s[tag=top,tag=paintbrush_fast] as @e[type=armor_stand,name=paintbrush] at @s run function raytracer:brushsize/paintbrush/paintbrushticktop_fast
+
+
 setblock 0 255 0 air
 
 
 kill @e[type=armor_stand,name=paintbrush]
-
-
-
