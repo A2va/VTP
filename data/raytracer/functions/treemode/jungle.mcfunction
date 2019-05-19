@@ -11,4 +11,5 @@ tag @s remove jungle_big
 tag @s remove jungle_small
 
 tag @s add jungle
-tellraw @s {"text":"Jungle selected","color":"yellow"}
+#tellraw @s {"text":"Jungle selected","color":"yellow"}
+title @s actionbar ["",{"text":"Jungle selected","color":"dark_aqua"}]

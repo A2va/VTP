@@ -2115,16 +2115,4 @@ execute if entity @s[tag=lift] as @e[type=armor_stand,name=smooth] at @s if enti
 
 
 
-
-
-
-
-
-
-
 kill @e[type=armor_stand,name=smooth]
-
-
-
-
-

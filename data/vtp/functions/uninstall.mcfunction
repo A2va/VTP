@@ -22,6 +22,10 @@ tag @a remove jungle
 tag @a remove jungle_big
 tag @a remove jungle_small
 tag @a remove acacia
+
+tag @a remove up
+tag @a remove ground
+tag @a remove paintbrush_fast
 #Remove scoreboard
 
 tellraw @a ["",{"text":"Deleting the scoreboard","color":"dark_red","bold":true}]

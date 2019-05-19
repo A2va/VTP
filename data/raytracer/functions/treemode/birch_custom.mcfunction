@@ -12,4 +12,5 @@ tag @s remove jungle_big
 tag @s remove jungle_small
 
 tag @s add birch_custom
-tellraw @s {"text":"Birch custom selected","color":"yellow"}
+#tellraw @s {"text":"Birch custom selected","color":"yellow"}
+title @s actionbar ["",{"text":"Birch custom selected","color":"dark_aqua"}]
