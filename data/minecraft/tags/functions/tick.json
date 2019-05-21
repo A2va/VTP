@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     "raytracer:main",
-	   "circle:main",
-     "stencils:main"
+	  "circle:main",
+    "stencils:main"
   ]
 }

@@ -1,4 +1,4 @@
-#Vraiment utile ?
+#Vraiment utile ? ou mettre dans init function
 
 scoreboard objectives add player_x dummy
 scoreboard objectives add player_y dummy

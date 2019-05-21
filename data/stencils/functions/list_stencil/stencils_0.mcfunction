@@ -1,6 +1,6 @@
 function rand:rand
 
-scoreboard players operation rand% rand %= Nstencils0 Rconst
+scoreboard players operation rand% rand %= Nstencils0_V Stencils
 
 
 execute as @s at @s if score rand% rand matches -21 run
@@ -56,3 +56,6 @@ execute as @s at @s if score rand% rand matches 22 run
 
 
 execute as @s at @s run setblock ~ ~1 ~ redstone_block
+
+execute as @s at @s run setblock ~ ~ ~ air
+execute as @s at @s run setblock ~ ~1 ~ air

@@ -12,5 +12,5 @@ tag @s remove jungle_big
 tag @s remove jungle_small
 
 tag @s add spruce
-#tellraw @s {"text":"Spruce selected","color":"yellow"}
+
 title @s actionbar ["",{"text":"Spruce selected","color":"dark_aqua"}]

@@ -12,5 +12,5 @@ tag @s remove jungle_big
 tag @s remove jungle_small
 
 tag @s add oak_custom
-#tellraw @s {"text":"Oak custom selected","color":"yellow"}
+
 title @s actionbar ["",{"text":"Oak custom selected","color":"dark_aqua"}]

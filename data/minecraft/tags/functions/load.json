@@ -1,9 +1,10 @@
 {
   "replace": true,
   "values": [
-    "raytracer:init",
+     "raytracer:init",
 	   "circle:init",
 	   "rand:init",
      "stencils:init"
+
   ]
 }
