@@ -2,7 +2,8 @@
   "replace": true,
   "values": [
     "raytracer:init",
-	"circle:init",
-	"rand:init"
+	   "circle:init",
+	   "rand:init",
+     "stencils:init"
   ]
 }

@@ -10,6 +10,10 @@ scoreboard players set Noak Rconst 22
 scoreboard players set Njungle Rconst 22
 scoreboard players set Noak_custom Rconst 10
 
+scoreboard players set Nstencils0 Rconst 1
+scoreboard players set ChStencils Rconst 0
+
+scoreboard players set SaveNumberStencils Rconst 1
 
 
 scoreboard players set prem1 Rconst 1812433253

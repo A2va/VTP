@@ -86,10 +86,10 @@ execute as @s[tag=tree,tag=jungle_big] at @s unless block ^ ^ ^1 #raytracer:tran
 execute as @s[tag=tree,tag=jungle] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/jungle
 
 
+#Stencils
 
 
-
-
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Rconst matches 1 run stencils:list_stencil/stencils0
 
 
 
