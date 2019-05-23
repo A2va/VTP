@@ -8,6 +8,17 @@ scoreboard objectives add PlayerPosZ dummy
 scoreboard objectives add waterI dummy
 scoreboard objectives add blockCount dummy
 
+scoreboard objectives add Tree dummy
+
+scoreboard players set Nacacia Tree 44
+scoreboard players set Nspruce_custom Tree 56
+scoreboard players set Nspruce Tree 44
+scoreboard players set Nbirch_custom Tree 12
+scoreboard players set Nbirch Tree 44
+scoreboard players set Noak Tree 44
+scoreboard players set Njungle Tree 44
+scoreboard players set Noak_custom Tree 44
+
 
 kill @e[type=armor_stand,tag=option]
 

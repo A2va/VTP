@@ -3,12 +3,7 @@ scoreboard objectives add Rconst dummy
 
 
 
-scoreboard players set Nspruce Rconst 28
-scoreboard players set Nbirch_custom Rconst 6
-scoreboard players set Nbirch Rconst 22
-scoreboard players set Noak Rconst 22
-scoreboard players set Njungle Rconst 22
-scoreboard players set Noak_custom Rconst 10
+
 
 
 
