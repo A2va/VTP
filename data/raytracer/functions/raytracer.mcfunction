@@ -89,8 +89,8 @@ execute as @s[tag=tree,tag=jungle] at @s unless block ^ ^ ^1 #raytracer:transpar
 
 
 
-execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 1 run function stencils:list_stencil/stencils_0
-
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 0 run function stencils:list_stencil/stencils_0
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 1 run function stencils:list_stencil/stencils_1
 
 
 

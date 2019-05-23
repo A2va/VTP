@@ -9,4 +9,7 @@ execute as @a store result score @s player_y run data get entity @s Pos[1] 1
 execute as @a store result score @s player_z run data get entity @s Pos[2] 1
 
 scoreboard players operation Nstencils0_V Stencils = Nstencils0 Stencils
-scoreboard players operation Nstencils0_V Stencils *= Passage Stencils
+scoreboard players operation Nstencils0_V Stencils *= Quatre Stencils
+
+scoreboard players operation Nstencils1_V Stencils = Nstencils1 Stencils
+scoreboard players operation Nstencils1_V Stencils *= Quatre Stencils
