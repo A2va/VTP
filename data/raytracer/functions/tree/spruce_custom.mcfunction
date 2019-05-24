@@ -1,6 +1,6 @@
 function rand:rand
 
-scoreboard players operation rand% rand %= Nspruce_custom Rconst
+scoreboard players operation rand% rand %= Nspruce_custom Tree
 
 execute as @s at @s if score rand% rand matches 0 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", posX: -13, mode: "LOAD", posY: 0, sizeX: 32, posZ: -14, name: "raytracer:spruce/custom/spruce_1",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 execute as @s at @s if score rand% rand matches 1 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", posX: -14, mode: "LOAD", posY: 0, sizeX: 32, posZ: -15, name: "raytracer:spruce/custom/spruce_2",sizeY: 32, sizeZ: 32, showboundingbox: 0b}

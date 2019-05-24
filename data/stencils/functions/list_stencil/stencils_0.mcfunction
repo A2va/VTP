@@ -104,6 +104,157 @@ execute as @s at @s if score rand% rand matches 77 run setblock ~ ~ ~ minecraft:
 execute as @s at @s if score rand% rand matches 78 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/20", showboundingbox: 0b}
 execute as @s at @s if score rand% rand matches 79 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/20", showboundingbox: 0b}
 
+execute as @s at @s if score rand% rand matches 80 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/21", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 81 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/21", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 82 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/21", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 83 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/21", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 84 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/22", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 85 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/22", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 86 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/22", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 87 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/22", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 88 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/23", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 89 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/23", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 90 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/23", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 91 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/23", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 92 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/24", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 93 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/24", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 94 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/24", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 95 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/24", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 96 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/25", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 97 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/25", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 98 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/25", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 99 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/25", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 100 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/26", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 101 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/26", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 102 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/26", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 103 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/26", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 104 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/27", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 105 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/27", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 106 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/27", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 107 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/27", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 108 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/28", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 109 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/28", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 110 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/28", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 111 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/28", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 112 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/29", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 113 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/29", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 114 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/29", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 115 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/29", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 116 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/30", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 117 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/30", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 118 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/30", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 119 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/30", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 120 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/31", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 121 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/31", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 122 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/31", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 123 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/31", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 124 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/32", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 125 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/32", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 126 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/32", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 127 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/32", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 128 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/33", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 129 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/33", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 130 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/33", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 131 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/33", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 132 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/34", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 133 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/34", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 134 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/34", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 135 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/34", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 136 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/35", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 137 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/35", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 138 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/35", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 139 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/35", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 140 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/36", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 141 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/36", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 142 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/36", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 143 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/36", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 144 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/37", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 145 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/37", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 146 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/37", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 147 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/37", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 148 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/38", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 149 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/38", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 150 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/38", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 151 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/38", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 152 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/39", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 153 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/39", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 154 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/39", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 155 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/39", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 156 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/40", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 157 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/40", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 158 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/40", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 159 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/40", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 160 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/41", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 161 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/41", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 162 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/41", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 163 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/41", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 164 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/42", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 165 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/42", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 166 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/42", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 167 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/42", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 168 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/43", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 169 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/43", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 170 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/43", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 171 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/43", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 172 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/44", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 173 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/44", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 174 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/44", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 175 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/44", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 176 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/45", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 177 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/45", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 178 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/45", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 179 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/45", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 180 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/46", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 181 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/46", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 182 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/46", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 183 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/46", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 184 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/47", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 185 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/47", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 186 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/47", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 187 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/47", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 188 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/48", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 189 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/48", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 190 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/48", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 191 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/48", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 192 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/49", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 193 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/49", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 194 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/49", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 195 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/49", showboundingbox: 0b}
+
+execute as @s at @s if score rand% rand matches 196 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/50", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 197 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/50", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 198 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/50", showboundingbox: 0b}
+execute as @s at @s if score rand% rand matches 199 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/50", showboundingbox: 0b}
+
+
 execute as @s at @s run setblock ~ ~1 ~ redstone_block
 
 execute as @s at @s run setblock ~ ~ ~ air
