@@ -12,6 +12,7 @@ I modified it to be compatible with BlingEdit
 
 ### Commands:
 `/function vtp:option` : Displays brush options and how to get them
+
 `/function vtp:fixwater`: Filled with water a closed area of 30 * 30 around you
 `/trigger sphere set [Radius]`: Generates a sphere of the given radius centered on you
 `/trigger hsphere set [Radius]`: Generates an empty sphere of the given radius centered on you
