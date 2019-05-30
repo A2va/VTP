@@ -60,32 +60,21 @@ execute as @s[tag=lift,scores={brushRad=7}] at @s unless block ^ ^ ^1 #raytracer
 execute as @s[tag=paintbrush,scores={brushRad=7}] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:brushsize/paintbrush_r7
 
 
-
-
-
-
-
-#Tree Oak
-execute as @s[tag=tree,tag=oak_custom] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak_custom
-execute as @s[tag=tree,tag=oak_big] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak_big
-execute as @s[tag=tree,tag=oak_small] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak_small
-execute as @s[tag=tree,tag=oak] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak
-#Birch
-execute as @s[tag=tree,tag=birch_custom] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/birch_custom
-execute as @s[tag=tree,tag=birch] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/birch
-#spruce
-execute as @s[tag=tree,tag=spruce_custom] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/spruce_custom
-execute as @s[tag=tree,tag=spruce] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/spruce
-#Acacia
-execute as @s[tag=tree,tag=acacia] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/acacia
-#Dark oak
-execute as @s[tag=tree,tag=dark_oak] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/dark_oak
-#Jungle
-execute as @s[tag=tree,tag=jungle_small] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/jungle_small
-execute as @s[tag=tree,tag=jungle_big] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/jungle_big
-execute as @s[tag=tree,tag=jungle] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/jungle
-
-
+#Tree
+execute if score ChoiceTree Tree matches 1 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/acacia
+execute if score ChoiceTree Tree matches 2 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/birch_custom
+execute if score ChoiceTree Tree matches 3 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/birch
+execute if score ChoiceTree Tree matches 4 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/dark_oak
+execute if score ChoiceTree Tree matches 5 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/jungle_big
+execute if score ChoiceTree Tree matches 6 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/jungle_custom
+execute if score ChoiceTree Tree matches 7 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/jungle_small
+execute if score ChoiceTree Tree matches 8 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/jungle
+execute if score ChoiceTree Tree matches 9 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak_big
+execute if score ChoiceTree Tree matches 10 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak_custom
+execute if score ChoiceTree Tree matches 11 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak
+execute if score ChoiceTree Tree matches 12 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak_small
+execute if score ChoiceTree Tree matches 13 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/spruce_custom
+execute if score ChoiceTree Tree matches 14 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/spruce
 
 
 

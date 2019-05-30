@@ -18,7 +18,9 @@ scoreboard players set Nbirch Tree 44
 scoreboard players set Noak Tree 44
 scoreboard players set Njungle Tree 44
 scoreboard players set Noak_custom Tree 44
+scoreboard players set Njungle_custom Tree 100
 
+scoreboard players set ChoiceTree Tree 12
 
 kill @e[type=armor_stand,tag=option]
 
