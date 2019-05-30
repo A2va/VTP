@@ -109,6 +109,3 @@ setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE",author: "Hubiug", rotati
 setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE",author: "Hubiug", rotation: "COUNTERCLOCKWISE_90", posX: -18, mode: "LOAD", posY: 0, sizeX: 32, posZ: 17, name: "raytracer:spruce/spruce_12",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE",author: "Hubiug", rotation: "COUNTERCLOCKWISE_90", posX: -15, mode: "LOAD", posY: 0, sizeX: 32, posZ: 15, name: "raytracer:spruce/spruce_13",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE",author: "Hubiug", rotation: "COUNTERCLOCKWISE_90", posX: -16, mode: "LOAD", posY: 0, sizeX: 32, posZ: 15, name: "raytracer:spruce/spruce_14",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
-
-
-

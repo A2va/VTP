@@ -2,7 +2,7 @@ function rand:rand
 
 scoreboard players operation rand% rand %= Nacacia Tree
 
-#For NONE => anthing
+#For NONE => anything
 #For CLOCKWISE_90         => posZ(NONE) -> posX(CLOCKWISE_90) positif
 #                            posX(NONE) -> posZ(CLOCKWISE_90)
 #For CLOCKWISE_180        => posZ(NONE) -> posZ(CLOCKWISE_180) positif
