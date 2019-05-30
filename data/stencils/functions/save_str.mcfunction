@@ -32,7 +32,7 @@ execute if score Global structure_sizeZ matches 1..32 run scoreboard players add
 execute if score Global structure_pos matches 0..2 run tellraw @a ["",{"text":"["},{"text":"FAILED","color":"red"},{"text":"] "},{"text":"Move closer, you're far away from the your selection!"}]
 execute if score Global structure_size matches 0..2 run tellraw @a ["",{"text":"["},{"text":"FAILED","color":"red"},{"text":"] "},{"text":"You're selection is too big! Maximum is 32x32x32!"}]
 
-execute if score Global structure_pos matches 3 if score Global structure_size matches 3 run setblock ~ ~ ~ structure_block{name:"stencils:stencilsx/x",rotation:"NONE",mirror:"NONE",mode:"SAVE",ignoreEntities:1b}
+execute if score Global structure_pos matches 3 if score Global structure_size matches 3 run setblock ~ ~ ~ structure_block{name:"stencils:stencilsx/y",rotation:"NONE",mirror:"NONE",mode:"SAVE",ignoreEntities:1b}
 
 execute if score Global structure_pos matches 3 if score Global structure_size matches 3 run execute store result block ~ ~ ~ posX double 1 run scoreboard players get Global structure_posX
 execute if score Global structure_pos matches 3 if score Global structure_size matches 3 run execute store result block ~ ~ ~ posY double 1 run scoreboard players get Global structure_posY

@@ -1,3 +1,5 @@
+scoreboard objectives add Stencils dummy
+
 scoreboard players set Nstencils0 Stencils 1
 scoreboard players set Nstencils1 Stencils 1
 scoreboard players set Nstencils2 Stencils 1
@@ -19,8 +21,6 @@ scoreboard players set Nstencils6_V Stencils 4
 scoreboard players set Nstencils7_V Stencils 4
 scoreboard players set Nstencils8_V Stencils 4
 scoreboard players set Nstencils9_V Stencils 4
-
-
 
 scoreboard players set Quatre Stencils 2
 

@@ -1,12 +1,6 @@
 scoreboard objectives add rand dummy
 scoreboard objectives add Rconst dummy
 
-
-
-
-
-
-
 scoreboard players set prem1 Rconst 1812433253
 scoreboard players set prem2 Rconst 25463357
 

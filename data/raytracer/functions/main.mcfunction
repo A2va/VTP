@@ -80,7 +80,7 @@ scoreboard players set @a Option 0
 
 
 
-execute as @e[type=armor_stand,name=fixwaterend] at @s run function raytracer:fixwaterend
+execute as @e[type=armor_stand,name=fixwaterend] at @s run function raytracer:fixwater/fixwaterend
 kill @e[type=armor_stand,name=fixwaterend]
 
 scoreboard players set @a blockCount 0

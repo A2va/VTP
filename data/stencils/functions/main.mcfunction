@@ -29,12 +29,15 @@ scoreboard players operation Nstencils9_V Stencils = Nstencils9 Stencils
 scoreboard players operation Nstencils9_V Stencils *= Quatre Stencils
 
 
-execute as @p[scores={be_str=1}] if score Global loaded matches 1 run function blingedit_structures:load
+execute as @p[scores={be_str=1}] if score Global loaded matches 1 run function stencils:load
 execute as @p[scores={be_str=1}] if score Global loaded matches 1 run scoreboard players reset @a be_str
 
-#execute as @e[type=minecraft:player] run execute if score @s disp_plugins matches 1.. run tellraw @s ["[",{"text":"Structures1 - Load","clickEvent":{"action":"run_command","value":"/function blingedit_structures:try_load_str"},"color":"green"},{"text":"]"}]
-execute as @a[tag=VTP] run execute if score @s disp_plugins matches 1.. run tellraw @s ["[",{"text":"VTP - Save Stencils","clickEvent":{"action":"run_command","value":"/function stencils:try_save_str"},"color":"green"},{"text":"]"}]
+
+execute as @e[type=minecraft:player] run execute if score @s disp_plugins matches 1.. run tellraw @s ["[",{"text":"VTP - Save Stencils","clickEvent":{"action":"run_command","value":"/function stencils:try_save_str"},"color":"green"},{"text":"]"}]
 
 execute as @a store result score @s player_x run data get entity @s Pos[0] 1
 execute as @a store result score @s player_y run data get entity @s Pos[1] 1
 execute as @a store result score @s player_z run data get entity @s Pos[2] 1
+
+#execute as @e[type=armor_stand,tag=structure_remove] at @s run fill ~ ~-1 ~ ~ ~ ~ air
+#execute as @e[type=armor_stand,tag=structure_remove] run kill @s

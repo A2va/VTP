@@ -2103,7 +2103,7 @@ summon armor_stand ~7 ~3 ~1 {CustomName:"{\"text\":\"smooth\"}",Marker:1,Invisib
 summon armor_stand ~7 ~3 ~2 {CustomName:"{\"text\":\"smooth\"}",Marker:1,Invisible:1,NoGravity:1}
 
 
-execute if entity @s[tag=smooth] as @e[type=armor_stand,name=smooth] at @s run function raytracer:smoothtick
+execute if entity @s[tag=smooth] as @e[type=armor_stand,name=smooth] at @s run function raytracer:brushsize/smooth/smoothtick
 execute if entity @s[tag=smooth] as @e[type=armor_stand,name=smooth] at @s if entity @s[scores={smooth=1..13}] run setblock ~ ~ ~ air
 execute if entity @s[tag=smooth] as @e[type=armor_stand,name=smooth] at @s if entity @s[scores={smooth=14..}] run setblock ~ ~ ~ stone
 
