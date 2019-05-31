@@ -38,6 +38,3 @@ execute as @e[type=minecraft:player] run execute if score @s disp_plugins matche
 execute as @a store result score @s player_x run data get entity @s Pos[0] 1
 execute as @a store result score @s player_y run data get entity @s Pos[1] 1
 execute as @a store result score @s player_z run data get entity @s Pos[2] 1
-
-#execute as @e[type=armor_stand,tag=structure_remove] at @s run fill ~ ~-1 ~ ~ ~ ~ air
-#execute as @e[type=armor_stand,tag=structure_remove] run kill @s

@@ -16,5 +16,3 @@ scoreboard players set Constant structure_size 1
 scoreboard players set Constant structure_pos 1000
 scoreboard players set Constant structure_posX 500
 scoreboard players set Constant structure_posZ 500
-
-tellraw @a ["",{"text":"["},{"text":"BlingEdit Structures","color":"gold"},{"text":"] "},{"text":"Plugin created by MrKacafirekCZ","color":"gray"},{"text":" ("},{"text":"v1.0.0","color":"aqua"},{"text":")"}]

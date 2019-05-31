@@ -5,8 +5,7 @@ I modified it to be compatible with BlingEdit
 
 ## Road map
 
-* Stencils (if possible)
-* Added custom jungle tree
+* Vegetate brush
 
 ## Utilisation
 
@@ -44,7 +43,6 @@ I modified it to be compatible with BlingEdit
 'Stencils': Brush to put a stencil
 
 ### Stencils:
-
 
 You can create stencils either using BlingEdit or with the structure block
 
