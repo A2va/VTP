@@ -40,7 +40,7 @@ I modified it to be compatible with BlingEdit
 
 `Tree`: Add trees: oak, birch, spruce, etc...
 
-'Stencils': Brush to put a stencil
+`Stencils`: Brush to put a stencil
 
 ### Stencils:
 

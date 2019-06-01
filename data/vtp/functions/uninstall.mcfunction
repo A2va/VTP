@@ -49,16 +49,16 @@ scoreboard objectives remove Rconst
 
 #Stencils
 scoreboard objectives remove Stencils
-scoreboard objectives remove player_x dummy
-scoreboard objectives remove player_y dummy
-scoreboard objectives remove player_z dummy
-scoreboard objectives remove structure_size dummy
-scoreboard objectives remove structure_pos dummy
-scoreboard objectives remove structure_posX dummy
-scoreboard objectives remove structure_posY dummy
-scoreboard objectives remove structure_posZ dummy
-scoreboard objectives remove structure_sizeX dummy
-scoreboard objectives remove structure_sizeY dummy
-scoreboard objectives remove structure_sizeZ dummy
+scoreboard objectives remove player_x
+scoreboard objectives remove player_y
+scoreboard objectives remove player_z
+scoreboard objectives remove structure_size
+scoreboard objectives remove structure_pos
+scoreboard objectives remove structure_posX
+scoreboard objectives remove structure_posY
+scoreboard objectives remove structure_posZ
+scoreboard objectives remove structure_sizeX
+scoreboard objectives remove structure_sizeY 
+scoreboard objectives remove structure_sizeZ
 
 tellraw @s ["",{"text":"Deleting the scoreboard","color":"dark_red","bold":true}]
