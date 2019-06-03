@@ -80,7 +80,14 @@ execute if score ChoiceTree Tree matches 14 as @s[tag=tree] at @s unless block ^
 
 execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 0 run function stencils:list_stencil/stencils_0
 execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 1 run function stencils:list_stencil/stencils_1
-
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 2 run function stencils:list_stencil/stencils_2
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 3 run function stencils:list_stencil/stencils_3
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 4 run function stencils:list_stencil/stencils_4
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 5 run function stencils:list_stencil/stencils_5
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 6 run function stencils:list_stencil/stencils_6
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 7 run function stencils:list_stencil/stencils_7
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 8 run function stencils:list_stencil/stencils_8
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 9 run function stencils:list_stencil/stencils_9
 
 
 
