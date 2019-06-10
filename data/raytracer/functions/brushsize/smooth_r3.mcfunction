@@ -255,10 +255,10 @@ execute if entity @s[tag=smooth] as @e[type=armor_stand,name=smooth] at @s run f
 execute if entity @s[tag=smooth] as @e[type=armor_stand,name=smooth] at @s if entity @s[scores={smooth=1..13}] run setblock ~ ~ ~ air
 execute if entity @s[tag=smooth] as @e[type=armor_stand,name=smooth] at @s if entity @s[scores={smooth=14..}] run setblock ~ ~ ~ stone
 
-execute if entity @s[tag=melt] as @e[type=armor_stand,name=smooth] at @s run function raytracer:smoothtick
+execute if entity @s[tag=melt] as @e[type=armor_stand,name=smooth] at @s run function raytracer:brushsize/smooth/smoothtick
 execute if entity @s[tag=melt] as @e[type=armor_stand,name=smooth] at @s if entity @s[scores={smooth=1..17}] run setblock ~ ~ ~ air
 
-execute if entity @s[tag=lift] as @e[type=armor_stand,name=smooth] at @s run function raytracer:smoothtick
+execute if entity @s[tag=lift] as @e[type=armor_stand,name=smooth] at @s run function raytracer:brushsize/smooth/smoothtick
 execute if entity @s[tag=lift] as @e[type=armor_stand,name=smooth] at @s if entity @s[scores={smooth=10..}] run setblock ~ ~ ~ stone
 
 

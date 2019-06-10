@@ -8,5 +8,5 @@ execute as @a[scores={sphere=1..},tag=VTP] at @s run function circle:gen_sphere
 execute as @a[scores={hsphere=1..},tag=VTP] at @s run function circle:gen_hsphere
 scoreboard players set @a circle 0
 scoreboard players set @a disk 0
-scoreboard players set @a sphere 0
+
 scoreboard players set @a hsphere 0
