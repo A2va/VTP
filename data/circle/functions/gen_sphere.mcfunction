@@ -50,5 +50,5 @@ kill @e[type=armor_stand,name=sphereGen]
 kill @e[type=armor_stand,name=debugChunk]
 
 
-execute as @s at @s run function circle:tp_circle
+execute as @s at @s run function circle:tp_sphere
 scoreboard players set @a sphere 0
