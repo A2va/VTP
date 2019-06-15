@@ -1,32 +1,32 @@
 scoreboard players operation Nstencils0_V Stencils = Nstencils0 Stencils
-scoreboard players operation Nstencils0_V Stencils *= Quatre Stencils
+scoreboard players operation Nstencils0_V Stencils *= Four Stencils
 
 scoreboard players operation Nstencils1_V Stencils = Nstencils1 Stencils
-scoreboard players operation Nstencils1_V Stencils *= Quatre Stencils
+scoreboard players operation Nstencils1_V Stencils *= Four Stencils
 
 scoreboard players operation Nstencils2_V Stencils = Nstencils2 Stencils
-scoreboard players operation Nstencils2_V Stencils *= Quatre Stencils
+scoreboard players operation Nstencils2_V Stencils *= Four Stencils
 
 scoreboard players operation Nstencils3_V Stencils = Nstencils3 Stencils
-scoreboard players operation Nstencils3_V Stencils *= Quatre Stencils
+scoreboard players operation Nstencils3_V Stencils *= Four Stencils
 
 scoreboard players operation Nstencils4_V Stencils = Nstencils4 Stencils
-scoreboard players operation Nstencils4_V Stencils *= Quatre Stencils
+scoreboard players operation Nstencils4_V Stencils *= Four Stencils
 
 scoreboard players operation Nstencils5_V Stencils = Nstencils5 Stencils
-scoreboard players operation Nstencils5_V Stencils *= Quatre Stencils
+scoreboard players operation Nstencils5_V Stencils *= Four Stencils
 
 scoreboard players operation Nstencils6_V Stencils = Nstencils6 Stencils
-scoreboard players operation Nstencils6_V Stencils *= Quatre Stencils
+scoreboard players operation Nstencils6_V Stencils *= Four Stencils
 
 scoreboard players operation Nstencils7_V Stencils = Nstencils7 Stencils
-scoreboard players operation Nstencils7_V Stencils *= Quatre Stencils
+scoreboard players operation Nstencils7_V Stencils *= Four Stencils
 
 scoreboard players operation Nstencils8_V Stencils = Nstencils8 Stencils
-scoreboard players operation Nstencils8_V Stencils *= Quatre Stencils
+scoreboard players operation Nstencils8_V Stencils *= Four Stencils
 
 scoreboard players operation Nstencils9_V Stencils = Nstencils9 Stencils
-scoreboard players operation Nstencils9_V Stencils *= Quatre Stencils
+scoreboard players operation Nstencils9_V Stencils *= Four Stencils
 
 
 execute as @p[scores={be_str=1}] if score Global loaded matches 1 run function stencils:load

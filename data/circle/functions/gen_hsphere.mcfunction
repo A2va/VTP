@@ -54,3 +54,5 @@ scoreboard players set percentDisk percent_vtp 0
 
 kill @e[type=armor_stand,name=sphereGen]
 kill @e[type=armor_stand,name=debugChunk]
+
+execute as @s at @s run function circle:tp_up/tp_hsphere

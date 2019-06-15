@@ -25,6 +25,9 @@ scoreboard players set 100 percent_vtp 100
 scoreboard players set 4 percent_vtp 4
 
 
+scoreboard objectives add teleport_at dummy
+scoreboard players set One teleport_at 1
+
 bossbar add minecraft:percentbar "Percent"
 bossbar set minecraft:percentbar visible false
 bossbar set minecraft:percentbar players @a

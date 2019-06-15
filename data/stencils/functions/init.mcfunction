@@ -22,7 +22,7 @@ scoreboard players set Nstencils7_V Stencils 4
 scoreboard players set Nstencils8_V Stencils 4
 scoreboard players set Nstencils9_V Stencils 4
 
-scoreboard players set Quatre Stencils 2
+scoreboard players set Four Stencils 4
 
 scoreboard players set ChStencils Stencils 1
 scoreboard players set ChStencils Stencils 1

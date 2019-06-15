@@ -12,8 +12,8 @@ scoreboard players operation percentCircle percent_vtp += temp percent_vtp
 
 
 execute store result bossbar minecraft:percentbar value run scoreboard players get percentCircle percent_vtp
-bossbar set minecraft:percentbar name ["",{"text":"Percent - "},{"score":{"name":"percentCircle","objective":"percent_vtp"}},{"text":"%"}]
-
+#bossbar set minecraft:percentbar name ["",{"text":"Percent - "},{"score":{"name":"percentCircle","objective":"percent_vtp"}},{"text":"%"}]
+bossbar set minecraft:percentbar name ["",{"score":{"name":"temp","objective":"percent_vtp"}},{"text":"%"}]
 
 
 

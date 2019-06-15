@@ -8,7 +8,8 @@ scoreboard players operation temp percent_vtp /= sphereOpI percent_vtp
 
 
 execute store result bossbar minecraft:percentbar value run scoreboard players get temp percent_vtp
-bossbar set minecraft:percentbar name ["",{"text":"Percent - "},{"score":{"name":"temp","objective":"percent_vtp"}},{"text":"%"}]
+#bossbar set minecraft:percentbar name ["",{"text":"Percent - "},{"score":{"name":"temp","objective":"percent_vtp"}},{"text":"%"}]
+bossbar set minecraft:percentbar name ["",{"score":{"name":"temp","objective":"percent_vtp"}},{"text":"%"}]
 
 scoreboard players operation @s circlePos1sqr = @s circlePos1
 scoreboard players operation @s circlePos1sqr *= @s circlePos1
