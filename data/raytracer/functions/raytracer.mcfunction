@@ -12,7 +12,7 @@ execute as @s[scores={brushRad=3},tag=clean] at @s run function raytracer:brushs
 execute as @s[scores={brushRad=5},tag=clean] at @s run function raytracer:brushsize/clean_r5
 execute as @s[scores={brushRad=7},tag=clean] at @s run function raytracer:brushsize/clean_r7
 
-execute as @s at @s if block ^ ^ ^1 #raytracer:transparent run function raytracer:brush
+execute as @s at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:brush
 
 
 execute as @s at @s unless block ^ ^ ^1 #raytracer:transparent run kill @s
