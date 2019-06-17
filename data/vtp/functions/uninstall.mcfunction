@@ -25,6 +25,7 @@ scoreboard objectives remove blockCount
 scoreboard objectives remove Tree
 
 #Circle
+scoreboard objectives remove teleport_at
 scoreboard objectives remove circle
 scoreboard objectives remove disk
 scoreboard objectives remove sphere
@@ -58,7 +59,9 @@ scoreboard objectives remove structure_posX
 scoreboard objectives remove structure_posY
 scoreboard objectives remove structure_posZ
 scoreboard objectives remove structure_sizeX
-scoreboard objectives remove structure_sizeY 
+scoreboard objectives remove structure_sizeY
 scoreboard objectives remove structure_sizeZ
 
 tellraw @s ["",{"text":"Deleting the scoreboard","color":"dark_red","bold":true}]
+
+#forceload remove 0 0
