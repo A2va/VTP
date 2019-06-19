@@ -1,8 +1,8 @@
 #Kill armor_stand
 kill @e[type=armor_stand,tag=option]
 #Remove sign and plot mask and material
-setblock 3 255 0 air
-fill -3 253 -6 3 254 6 air
+setblock 11 255 -8 air
+fill 11 253 -2 5 254 -14 air
 
 #Remove tag
 tag @s remove up
@@ -23,6 +23,7 @@ scoreboard objectives remove PlayerPosZ
 scoreboard objectives remove waterI
 scoreboard objectives remove blockCount
 scoreboard objectives remove Tree
+scoreboard objectives remove Chunk
 
 #Circle
 scoreboard objectives remove teleport_at
@@ -64,4 +65,5 @@ scoreboard objectives remove structure_sizeZ
 
 tellraw @s ["",{"text":"Deleting the scoreboard","color":"dark_red","bold":true}]
 
-#forceload remove 0 0
+tellraw @a ["",{"text":"Chunk 0,-1 is loaded. Remove the load with ("},{"text":"/forceload remove 0 -1","clickEvent":{"action":"suggest_command","value":"/forceload remove 0 -1"},"color":"aqua","underlined":true},{"text":")","color":"white"}]
+#forceload remove 0 -1
