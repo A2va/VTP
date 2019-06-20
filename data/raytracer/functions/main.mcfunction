@@ -19,6 +19,8 @@ execute as @a[scores={click_vtp=1..},tag=VTP,nbt={SelectedItem:{id:"minecraft:ca
 execute as @a[scores={click_vtp=1..},tag=VTP] at @s run scoreboard players operation @e[type=armor_stand,name=ray,distance=0..2,limit=1] brushRad = @s brushRad
 
 
+execute if score detect SetBlock matches 1 as @a[tag=VTP] at @s unless block ~ ~ ~ minecraft:air run function raytracer:set_plot/set
+
 execute as @e[type=armor_stand,name=ray] at @s run tp @s ~ ~1.5 ~
 
 

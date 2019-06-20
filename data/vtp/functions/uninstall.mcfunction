@@ -23,7 +23,7 @@ scoreboard objectives remove PlayerPosZ
 scoreboard objectives remove waterI
 scoreboard objectives remove blockCount
 scoreboard objectives remove Tree
-scoreboard objectives remove Chunk
+
 
 #Circle
 scoreboard objectives remove teleport_at
@@ -65,5 +65,6 @@ scoreboard objectives remove structure_sizeZ
 
 tellraw @s ["",{"text":"Deleting the scoreboard","color":"dark_red","bold":true}]
 
-tellraw @a ["",{"text":"Chunk 0,-1 is loaded. Remove the load with ("},{"text":"/forceload remove 0 -1","clickEvent":{"action":"suggest_command","value":"/forceload remove 0 -1"},"color":"aqua","underlined":true},{"text":")","color":"white"}]
-#forceload remove 0 -1
+
+execute if score forceload Chunk matches 1 run tellraw @a ["",{"text":"[I] ","color":"gold"},{"text":"Chunk 0,-1 is loaded. Remove the load with ( ","color":"none"},{"text":"/forceload remove 0 -1","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/forceload remove 0 -1"}},{"text":")","color":"none","underlined":false}]
+scoreboard objectives remove Chunk
