@@ -38,6 +38,7 @@ scoreboard players set loaded Chunk 0
 
 
 function vtp:welcome
+#execute store result score forceload Chunk run forceload query 0 -1
 execute store success score loaded Chunk run setblock 11 255 -8 stone
 execute if score loaded Chunk matches 0 run tellraw @a ["",{"text":"[I] ","color":"gold"},{"text":"Chunk 0,-1 wasn't loaded. Try again (or use ","color":"none"},{"text":"/forceload add 0 -1","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/forceload add 0 -1"}},{"text":")","color":"none","underlined":false}]
 execute if score loaded Chunk matches 0 run scoreboard players set forceload Chunk 1
