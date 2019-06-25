@@ -9,6 +9,8 @@ scoreboard objectives add PlayerPosZ dummy
 scoreboard objectives add waterI dummy
 scoreboard objectives add blockCount dummy
 
+scoreboard objectives add Settings dummy
+scoreboard players set ToggleTools Settings 0
 
 scoreboard objectives add tools_toggle dummy
 scoreboard players set PushPull tools_toggle 0
