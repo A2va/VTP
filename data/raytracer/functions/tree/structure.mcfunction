@@ -8,7 +8,6 @@ setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE",author: "Hubiug", rotati
 setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE",author: "Hubiug", rotation: "NONE", posX: -16, mode: "LOAD", posY: 0, sizeX: 32, posZ: -14, name: "raytracer:oak/oak_8",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE",author: "Hubiug", rotation: "NONE", posX: -15, mode: "LOAD", posY: 0, sizeX: 32, posZ: -13, name: "raytracer:oak/oak_11",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 
-
 setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE",author: "Hubiug", rotation: "NONE", posX: -13, mode: "LOAD", posY: 0, sizeX: 32, posZ: -14, name: "raytracer:spruce/spruce_1",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE",author: "Hubiug", rotation: "NONE", posX: -14, mode: "LOAD", posY: 0, sizeX: 32, posZ: -15, name: "raytracer:spruce/spruce_2",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE",author: "Hubiug", rotation: "NONE", posX: -13, mode: "LOAD", posY: 0, sizeX: 32, posZ: -15, name: "raytracer:spruce/spruce_3",sizeY: 32, sizeZ: 32, showboundingbox: 0b}

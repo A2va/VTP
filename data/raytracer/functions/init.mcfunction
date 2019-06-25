@@ -1,4 +1,5 @@
 scoreboard objectives add click_vtp minecraft.used:minecraft.carrot_on_a_stick
+
 scoreboard objectives add rayTimer dummy
 scoreboard objectives add smooth dummy
 scoreboard objectives add brushRad dummy
@@ -7,6 +8,11 @@ scoreboard objectives add PlayerPosY dummy
 scoreboard objectives add PlayerPosZ dummy
 scoreboard objectives add waterI dummy
 scoreboard objectives add blockCount dummy
+
+
+scoreboard objectives add tools_toggle dummy
+scoreboard players set PushPull tools_toggle 0
+scoreboard players set dectect tools_toggle 0
 
 scoreboard objectives add Tree dummy
 scoreboard objectives add Chunk dummy
