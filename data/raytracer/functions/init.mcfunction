@@ -11,10 +11,11 @@ scoreboard objectives add blockCount dummy
 
 scoreboard objectives add Settings dummy
 scoreboard players set ToggleTools Settings 0
+scoreboard players set ToggleTools_Old Settings 0
 
-scoreboard objectives add tools_toggle dummy
-scoreboard players set PushPull tools_toggle 0
-scoreboard players set dectect tools_toggle 0
+scoreboard objectives add tools dummy
+scoreboard objectives add tools_old dummy
+
 
 scoreboard objectives add Tree dummy
 scoreboard objectives add Chunk dummy

@@ -15,18 +15,18 @@ execute as @a[scores={click_vtp=1..},tag=VTP,nbt={SelectedItem:{id:"minecraft:ca
 execute as @a[scores={click_vtp=1..},tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Stencils\",\"color\":\"gray\"}"}}}}] at @s run tag @e[type=armor_stand,name=ray,distance=0..2,limit=1] add stencils
 execute as @a[scores={click_vtp=1..},tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Gravel\",\"color\":\"gray\"}"}}}}] at @s run tag @e[type=armor_stand,name=ray,distance=0..2,limit=1] add gravel
 
-execute if score ToggleTools Settings matches 1 as @a[tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Push\",\"color\":\"dark_red\"}"}}}}] run scoreboard players set tools tools_toggle 1
-execute if score ToggleTools Settings matches 1 as @a[tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Pull\",\"color\":\"dark_green\"}"}}}}] run scoreboard players set tools tools_toggle 2
-execute if score ToggleTools Settings matches 1 as @a[tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Melt\",\"color\":\"red\"}"}}}}] run scoreboard players set tools tools_toggle 3
-execute if score ToggleTools Settings matches 1 as @a[tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Lift\",\"color\":\"green\"}"}}}}] run scoreboard players set tools tools_toggle 4
-execute if score ToggleTools Settings matches 1 unless score tools tools_toggle = tools_old tools_toggle run scoreboard players set detect tools_toggle 1
-execute if score ToggleTools Settings matches 1 run scoreboard players operation tools_old tools_toggle = tools tools_toggle
-execute if score ToggleTools Settings matches 1 as @a[tag=VTP] at @s if score detect tools_toggle matches 1 run function raytracer:tools_toggle/tools_toggle
 
-execute if score ToggleTools Settings matches 0 as @a[tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Push\",\"color\":\"dark_red\"}"}}}}] run replaceitem entity @s weapon.offhand minecraft:air
-execute if score ToggleTools Settings matches 0 as @a[tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Pull\",\"color\":\"dark_green\"}"}}}}] run replaceitem entity @s weapon.offhand minecraft:air
-execute if score ToggleTools Settings matches 0 as @a[tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Melt\",\"color\":\"dark_red\"}"}}}}] run replaceitem entity @s weapon.offhand minecraft:air
-execute if score ToggleTools Settings matches 0 as @a[tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Lift\",\"color\":\"green\"}"}}}}] run replaceitem entity @s weapon.offhand minecraft:air
+
+execute if score ToggleTools Settings matches 1 as @a[tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Push\",\"color\":\"dark_red\"}"}}}}] run scoreboard players set @s tools 1
+execute if score ToggleTools Settings matches 1 as @a[tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Pull\",\"color\":\"dark_green\"}"}}}}] run scoreboard players set @s tools 2
+execute if score ToggleTools Settings matches 1 as @a[tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Melt\",\"color\":\"red\"}"}}}}] run scoreboard players set @s tools 3
+execute if score ToggleTools Settings matches 1 as @a[tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Lift\",\"color\":\"green\"}"}}}}] run scoreboard players set @s tools 4
+execute if score ToggleTools Settings matches 1 as @a[tag=VTP] at @s unless score @s tools = @s tools_old run function raytracer:tools_toggle/tools_toggle
+execute if score ToggleTools Settings matches 1 as @a[tag=VTP] run scoreboard players operation @s tools_old = @s tools
+
+execute unless score ToggleTools Settings = ToggleTools_Old Settings as @a[tag=VTP] run replaceitem entity @s weapon.offhand minecraft:air
+scoreboard players operation ToggleTools_Old Settings = ToggleTools Settings
+
 
 
 
@@ -77,4 +77,3 @@ kill @e[type=armor_stand,name=fixwaterend]
 scoreboard players set @a blockCount 0
 
 setblock 8 255 -8 air
-#{auto:1b,Command:"summon armor_stand ~ ~ ~ {CustomName:\"{\\\"text\\\":\\\"sphere\\\"}\",Marker:1,Invisible:1,NoGravity:1}"}
