@@ -23,7 +23,11 @@ scoreboard objectives remove PlayerPosZ
 scoreboard objectives remove waterI
 scoreboard objectives remove blockCount
 scoreboard objectives remove Tree
-
+scoreboard objectives add SetBlock_detect dummy
+scoreboard objectives add plot dummy
+scoreboard objectives add tools dummy
+scoreboard objectives add tools_old dummy
+scoreboard objectives add Settings dummy
 
 #Circle
 scoreboard objectives remove teleport_at

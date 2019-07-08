@@ -32,8 +32,8 @@ scoreboard players operation ToggleTools_Old Settings = ToggleTools Settings
 
 execute as @a[scores={click_vtp=1..},tag=VTP] at @s run scoreboard players operation @e[type=armor_stand,name=ray,distance=0..2,limit=1] brushRad = @s brushRad
 
+execute as @a[tag=VTP] at @s if score @s SetBlock_detect matches 1 unless block ~ ~ ~ minecraft:air run function raytracer:set_plot/set
 
-execute if score detect SetBlock matches 1 as @a[tag=VTP] at @s unless block ~ ~ ~ minecraft:air run function raytracer:set_plot/set
 
 execute as @e[type=armor_stand,name=ray] at @s run tp @s ~ ~1.5 ~
 

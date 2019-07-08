@@ -19,7 +19,9 @@ scoreboard objectives add tools_old dummy
 
 scoreboard objectives add Tree dummy
 scoreboard objectives add Chunk dummy
-scoreboard objectives add SetBlock dummy
+
+scoreboard objectives add SetBlock_detect dummy
+scoreboard objectives add plot dummy
 scoreboard players set plot SetBlock 10
 scoreboard players set air SetBlock 10
 scoreboard players set detect SetBlock 10
