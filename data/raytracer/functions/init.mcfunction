@@ -1,5 +1,7 @@
 scoreboard objectives add click_vtp minecraft.used:minecraft.carrot_on_a_stick
 
+#Raytracer
+scoreboard objectives add click_vtp minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add rayTimer dummy
 scoreboard objectives add smooth dummy
 scoreboard objectives add brushRad dummy
@@ -8,24 +10,29 @@ scoreboard objectives add PlayerPosY dummy
 scoreboard objectives add PlayerPosZ dummy
 scoreboard objectives add waterI dummy
 scoreboard objectives add blockCount dummy
+scoreboard objectives add gravel_loop dummy
+scoreboard objectives add gravel_loop_c dummy
+scoreboard objectives add gravel_percent dummy
+scoreboard players set percent gravel_percent 0
 
+#Settings
 scoreboard objectives add Settings dummy
 scoreboard players set ToggleTools Settings 0
 scoreboard players set ToggleTools_Old Settings 0
-
+#Tools Toggle
 scoreboard objectives add tools dummy
 scoreboard objectives add tools_old dummy
 
 
-scoreboard objectives add Tree dummy
+#Chunk
 scoreboard objectives add Chunk dummy
 
+#Set plot
 scoreboard objectives add SetBlock_detect dummy
 scoreboard objectives add plot dummy
-scoreboard players set plot SetBlock 10
-scoreboard players set air SetBlock 10
-scoreboard players set detect SetBlock 10
 
+#Tree
+scoreboard objectives add Tree dummy
 scoreboard players set Nacacia Tree 44
 scoreboard players set Nspruce_custom Tree 56
 scoreboard players set Nspruce Tree 44

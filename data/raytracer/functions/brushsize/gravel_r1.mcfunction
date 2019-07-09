@@ -1,19 +1,31 @@
-summon armor_stand ~-1 ~0 ~-1 {CustomName:"{\"text\":\"gravel\"}",Marker:1,Invisible:1,NoGravity:1}
-summon armor_stand ~-1 ~0 ~0 {CustomName:"{\"text\":\"gravel\"}",Marker:1,Invisible:1,NoGravity:1}
-summon armor_stand ~-1 ~0 ~1 {CustomName:"{\"text\":\"gravel\"}",Marker:1,Invisible:1,NoGravity:1}
-summon armor_stand ~0 ~0 ~-1 {CustomName:"{\"text\":\"gravel\"}",Marker:1,Invisible:1,NoGravity:1}
-summon armor_stand ~0 ~0 ~0 {CustomName:"{\"text\":\"gravel\"}",Marker:1,Invisible:1,NoGravity:1}
-summon armor_stand ~0 ~0 ~1 {CustomName:"{\"text\":\"gravel\"}",Marker:1,Invisible:1,NoGravity:1}
-summon armor_stand ~1 ~0 ~-1 {CustomName:"{\"text\":\"gravel\"}",Marker:1,Invisible:1,NoGravity:1}
-summon armor_stand ~1 ~0 ~0 {CustomName:"{\"text\":\"gravel\"}",Marker:1,Invisible:1,NoGravity:1}
-summon armor_stand ~1 ~0 ~1 {CustomName:"{\"text\":\"gravel\"}",Marker:1,Invisible:1,NoGravity:1}
+summon armor_stand ~0 ~0 ~0 {CustomName:"{\"text\":\"centerGravel\"}",Marker:1,Invisible:1,NoGravity:1}
 
 
 
-execute as @e[type=armor_stand,name=gravel] at @s run setblock ~ ~5 ~ gravel
-execute as @e[type=armor_stand,name=gravel] at @s run kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:gravel"}}]
+scoreboard players set Two gravel_percent 2
+scoreboard players set BrushR1 gravel_percent 9
+scoreboard players set hundred gravel_percent 100
 
 
 
+scoreboard players operation @e[type=armor_stand,name=centerGravel] gravel_loop = Brush gravel_percent
+scoreboard players operation @e[type=armor_stand,name=centerGravel] gravel_loop *= percent gravel_percent
+scoreboard players operation @e[type=armor_stand,name=centerGravel] gravel_loop /= hundred gravel_percent
+scoreboard players operation @e[type=armor_stand,name=centerGravel] gravel_loop *= Two gravel_percent
 
-kill @e[type=armor_stand,name=gravel]
+
+scoreboard players operation gravel_loop gravel_percent = Brush gravel_percent
+scoreboard players operation gravel_loop gravel_percent *= percent gravel_percent
+scoreboard players operation gravel_loop gravel_percent /= hundred gravel_percent
+
+scoreboard players operation gravel_loop gravel_percent *= Two gravel_percent
+
+
+execute as @e[type=armor_stand,name=centerGravel] at @s run function raytracer:brushsize/gravel/gravel_loop
+execute as @e[type=armor_stand,name=placeGravel] at @s run setblock ~ ~5 ~ gravel
+#execute as @e[type=armor_stand,name=placeGravel] at @s run kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:gravel"}}]
+
+
+
+kill @e[type=armor_stand,name=centerGravel]
+kill @e[type=armor_stand,name=placeGravel]
