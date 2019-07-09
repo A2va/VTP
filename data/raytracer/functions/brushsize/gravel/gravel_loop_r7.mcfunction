@@ -3,7 +3,7 @@
 function rand:rand
 
 
-scoreboard players operation rand% rand %= Brush gravel_percent
+scoreboard players operation rand% rand %= BrushR7 gravel_percent
 
 execute as @s at @s if score rand% rand matches 0 unless entity @e[type=armor_stand,name=placeGravel,distance=0] run summon armor_stand ~-7 ~0 ~-7 {CustomName:"{\"text\":\"placeGravel\"}",Marker:1,Invisible:1,NoGravity:1}
 execute as @s at @s if score rand% rand matches 1 unless entity @e[type=armor_stand,name=placeGravel,distance=0] run summon armor_stand ~-7 ~0 ~-6 {CustomName:"{\"text\":\"placeGravel\"}",Marker:1,Invisible:1,NoGravity:1}
@@ -63,7 +63,7 @@ execute as @s at @s if score rand% rand matches 54 unless entity @e[type=armor_s
 execute as @s at @s if score rand% rand matches 55 unless entity @e[type=armor_stand,name=placeGravel,distance=0] run summon armor_stand ~-4 ~0 ~3 {CustomName:"{\"text\":\"placeGravel\"}",Marker:1,Invisible:1,NoGravity:1}
 execute as @s at @s if score rand% rand matches 56 unless entity @e[type=armor_stand,name=placeGravel,distance=0] run summon armor_stand ~-4 ~0 ~4 {CustomName:"{\"text\":\"placeGravel\"}",Marker:1,Invisible:1,NoGravity:1}
 execute as @s at @s if score rand% rand matches 57 unless entity @e[type=armor_stand,name=placeGravel,distance=0] run summon armor_stand ~-4 ~0 ~5 {CustomName:"{\"text\":\"placeGravel\"}",Marker:1,Invisible:1,NoGravity:1}
-execute as @s at @s if score rand% rand matches 58 unless entity @e[type=armor_stand,name=placeGravel,distance=0] runs summon armor_stand ~-4 ~0 ~6 {CustomName:"{\"text\":\"placeGravel\"}",Marker:1,Invisible:1,NoGravity:1}
+execute as @s at @s if score rand% rand matches 58 unless entity @e[type=armor_stand,name=placeGravel,distance=0] run summon armor_stand ~-4 ~0 ~6 {CustomName:"{\"text\":\"placeGravel\"}",Marker:1,Invisible:1,NoGravity:1}
 execute as @s at @s if score rand% rand matches 59 unless entity @e[type=armor_stand,name=placeGravel,distance=0] run summon armor_stand ~-4 ~0 ~7 {CustomName:"{\"text\":\"placeGravel\"}",Marker:1,Invisible:1,NoGravity:1}
 execute as @s at @s if score rand% rand matches 60 unless entity @e[type=armor_stand,name=placeGravel,distance=0] run summon armor_stand ~-3 ~0 ~-7 {CustomName:"{\"text\":\"placeGravel\"}",Marker:1,Invisible:1,NoGravity:1}
 execute as @s at @s if score rand% rand matches 61 unless entity @e[type=armor_stand,name=placeGravel,distance=0] run summon armor_stand ~-3 ~0 ~-6 {CustomName:"{\"text\":\"placeGravel\"}",Marker:1,Invisible:1,NoGravity:1}
@@ -233,4 +233,4 @@ execute as @s at @s if score rand% rand matches 224 unless entity @e[type=armor_
 
 
 scoreboard players add @s gravel_loop_c 1
-execute as @s at @s if score @s gravel_loop_c < @s gravel_loop run function raytracer:brushsize/gravel/gravel_loop
+execute as @s at @s if score @s gravel_loop_c < @s gravel_loop run function raytracer:brushsize/gravel/gravel_loop_r7
