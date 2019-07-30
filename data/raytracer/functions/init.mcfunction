@@ -17,6 +17,7 @@ scoreboard players set percent gravel_percent 0
 
 #Settings
 scoreboard objectives add Settings dummy
+scoreboard players set paintbrush_fast Settings 0
 scoreboard players set ToggleTools Settings 0
 scoreboard players set ToggleTools_Old Settings 0
 #Tools Toggle

@@ -7,7 +7,6 @@ fill 11 253 -2 5 254 -14 air
 #Remove tag
 tag @s remove up
 tag @s remove ground
-tag @s remove paintbrush_fast
 tag @s remove VTP
 
 tellraw @s ["",{"text":"Deleting the plot mask and material","color":"dark_red","bold":true}]
