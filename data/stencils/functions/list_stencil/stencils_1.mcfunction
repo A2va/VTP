@@ -256,3 +256,4 @@ execute as @s at @s if score rand% rand matches 199 run setblock ~ ~ ~ minecraft
 
 
 execute as @s at @s run setblock ~ ~1 ~ redstone_block
+execute as @s at @s if block ~ ~1 ~ redstone_block run setblock ~ ~1 ~ air
