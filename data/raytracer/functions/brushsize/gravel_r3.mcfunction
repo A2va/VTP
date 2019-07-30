@@ -3,7 +3,7 @@ summon armor_stand ~0 ~0 ~0 {CustomName:"{\"text\":\"centerGravel\"}",Marker:1,I
 
 
 scoreboard players set Two gravel_percent 2
-scoreboard players set BrushR3 gravel_percent 48
+scoreboard players set BrushR3 gravel_percent 42
 scoreboard players set hundred gravel_percent 100
 
 
