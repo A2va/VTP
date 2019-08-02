@@ -79,3 +79,4 @@ scoreboard players enable @a Option
 execute as @a run scoreboard players operation @s brushRad = @s brushRad
 
 scoreboard players set @a[scores={brushRad=0}] brushRad 3
+gamerule sendCommandFeedback false

@@ -28,9 +28,6 @@ summon armor_stand ~1 ~1 ~1 {CustomName:"{\"text\":\"paintbrush\"}",Marker:1,Inv
 
 
 
-
-execute if score paintbrush_fast Settings matches 0
-
 execute if entity @s[tag=!ground,tag=!top] as @e[type=armor_stand,name=paintbrush] at @s if score paintbrush_fast Settings matches 0 run function raytracer:brushsize/paintbrush/paintbrushtick
 execute if entity @s[tag=!ground,tag=!top] as @e[type=armor_stand,name=paintbrush] at @s if score paintbrush_fast Settings matches 1 run function raytracer:brushsize/paintbrush/paintbrushtick_fast
 
