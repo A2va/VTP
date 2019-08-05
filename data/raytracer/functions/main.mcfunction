@@ -76,4 +76,5 @@ kill @e[type=armor_stand,name=fixwaterend]
 
 scoreboard players set @a blockCount 0
 
-setblock 8 255 -8 air
+
+execute unless block 0 255 0 air run setblock 0 255 0 air
