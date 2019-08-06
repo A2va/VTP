@@ -13,7 +13,12 @@ scoreboard objectives add blockCount dummy
 scoreboard objectives add gravel_loop dummy
 scoreboard objectives add gravel_loop_c dummy
 scoreboard objectives add gravel_percent dummy
-scoreboard players set percent gravel_percent 0
+scoreboard players set percent gravel_percent 10
+
+scoreboard objectives add vegetate_loop dummy
+scoreboard objectives add vegetate_loop_c dummy 
+scoreboard objectives add vegetate_percent dummy 
+scoreboard players set percent vegetate_percent 10
 
 #Settings
 scoreboard objectives add Settings dummy
@@ -27,6 +32,8 @@ scoreboard objectives add tools_old dummy
 
 #Chunk
 scoreboard objectives add Chunk dummy
+execute if score forceload Chunk matches 2.. run scoreboard players set forceload Chunk 0
+execute if score forceload Chunk matches -2.. run scoreboard players set forceload Chunk 0
 
 #Set plot
 scoreboard objectives add SetBlock_detect dummy
