@@ -1,6 +1,6 @@
 function rand:rand
 
-scoreboard players operation rand% rand %= Ten vegetate_percent
+scoreboard players operation rand% rand %= hundred vegetate_percent
 
 execute if score rand% rand matches 0 run setblock ~ ~1 ~ grass keep
 execute if score rand% rand matches 1 run setblock ~ ~1 ~ grass keep
@@ -101,4 +101,4 @@ execute if score rand% rand matches 95 run setblock ~ ~1 ~ grass keep
 execute if score rand% rand matches 96 run setblock ~ ~1 ~ grass keep
 execute if score rand% rand matches 97 run setblock ~ ~1 ~ poppy keep
 execute if score rand% rand matches 98 run setblock ~ ~1 ~ dandelion keep
-execute if score rand% rand matches 99 run setblock ~ ~1 ~ blue_orchid keep
+execute if score rand% rand matches 99 run setblock ~ ~1 ~ fern keep

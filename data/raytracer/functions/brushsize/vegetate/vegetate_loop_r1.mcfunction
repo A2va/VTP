@@ -1,7 +1,4 @@
-
-
 function rand:rand
-
 
 scoreboard players operation rand% rand %= BrushR1 vegetate_percent
 
@@ -32,7 +29,6 @@ execute as @s at @s if score rand% rand matches 24 positioned ~1 ~0 ~1 unless en
 execute as @s at @s if score rand% rand matches 25 positioned ~1 ~1 ~-1 unless entity @e[type=armor_stand,name=placeVegetate,distance=0] run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"placeVegetate\"}",Marker:1,Invisible:1,NoGravity:1}
 execute as @s at @s if score rand% rand matches 26 positioned ~1 ~1 ~0 unless entity @e[type=armor_stand,name=placeVegetate,distance=0] run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"placeVegetate\"}",Marker:1,Invisible:1,NoGravity:1}
 execute as @s at @s if score rand% rand matches 27 positioned ~1 ~1 ~1 unless entity @e[type=armor_stand,name=placeVegetate,distance=0] run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"placeVegetate\"}",Marker:1,Invisible:1,NoGravity:1}
-
 
 scoreboard players add @s vegetate_loop_c 1
 execute as @s at @s if score @s vegetate_loop_c < @s vegetate_loop run function raytracer:brushsize/vegetate/vegetate_loop_r1
