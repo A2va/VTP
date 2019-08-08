@@ -42,6 +42,12 @@ It's a fork of Vanilla Terraforming Pack ([Original author](https://www.planetmi
 
 `Vegetate` : Setblock grass relative to a percentage
 
+### Settings:
+
+Fast paintbrush: The paintbrush is faster but it takes into account that only one block for the mask and the material is that of the middle
+
+Toggle Tools: Allows to have in the left and right hand the opposite brushes (ex: Melt and Lift). You can press F to change the brush
+
 ### Stencils:
 
 You can create stencils either using BlingEdit.
