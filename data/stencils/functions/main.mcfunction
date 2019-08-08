@@ -38,3 +38,18 @@ execute as @e[type=minecraft:player] run execute if score @s disp_plugins matche
 execute as @a store result score @s player_x run data get entity @s Pos[0] 1
 execute as @a store result score @s player_y run data get entity @s Pos[1] 1
 execute as @a store result score @s player_z run data get entity @s Pos[2] 1
+
+
+execute if score Nstencils0 Stencils matches 51.. run function stencils:reset_scoreboard/reset_nb_stencils
+execute if score Nstencils1 Stencils matches 51.. run function stencils:reset_scoreboard/reset_nb_stencils
+execute if score Nstencils2 Stencils matches 51.. run function stencils:reset_scoreboard/reset_nb_stencils
+execute if score Nstencils3 Stencils matches 51.. run function stencils:reset_scoreboard/reset_nb_stencils 
+execute if score Nstencils4 Stencils matches 51.. run function stencils:reset_scoreboard/reset_nb_stencils
+execute if score Nstencils5 Stencils matches 51.. run function stencils:reset_scoreboard/reset_nb_stencils 
+execute if score Nstencils6 Stencils matches 51.. run function stencils:reset_scoreboard/reset_nb_stencils
+execute if score Nstencils7 Stencils matches 51.. run function stencils:reset_scoreboard/reset_nb_stencils 
+execute if score Nstencils8 Stencils matches 51.. run function stencils:reset_scoreboard/reset_nb_stencils 
+execute if score Nstencilsx Stencils matches 51.. run function stencils:reset_scoreboard/reset_nb_stencils 
+
+
+execute if score ChStencils Stencils matches 10.. run function stencils:reset_scoreboard/reset_ch_stencils 

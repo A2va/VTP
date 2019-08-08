@@ -13,12 +13,12 @@ scoreboard objectives add blockCount dummy
 scoreboard objectives add gravel_loop dummy
 scoreboard objectives add gravel_loop_c dummy
 scoreboard objectives add gravel_percent dummy
-scoreboard players set percent gravel_percent 10
+
 
 scoreboard objectives add vegetate_loop dummy
 scoreboard objectives add vegetate_loop_c dummy 
 scoreboard objectives add vegetate_percent dummy 
-scoreboard players set percent vegetate_percent 10
+
 
 #Settings
 scoreboard objectives add Settings dummy
@@ -65,10 +65,11 @@ execute positioned 8 255 -8 as @a[distance=15..] store result score @s PlayerPos
 
 function vtp:welcome
 #execute store result score forceload Chunk run forceload query 0 -1
-execute store success score loaded Chunk run setblock 11 255 -8 stone
-execute if score forceload Chunk matches 0 run tellraw @a ["",{"text":"[I]","color":"gold"},{"text":"Chunk 0 -1 wasn't loaded. Use ","color":"none"},{"text":"/forceload add 0 -1","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/forceload add 0 -1"}},{"text":"\nAtfer reload the datapack","color":"none","underlined":false}]
-execute if score forceload Chunk matches 0 run scoreboard players set forceload Chunk 1
+#execute store success score loaded Chunk run setblock 11 255 -8 stone
+#execute if score forceload Chunk matches 0 run tellraw @a ["",{"text":"[I]","color":"gold"},{"text":"Chunk 0 -1 wasn't loaded. Use ","color":"none"},{"text":"/forceload add 0 -1","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/forceload add 0 -1"}},{"text":"\nAtfer reload the datapack","color":"none","underlined":false}]
+#execute if score forceload Chunk matches 0 run scoreboard players set forceload Chunk 1
 #{"command":"tellraw @a %s","jobject":[{"text":"[I]","color":"gold"},{"text":"Chunk 0 -1 wasn't loaded. Use "},{"text":"/forceload add 0 -1","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/forceload add 0 -1"}},{"text":"\\nAtfer reload the datapack"}],"jtemplate":"tellraw"}
+tellraw @a ["",{"text":"[I]","color":"gold"},{"text":"Chunk 0 -1 wasn't loaded. Use ","color":"none"},{"text":"/forceload add 0 -1","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/forceload add 0 -1"}},{"text":"\nAtfer reload the datapack","color":"none","underlined":false}]
 fill 11 253 -2 5 254 -14 white_concrete keep
 fill 6 254 -13 10 254 -9 air replace white_concrete
 fill 6 254 -7 10 254 -3 air replace white_concrete

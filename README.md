@@ -1,16 +1,12 @@
 # VTP
 
 It's a fork of Vanilla Terraforming Pack ([Original author](https://www.planetminecraft.com/mod/vanilla-terraforming-pack-datapack-4124905/)).
-I modified it to be compatible with BlingEdit
 
-## Road map
-
-* Vegetate brush
 
 ## Utilisation
 
 ### Commands:
-`/function vtp:option`: Displays brush options and how to get them
+`/function vtp:menu`: Displays brush options and how to get them
 
 `/function vtp:fixwater`: Filled with water a closed area of 30 * 30 around you
 
@@ -42,24 +38,29 @@ I modified it to be compatible with BlingEdit
 
 `Stencils`: Brush to put a stencil
 
+`Gravel` : Setblock gravel relative to a percentage
+
+`Vegetate` : Setblock grass relative to a percentage
+
 ### Stencils:
 
-You can create stencils either using BlingEdit or with the structure block
+You can create stencils either using BlingEdit.
 
 #### With BlingEdit:
 
-Install BlingEdit on your world Link [here](https://drive.google.com/file/d/1XgJ2_PHpiAnWSMkLqOwht88zwJG0AVeK/view)
+Install BlingEdit on your world Link [here](https://www.reddit.com/r/BlingEdit/comments/9pdd2w/subreddit_plugin_list/)
 
 Select a area click on Plugin and click again on VTP - Create Stencils
 
 A block structure appears under your feet. Name the stencils.
 
-#### With Structre block
-
-Place two structure blocks in opposite side on the structure
-Place a third structure block near and name the stencils and save
 
 #### Name the stencils
 `stencils:stencilsx/y`
 X is the channel on stencils
 Y is the number of stencils
+
+
+## Warning!!
+
+The large brush can induce lag especially by putting the percentage of brush vegetate and gravel

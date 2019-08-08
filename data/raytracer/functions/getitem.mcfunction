@@ -1,8 +1,13 @@
 give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Clean\",\"color\":\"gray\"}"}}
-give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Push\",\"color\":\"dark_red\"}"}}
-give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Pull\",\"color\":\"dark_green\"}"}}
-give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Smooth\",\"color\":\"blue\"}"}}
-give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Melt\",\"color\":\"red\"}"}}
-give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Lift\",\"color\":\"green\"}"}}
-give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Paintbrush\",\"color\":\"dark_purple\"}"}}
-give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Tree\",\"color\":\"green\"}"}}
+give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Push\",\"color\":\"gray\"}"}}
+give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Pull\",\"color\":\"gray\"}"}}
+give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Smooth\",\"color\":\"gray\"}"}}
+give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Melt\",\"color\":\"gray\"}"}}
+give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Lift\",\"color\":\"gray\"}"}}
+give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Paintbrush\",\"color\":\"gray\"}"}}
+give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Tree\",\"color\":\"gray\"}"}}
+give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Vegetate\",\"color\":\"gray\"}"}}
+give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Stencils\",\"color\":\"gray\"}"}}
+give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Gravel\",\"color\":\"gray\"}"}}
+
+

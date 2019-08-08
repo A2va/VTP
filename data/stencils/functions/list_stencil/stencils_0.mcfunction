@@ -3,7 +3,6 @@ function rand:rand
 scoreboard players operation rand% rand %= Nstencils0_V Stencils
 
 
-
 execute as @s at @s if score rand% rand matches 0 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", mode: "LOAD", name: "stencils:stencils0/1", showboundingbox: 0b}
 execute as @s at @s if score rand% rand matches 1 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_90", mode: "LOAD", name: "stencils:stencils0/1", showboundingbox: 0b}
 execute as @s at @s if score rand% rand matches 2 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", mode: "LOAD", name: "stencils:stencils0/1", showboundingbox: 0b}

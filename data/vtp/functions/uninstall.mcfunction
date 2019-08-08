@@ -28,6 +28,13 @@ scoreboard objectives add tools dummy
 scoreboard objectives add tools_old dummy
 scoreboard objectives add Settings dummy
 
+scoreboard objectives add gravel_loop dummy
+scoreboard objectives add gravel_loop_c dummy
+scoreboard objectives add gravel_percent dummy
+scoreboard objectives add vegetate_loop dummy
+scoreboard objectives add vegetate_loop_c dummy 
+scoreboard objectives add vegetate_percent dummy 
+
 #Circle
 scoreboard objectives remove teleport_at
 scoreboard objectives remove circle
@@ -69,5 +76,6 @@ scoreboard objectives remove structure_sizeZ
 tellraw @s ["",{"text":"Deleting the scoreboard","color":"dark_red","bold":true}]
 
 
-execute if score forceload Chunk matches 1 run tellraw @a ["",{"text":"[I] ","color":"gold"},{"text":"Chunk 0,-1 is loaded. Remove the load with ( ","color":"none"},{"text":"/forceload remove 0 -1","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/forceload remove 0 -1"}},{"text":")","color":"none","underlined":false}]
+#execute if score forceload Chunk matches 1 run tellraw @a ["",{"text":"[I] ","color":"gold"},{"text":"Chunk 0,-1 is loaded. Remove the load with ( ","color":"none"},{"text":"/forceload remove 0 -1","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/forceload remove 0 -1"}},{"text":")","color":"none","underlined":false}]
+tellraw @a ["",{"text":"[I] ","color":"gold"},{"text":"Chunk 0,-1 is loaded. Remove the load with ( ","color":"none"},{"text":"/forceload remove 0 -1","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/forceload remove 0 -1"}},{"text":")","color":"none","underlined":false}]
 scoreboard objectives remove Chunk
