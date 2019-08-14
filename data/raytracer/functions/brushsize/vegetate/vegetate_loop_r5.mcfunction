@@ -1,6 +1,4 @@
-
-
-function rand:rand
+function utils:rand
 
 
 scoreboard players operation rand% rand %= BrushR5 vegetate_percent

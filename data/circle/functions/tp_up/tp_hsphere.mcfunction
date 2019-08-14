@@ -5,4 +5,4 @@ execute store result score AT#Z teleport_at run data get entity @s Pos[2]
 scoreboard players operation AT#Y teleport_at += @s hsphere
 scoreboard players operation AT#Y teleport_at += One teleport_at
 
-execute as @s run function circle:teleport/to
+execute as @s run function utils:teleport/to

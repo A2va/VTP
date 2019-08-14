@@ -1,4 +1,4 @@
-function rand:rand
+function utils:rand
 
 scoreboard players operation rand% rand %= Nstencils5_V Stencils
 

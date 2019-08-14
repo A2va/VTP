@@ -3,7 +3,7 @@
   "values": [
      "raytracer:init",
 	   "circle:init",
-	   "rand:init",
+	   "utils:init",
      "stencils:init"
 
   ]

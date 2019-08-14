@@ -1,6 +1,6 @@
 
 
-function rand:rand
+function utils:rand
 
 
 scoreboard players operation rand% rand %= BrushR1 gravel_percent
