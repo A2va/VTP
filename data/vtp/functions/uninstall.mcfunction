@@ -75,7 +75,6 @@ scoreboard objectives remove structure_sizeZ
 
 tellraw @s ["",{"text":"Deleting the scoreboard","color":"dark_red","bold":true}]
 
-
-#execute if score forceload Chunk matches 1 run tellraw @a ["",{"text":"[I] ","color":"gold"},{"text":"Chunk 0,-1 is loaded. Remove the load with ( ","color":"none"},{"text":"/forceload remove 0 -1","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/forceload remove 0 -1"}},{"text":")","color":"none","underlined":false}]
-tellraw @a ["",{"text":"[I] ","color":"gold"},{"text":"Chunk 0,-1 is loaded. Remove the load with ( ","color":"none"},{"text":"/forceload remove 0 -1","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/forceload remove 0 -1"}},{"text":")","color":"none","underlined":false}]
+execute store result score forceload Chunk run forceload query 0 -1
+execute if score forceload Chunk matches 1 run tellraw @a ["",{"text":"[I] ","color":"gold"},{"text":"Chunk 0,-1 is loaded. Remove the load with ( ","color":"none"},{"text":"/forceload remove 0 -1","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/forceload remove 0 -1"}},{"text":")","color":"none","underlined":false}]
 scoreboard objectives remove Chunk
