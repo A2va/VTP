@@ -29,7 +29,7 @@ execute unless score ToggleTools Settings = ToggleTools_Old Settings as @a[tag=V
 scoreboard players operation ToggleTools_Old Settings = ToggleTools Settings
 
 
-setblock ~ ~ ~ minecraft:chest{Items:[]}
+
 
 execute as @a[scores={click_vtp=1..},tag=VTP] at @s run scoreboard players operation @e[type=armor_stand,name=ray,distance=0..2,limit=1] brushRad = @s brushRad
 
@@ -39,11 +39,13 @@ execute as @a[tag=VTP] at @s if score @s SetBlock_detect matches 1 unless block 
 execute as @e[type=armor_stand,name=ray] at @s run tp @s ~ ~1.5 ~
 
 
-scoreboard players set @a click_vtp 0
+#scoreboard players set @a click_vtp 0
 
 scoreboard players set @e[type=armor_stand,name=ray] rayTimer 512
-execute as @e[type=armor_stand,name=ray] at @s run function raytracer:raytracer
+#execute as @e[type=armor_stand,name=ray] at @s run function raytracer:raytracer
+execute if entity @a [scores={click_vtp=1..}] as @e[type=armor_stand,name=ray] at @s run function raytracer:raytracer
 
+scoreboard players set @a click_vtp 0
 kill @e[type=armor_stand,name=ray]
 
 
