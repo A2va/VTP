@@ -24,7 +24,7 @@ scoreboard objectives add vegetate_percent dummy
 scoreboard objectives add Settings dummy
 scoreboard players set paintbrush_fast Settings 0
 scoreboard players set ToggleTools Settings 0
-scoreboard players set ToggleTools_Old Settings 0
+
 #Tools Toggle
 scoreboard objectives add tools dummy
 scoreboard objectives add tools_old dummy

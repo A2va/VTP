@@ -25,8 +25,7 @@ execute if score ToggleTools Settings matches 1 as @a[tag=VTP,nbt={SelectedItem:
 execute if score ToggleTools Settings matches 1 as @a[tag=VTP] at @s unless score @s tools = @s tools_old run function raytracer:tools_toggle/tools_toggle
 execute if score ToggleTools Settings matches 1 as @a[tag=VTP] run scoreboard players operation @s tools_old = @s tools
 
-execute unless score ToggleTools Settings = ToggleTools_Old Settings as @a[tag=VTP] run replaceitem entity @s weapon.offhand minecraft:air
-scoreboard players operation ToggleTools_Old Settings = ToggleTools Settings
+
 
 
 
@@ -43,7 +42,7 @@ execute as @e[type=armor_stand,name=ray] at @s run tp @s ~ ~1.5 ~
 
 scoreboard players set @e[type=armor_stand,name=ray] rayTimer 512
 #execute as @e[type=armor_stand,name=ray] at @s run function raytracer:raytracer
-execute if entity @a [scores={click_vtp=1..}] as @e[type=armor_stand,name=ray] at @s run function raytracer:raytracer
+execute if entity @a[scores={click_vtp=1..}] as @e[type=armor_stand,name=ray] at @s run function raytracer:raytracer
 
 scoreboard players set @a click_vtp 0
 kill @e[type=armor_stand,name=ray]
