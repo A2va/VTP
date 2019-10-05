@@ -51,30 +51,32 @@ execute as @s[tag=gravel,scores={brushRad=7}] at @s unless block ^ ^ ^1 #raytrac
 
 
 #Tree
-execute if score ChoiceTree Tree matches 1 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/acacia
-execute if score ChoiceTree Tree matches 2 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/birch_custom
-execute if score ChoiceTree Tree matches 3 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/birch
-execute if score ChoiceTree Tree matches 4 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/dark_oak
-execute if score ChoiceTree Tree matches 5 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/jungle_big
-execute if score ChoiceTree Tree matches 6 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/jungle_custom
-execute if score ChoiceTree Tree matches 7 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/jungle_small
-execute if score ChoiceTree Tree matches 8 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/jungle
-execute if score ChoiceTree Tree matches 9 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak_big
-execute if score ChoiceTree Tree matches 10 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak_custom
-execute if score ChoiceTree Tree matches 11 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak
-execute if score ChoiceTree Tree matches 12 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak_small
-execute if score ChoiceTree Tree matches 13 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/spruce_custom
-execute if score ChoiceTree Tree matches 14 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/spruce
+
+
+execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 1 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/acacia
+execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 2 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/birch_custom
+execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 3 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/birch
+execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 4 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/dark_oak
+execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 5 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/jungle_big
+execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 6 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/jungle_custom
+execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 7 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/jungle_small
+execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 8 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/jungle
+execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 9 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak_big
+execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 10 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak_custom
+execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 11 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak
+execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 12 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/oak_small
+execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 13 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/spruce_custom
+execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 14 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/spruce
 
 
 
-execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 0 run function stencils:list_stencil/stencils_0
-execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 1 run function stencils:list_stencil/stencils_1
-execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 2 run function stencils:list_stencil/stencils_2
-execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 3 run function stencils:list_stencil/stencils_3
-execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 4 run function stencils:list_stencil/stencils_4
-execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 5 run function stencils:list_stencil/stencils_5
-execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 6 run function stencils:list_stencil/stencils_6
-execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 7 run function stencils:list_stencil/stencils_7
-execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 8 run function stencils:list_stencil/stencils_8
-execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score ChStencils Stencils matches 9 run function stencils:list_stencil/stencils_9
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChStencils matches 0 run function stencils:list_stencil/stencils_0
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChStencils matches 1 run function stencils:list_stencil/stencils_1
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChStencils matches 2 run function stencils:list_stencil/stencils_2
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChStencils matches 3 run function stencils:list_stencil/stencils_3
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChStencils matches 4 run function stencils:list_stencil/stencils_4
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChStencils matches 5 run function stencils:list_stencil/stencils_5
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChStencils matches 6 run function stencils:list_stencil/stencils_6
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChStencils matches 7 run function stencils:list_stencil/stencils_7
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChStencils matches 8 run function stencils:list_stencil/stencils_8
+execute as @s[tag=stencils] at @s unless block ^ ^ ^1 #raytracer:transparent if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChStencils matches 9 run function stencils:list_stencil/stencils_9

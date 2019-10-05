@@ -42,7 +42,7 @@ execute as @e[type=armor_stand,name=ray] at @s run tp @s ~ ~1.5 ~
 
 scoreboard players set @e[type=armor_stand,name=ray] rayTimer 512
 #execute as @e[type=armor_stand,name=ray] at @s run function raytracer:raytracer
-execute if entity @a[scores={click_vtp=1..}] as @e[type=armor_stand,name=ray] at @s run function raytracer:raytracer
+execute if entity @a[scores={click_vtp=1..},tag=VTP] as @e[type=armor_stand,name=ray] at @s run function raytracer:raytracer
 
 scoreboard players set @a click_vtp 0
 kill @e[type=armor_stand,name=ray]

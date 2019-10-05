@@ -1,4 +1,4 @@
-scoreboard objectives add click_vtp minecraft.used:minecraft.carrot_on_a_stick
+
 
 #Raytracer
 scoreboard objectives add click_vtp minecraft.used:minecraft.carrot_on_a_stick
@@ -32,14 +32,15 @@ scoreboard objectives add tools_old dummy
 
 #Chunk
 scoreboard objectives add Chunk dummy
-execute if score forceload Chunk matches 2.. run scoreboard players set forceload Chunk 0
-execute if score forceload Chunk matches -2.. run scoreboard players set forceload Chunk 0
+
 
 #Set plot
 scoreboard objectives add SetBlock_detect dummy
 scoreboard objectives add plot dummy
 
 #Tree
+scoreboard objectives add ChoiceTree dummy
+
 scoreboard objectives add Tree dummy
 scoreboard players set Nacacia Tree 44
 scoreboard players set Nspruce_custom Tree 56
@@ -51,7 +52,7 @@ scoreboard players set Njungle Tree 44
 scoreboard players set Noak_custom Tree 44
 scoreboard players set Njungle_custom Tree 100
 
-scoreboard players set ChoiceTree Tree 12
+
 
 kill @e[type=armor_stand,tag=option]
 
@@ -86,4 +87,5 @@ scoreboard players enable @a Option
 execute as @a run scoreboard players operation @s brushRad = @s brushRad
 
 scoreboard players set @a[scores={brushRad=0}] brushRad 3
+scoreboard players set @a[scores={brushRad=0}] ChoiceTree 12
 gamerule sendCommandFeedback false
