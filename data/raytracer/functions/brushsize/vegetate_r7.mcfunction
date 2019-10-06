@@ -1,24 +1,13 @@
 summon armor_stand ~0 ~0 ~0 {CustomName:"{\"text\":\"centerVegetate\"}",Marker:1,Invisible:1,NoGravity:1}
 
-
-
 scoreboard players set Two vegetate_percent 2
 scoreboard players set BrushR7 vegetate_percent 2104
 scoreboard players set hundred vegetate_percent 100
 
-
-
 scoreboard players operation @e[type=armor_stand,name=centerVegetate] vegetate_loop = BrushR7 vegetate_percent
-scoreboard players operation @e[type=armor_stand,name=centerVegetate] vegetate_loop *= percent vegetate_percent
+scoreboard players operation @e[type=armor_stand,name=centerVegetate] vegetate_loop *= @a[scores={click_vtp=1..},tag=VTP,limit=1] vegetate_percent
 scoreboard players operation @e[type=armor_stand,name=centerVegetate] vegetate_loop /= hundred vegetate_percent
 scoreboard players operation @e[type=armor_stand,name=centerVegetate] vegetate_loop *= Two vegetate_percent
-
-
-scoreboard players operation vegetate_loop vegetate_percent = BrushR2 vegetate_percent
-scoreboard players operation vegetate_loop vegetate_percent *= percent vegetate_percent
-scoreboard players operation vegetate_loop vegetate_percent /= hundred vegetate_percent
-
-scoreboard players operation vegetate_loop vegetate_percent *= Two vegetate_percent
 
 
 execute as @e[type=armor_stand,name=centerVegetate] at @s run function raytracer:brushsize/vegetate/vegetate_loop_r7

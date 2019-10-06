@@ -51,8 +51,6 @@ execute as @s[tag=gravel,scores={brushRad=7}] at @s unless block ^ ^ ^1 #raytrac
 
 
 #Tree
-
-
 execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 1 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/acacia
 execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 2 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/birch_custom
 execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 3 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/birch

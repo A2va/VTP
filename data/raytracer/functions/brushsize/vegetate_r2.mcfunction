@@ -9,16 +9,9 @@ scoreboard players set hundred vegetate_percent 100
 
 
 scoreboard players operation @e[type=armor_stand,name=centerVegetate] vegetate_loop = BrushR2 vegetate_percent
-scoreboard players operation @e[type=armor_stand,name=centerVegetate] vegetate_loop *= percent vegetate_percent
+scoreboard players operation @e[type=armor_stand,name=centerVegetate] vegetate_loop *= @a[scores={click_vtp=1..},tag=VTP,limit=1] vegetate_percent
 scoreboard players operation @e[type=armor_stand,name=centerVegetate] vegetate_loop /= hundred vegetate_percent
 scoreboard players operation @e[type=armor_stand,name=centerVegetate] vegetate_loop *= Two vegetate_percent
-
-
-scoreboard players operation vegetate_loop vegetate_percent = BrushR2 vegetate_percent
-scoreboard players operation vegetate_loop vegetate_percent *= percent vegetate_percent
-scoreboard players operation vegetate_loop vegetate_percent /= hundred vegetate_percent
-
-scoreboard players operation vegetate_loop vegetate_percent *= Two vegetate_percent
 
 
 execute as @e[type=armor_stand,name=centerVegetate] at @s run function raytracer:brushsize/vegetate/vegetate_loop_r2

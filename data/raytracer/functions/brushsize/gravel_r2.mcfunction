@@ -9,7 +9,7 @@ scoreboard players set hundred gravel_percent 100
 
 
 scoreboard players operation @e[type=armor_stand,name=centerGravel] gravel_loop = BrushR2 gravel_percent
-scoreboard players operation @e[type=armor_stand,name=centerGravel] gravel_loop *= percent gravel_percent
+scoreboard players operation @e[type=armor_stand,name=centerGravel] gravel_loop *= @a[scores={click_vtp=1..},tag=VTP,limit=1] gravel_percent
 scoreboard players operation @e[type=armor_stand,name=centerGravel] gravel_loop /= hundred gravel_percent
 scoreboard players operation @e[type=armor_stand,name=centerGravel] gravel_loop *= Two gravel_percent
 
