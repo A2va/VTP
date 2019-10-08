@@ -1,3 +1,3 @@
-scoreboard players set ChoiceTree Tree 7
+scoreboard players set @s ChoiceTree 7
 
 title @s actionbar ["",{"text":"Jungle small selected","color":"dark_aqua"}]
