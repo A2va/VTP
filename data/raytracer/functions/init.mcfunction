@@ -4,20 +4,20 @@
 scoreboard objectives add click_vtp minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add rayTimer dummy
 scoreboard objectives add smooth dummy
-scoreboard objectives add brushRad dummy
-scoreboard objectives add PlayerPosX dummy
-scoreboard objectives add PlayerPosY dummy
-scoreboard objectives add PlayerPosZ dummy
+scoreboard objectives add brushRad trigger
+scoreboard objectives add OldPlayerPosX dummy
+scoreboard objectives add OldPlayerPosY dummy
+scoreboard objectives add OldPlayerPosZ dummy
 scoreboard objectives add waterI dummy
 scoreboard objectives add blockCount dummy
 scoreboard objectives add gravel_loop dummy
 scoreboard objectives add gravel_loop_c dummy
-scoreboard objectives add gravel_percent dummy
+scoreboard objectives add gravel_percent trigger
 
 
 scoreboard objectives add vegetate_loop dummy
 scoreboard objectives add vegetate_loop_c dummy 
-scoreboard objectives add vegetate_percent dummy 
+scoreboard objectives add vegetate_percent trigger 
 
 
 #Settings
@@ -57,9 +57,9 @@ scoreboard players set Njungle_custom Tree 100
 kill @e[type=armor_stand,tag=option]
 
 
-execute positioned 8 255 -8 as @a[distance=15..] store result score @s PlayerPosX run data get entity @s Pos[0]
-execute positioned 8 255 -8 as @a[distance=15..] store result score @s PlayerPosY run data get entity @s Pos[1]
-execute positioned 8 255 -8 as @a[distance=15..] store result score @s PlayerPosZ run data get entity @s Pos[2]
+#execute positioned 8 255 -8 as @a[distance=15..] store result score @s PlayerPosX run data get entity @s Pos[0]
+#execute positioned 8 255 -8 as @a[distance=15..] store result score @s PlayerPosY run data get entity @s Pos[1]
+#execute positioned 8 255 -8 as @a[distance=15..] store result score @s PlayerPosZ run data get entity @s Pos[2]
 
 
 
@@ -82,7 +82,6 @@ execute if score forceload Chunk matches 1 run summon armor_stand 8 256 -11 {Cus
 execute if score forceload Chunk matches 1 run summon armor_stand 8 254 -8 {CustomName:"{\"text\":\"randMaterial\"}",Marker:1,Invisible:1,NoGravity:1,Tags:[option]}
 
 
-scoreboard players enable @a Option
 
 execute as @a run scoreboard players operation @s brushRad = @s brushRad
 
