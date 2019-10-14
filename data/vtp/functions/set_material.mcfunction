@@ -1,0 +1,1 @@
+function raytracer:set_plot/set_material

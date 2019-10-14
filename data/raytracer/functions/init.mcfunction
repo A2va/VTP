@@ -64,7 +64,7 @@ kill @e[type=armor_stand,tag=option]
 
 
 
-function vtp:welcome
+function raytracer:welcome
 execute store result score forceload Chunk run forceload query 0 -1
 execute if score forceload Chunk matches 0 run tellraw @a ["",{"text":"[I]","color":"gold"},{"text":"Chunk 0 -1 wasn't loaded. Use ","color":"none"},{"text":"/forceload add 0 -1","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/forceload add 0 -1"}},{"text":"\nAtfer reload the datapack","color":"none","underlined":false}]
 
