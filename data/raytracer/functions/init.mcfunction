@@ -21,6 +21,7 @@ scoreboard objectives add vegetate_percent trigger
 
 
 #Settings
+scoreboard objectives add paintbrush_fast dummy
 scoreboard objectives add Settings dummy
 scoreboard players set paintbrush_fast Settings 0
 scoreboard players set ToggleTools Settings 0
