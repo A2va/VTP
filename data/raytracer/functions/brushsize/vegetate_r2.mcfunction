@@ -15,10 +15,10 @@ scoreboard players operation @e[type=area_effect_cloud,tag=centerVegetate] veget
 
 
 execute as @e[type=area_effect_cloud,tag=centerVegetate] at @s run function raytracer:brushsize/vegetate/vegetate_loop_r2
-execute as @e[type=armor_stand,name=placeVegetate] at @s if block ~ ~ ~ minecraft:grass_block run function raytracer:brushsize/vegetate/place_block
+execute as @e[type=area_effect_cloud,tag=placeVegetate] at @s if block ~ ~ ~ minecraft:grass_block run function raytracer:brushsize/vegetate/place_block
 #execute as @e[type=armor_stand,name=placeGravel] at @s run kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:gravel"}}]
 
 
 
 kill @e[type=area_effect_cloud,tag=centerVegetate]
-kill @e[type=armor_stand,name=placeVegetate]
+kill @e[type=area_effect_cloud,tag=placeVegetate]
