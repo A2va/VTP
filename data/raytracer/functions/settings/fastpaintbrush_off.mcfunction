@@ -1,4 +1,4 @@
-scoreboard players set paintbrush_fast Settings 0
+scoreboard players set @s paintbrush_fast 0
 title @s actionbar ["",{"text":"Fast paintbrush mode off","color":"dark_aqua"}]
 
 

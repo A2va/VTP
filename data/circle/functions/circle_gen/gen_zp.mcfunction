@@ -1,4 +1,4 @@
-spreadplayers ~ ~ 0 1 false @e[type=armor_stand,name=debugChunk]
+spreadplayers ~ ~ 0 1 false @e[type=area_effect_cloud,tag=debugChunk]
 
 
 scoreboard players operation percentCircle percent_vtp -= temp percent_vtp

@@ -53,11 +53,12 @@ scoreboard players enable @a[tag=VTP] gravel_percent
 scoreboard players enable @a[tag=VTP] brushRad
 
 #Fixwater
-execute as @e[type=armor_stand,name=fixwaterend] at @s run function raytracer:fixwater/fixwaterend
-kill @e[type=armor_stand,name=fixwaterend]
+execute as @e[type=area_effect_cloud,tag=fixwaterend] at @s run function raytracer:fixwater/fixwaterend
+kill @e[type=area_effect_cloud,tag=fixwaterend]
 
 
 scoreboard players set @a blockCount 0
 
 #Randomizer Material
+data merge entity @e[type=area_effect_cloud,tag=randMaterial,limit=1] {Age:0}
 execute unless block 8 255 -8 air run setblock 8 255 -8 air

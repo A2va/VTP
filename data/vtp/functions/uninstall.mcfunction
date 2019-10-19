@@ -1,13 +1,14 @@
 #Kill armor_stand
 kill @e[type=armor_stand,tag=option]
+kill @e[type=area_effect_cloud]
 #Remove sign and plot mask and material
 setblock 11 255 -8 air
 fill 11 253 -2 5 254 -14 air
 
 #Remove tag
-tag @s remove up
-tag @s remove ground
-tag @s remove VTP
+tag @a remove up
+tag @a remove ground
+tag @a remove VTP
 
 tellraw @s ["",{"text":"Deleting the plot mask and material","color":"dark_red","bold":true}]
 #Remove scoreboard
@@ -22,18 +23,21 @@ scoreboard objectives remove PlayerPosZ
 scoreboard objectives remove waterI
 scoreboard objectives remove blockCount
 scoreboard objectives remove Tree
-scoreboard objectives add SetBlock_detect dummy
-scoreboard objectives add plot dummy
-scoreboard objectives add tools dummy
-scoreboard objectives add tools_old dummy
-scoreboard objectives add Settings dummy
+scoreboard objectives remove SetBlock_detect 
+scoreboard objectives remove plot 
+scoreboard objectives remove tools 
+scoreboard objectives remove tools_old 
+scoreboard objectives remove Settings 
+scoreboard objectives remove paintbrush_fast 
 
-scoreboard objectives add gravel_loop dummy
-scoreboard objectives add gravel_loop_c dummy
-scoreboard objectives add gravel_percent dummy
-scoreboard objectives add vegetate_loop dummy
-scoreboard objectives add vegetate_loop_c dummy 
-scoreboard objectives add vegetate_percent dummy 
+scoreboard objectives remove gravel_loop 
+scoreboard objectives remove gravel_loop_c 
+scoreboard objectives remove gravel_percent 
+scoreboard objectives remove vegetate_loop 
+scoreboard objectives remove vegetate_loop_c  
+scoreboard objectives remove vegetate_percent  
+scoreboard objectives remove ChoiceTree 
+
 
 #Circle
 scoreboard objectives remove teleport_at

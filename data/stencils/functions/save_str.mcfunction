@@ -42,8 +42,7 @@ execute if score Global structure_pos matches 3 if score Global structure_size m
 execute if score Global structure_pos matches 3 if score Global structure_size matches 3 run execute store result block ~ ~ ~ sizeY double 1 run scoreboard players get Global structure_sizeY
 execute if score Global structure_pos matches 3 if score Global structure_size matches 3 run execute store result block ~ ~ ~ sizeZ double 1 run scoreboard players get Global structure_sizeZ
 
-#execute if score Global structure_pos matches 3 if score Global structure_size matches 3 run setblock ~ ~1 ~ redstone_block
-#execute if score Global structure_pos matches 3 if score Global structure_size matches 3 run summon armor_stand ~ ~1 ~ {Invisible:1b,Tags:["structure_remove"]}
+
 
 execute if score Global structure_pos matches 3 if score Global structure_size matches 3 run tellraw @a ["",{"text":"["},{"text":"OK","color":"green"},{"text":"] "},{"text":"Selection saved!"}]
 

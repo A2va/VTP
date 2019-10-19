@@ -1,6 +1,6 @@
-spreadplayers 8 -11 0 2 false @e[type=armor_stand,name=randMaterial]
+spreadplayers 8 -11 0 2 false @e[type=area_effect_cloud,tag=randMaterial]
 
-execute as @e[type=armor_stand,name=randMaterial] at @s run clone ~ 254 ~ ~ 254 ~ 8 255 -8 replace
+execute as @e[type=area_effect_cloud,tag=randMaterial] at @s run clone ~ 254 ~ ~ 254 ~ 8 255 -8 replace
 
 
 

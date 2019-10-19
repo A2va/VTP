@@ -5,9 +5,9 @@ scoreboard objectives add click_vtp minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add rayTimer dummy
 scoreboard objectives add smooth dummy
 scoreboard objectives add brushRad trigger
-scoreboard objectives add OldPlayerPosX dummy
-scoreboard objectives add OldPlayerPosY dummy
-scoreboard objectives add OldPlayerPosZ dummy
+scoreboard objectives add PlayerPosX dummy
+scoreboard objectives add PlayerPosY dummy
+scoreboard objectives add PlayerPosZ dummy
 scoreboard objectives add waterI dummy
 scoreboard objectives add blockCount dummy
 scoreboard objectives add gravel_loop dummy
@@ -56,7 +56,7 @@ scoreboard players set Njungle_custom Tree 100
 
 
 kill @e[type=armor_stand,tag=option]
-
+kill @e[type=area_effect_cloud]
 
 #execute positioned 8 255 -8 as @a[distance=15..] store result score @s PlayerPosX run data get entity @s Pos[0]
 #execute positioned 8 255 -8 as @a[distance=15..] store result score @s PlayerPosY run data get entity @s Pos[1]
@@ -77,15 +77,14 @@ execute if score forceload Chunk matches 1 run fill 6 254 -7 10 254 -3 air repla
 #Change for 1.14
 execute if score forceload Chunk matches 1 run setblock 11 255 -8 oak_sign[rotation=4]{Text4: "{\"color\":\"gold\",\"text\":\"\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\"}", Text3: "null", Text2: "{\"color\":\"dark_blue\",\"text\":\"TP Back\"}", Text1: "{\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"tag @s add TpBack\"},\"text\":\"\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\"}"}
 
-execute if score forceload Chunk matches 1 run summon armor_stand 8 254 -8 {CustomName:"{\"text\":\"optionCenter\"}",Marker:1,Invisible:1,NoGravity:1,Tags:[option]}
 execute if score forceload Chunk matches 1 run summon armor_stand 8 256 -5 {CustomNameVisible:1b,CustomName:"{\"text\":\"Mask\",\"color\":\"dark_blue\"}",Marker:1,Invisible:1,NoGravity:1,Tags:[option]}
 execute if score forceload Chunk matches 1 run summon armor_stand 8 256 -11 {CustomNameVisible:1b,CustomName:"{\"text\":\"Material\",\"color\":\"dark_blue\"}",Marker:1,Invisible:1,NoGravity:1,Tags:[option]}
-execute if score forceload Chunk matches 1 run summon armor_stand 8 254 -8 {CustomName:"{\"text\":\"randMaterial\"}",Marker:1,Invisible:1,NoGravity:1,Tags:[option]}
+execute if score forceload Chunk matches 1 run summon area_effect_cloud 8 254 -8 {Tags:["option","randMaterial"],Duration:2147483647}
 
 
 
 execute as @a run scoreboard players operation @s brushRad = @s brushRad
 
 scoreboard players set @a[scores={brushRad=0}] brushRad 3
-scoreboard players set @a[scores={brushRad=0}] ChoiceTree 12
+scoreboard players set @a[scores={ChoiceTree=0}] ChoiceTree 12
 gamerule sendCommandFeedback false

@@ -1,4 +1,4 @@
-spreadplayers ~ ~ 0 1 false @e[type=armor_stand,name=debugChunk]
+spreadplayers ~ ~ 0 1 false @e[type=area_effect_cloud,tag=debugChunk]
 
 execute if entity @s[scores={tempRad=1}] run tp @s ~ ~-1 ~
 execute if entity @s[scores={tempRad=2..3}] run tp @s ~ ~-2 ~
