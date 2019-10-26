@@ -13,69 +13,12 @@ tag @a remove VTP
 tellraw @s ["",{"text":"Deleting the plot mask and material","color":"dark_red","bold":true}]
 #Remove scoreboard
 
+function raytracer:uninstall
+function utils:uninstall
+function circle:uninstall
+function stencils:uninstall
 #Raytracer
-scoreboard objectives remove click_vtp
-scoreboard objectives remove rayTimer
-scoreboard objectives remove brushRad
-scoreboard objectives remove PlayerPosX
-scoreboard objectives remove PlayerPosY
-scoreboard objectives remove PlayerPosZ
-scoreboard objectives remove waterI
-scoreboard objectives remove blockCount
-scoreboard objectives remove Tree
-scoreboard objectives remove SetBlock_detect 
-scoreboard objectives remove plot 
-scoreboard objectives remove tools 
-scoreboard objectives remove tools_old 
-scoreboard objectives remove Settings 
-scoreboard objectives remove paintbrush_fast 
 
-scoreboard objectives remove gravel_loop 
-scoreboard objectives remove gravel_loop_c 
-scoreboard objectives remove gravel_percent 
-scoreboard objectives remove vegetate_loop 
-scoreboard objectives remove vegetate_loop_c  
-scoreboard objectives remove vegetate_percent  
-scoreboard objectives remove ChoiceTree 
-
-
-#Circle
-scoreboard objectives remove teleport_at
-scoreboard objectives remove circle
-scoreboard objectives remove disk
-scoreboard objectives remove sphere
-scoreboard objectives remove hsphere
-scoreboard objectives remove Rad
-scoreboard objectives remove tempRad
-scoreboard objectives remove circlePos1
-scoreboard objectives remove circlePos2
-scoreboard objectives remove circlePos3
-scoreboard objectives remove circlePos1sqr
-scoreboard objectives remove circlePos2sqr
-scoreboard objectives remove circlePos3sqr
-scoreboard objectives remove Radsqr
-scoreboard objectives remove operation
-scoreboard objectives remove HsphereRad
-scoreboard objectives remove percent_vtp
-bossbar remove minecraft:percentbar
-
-#Rand
-scoreboard objectives remove rand
-scoreboard objectives remove Rconst
-
-#Stencils
-scoreboard objectives remove Stencils
-scoreboard objectives remove player_x
-scoreboard objectives remove player_y
-scoreboard objectives remove player_z
-scoreboard objectives remove structure_size
-scoreboard objectives remove structure_pos
-scoreboard objectives remove structure_posX
-scoreboard objectives remove structure_posY
-scoreboard objectives remove structure_posZ
-scoreboard objectives remove structure_sizeX
-scoreboard objectives remove structure_sizeY
-scoreboard objectives remove structure_sizeZ
 
 tellraw @s ["",{"text":"Deleting the scoreboard","color":"dark_red","bold":true}]
 

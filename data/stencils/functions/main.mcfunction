@@ -29,7 +29,7 @@ scoreboard players operation Nstencils9_V Stencils = Nstencils9 Stencils
 scoreboard players operation Nstencils9_V Stencils *= Four Stencils
 
 
-execute as @p[scores={be_str=1}] if score Global loaded matches 1 run function stencils:init_2
+#execute as @p[scores={be_str=1}] if score Global loaded matches 1 run function stencils:init_2
 execute as @p[scores={be_str=1}] if score Global loaded matches 1 run scoreboard players reset @a be_str
 
 
