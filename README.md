@@ -1,22 +1,9 @@
 # VTP
 
-It's a fork of Vanilla Terraforming Pack ([Original author](https://www.planetminecraft.com/mod/vanilla-terraforming-pack-datapack-4124905/)).
+It's a fork of Vanilla Terraforming Pack ([Original author](https://www.planetminecraft.com/mod/vanilla-terraforming-pack-datapack-4124905/)). 
 
 
 ## Utilisation
-
-### Commands:
-`/function vtp:menu`: Displays brush options and how to get them\n
-`/function vtp:fixwater`: Filled with water a closed area of 30 * 30 around you
-
-`/trigger sphere set [Radius]`: Generates a sphere of the given radius centered on you
-
-`/trigger hsphere set [Radius]`: Generates an empty sphere of the given radius centered on you
-
-`/trigger disk set [Radius]`: Generates a disk of the given radius centered on you
-
-`/trigger circle set [Radius]`: Generates a circle of the given radius centered on you
-
 
 ### Brush:
 `Clean`: Removes trees, plants and water and replaces the ground with stone
@@ -41,6 +28,39 @@ It's a fork of Vanilla Terraforming Pack ([Original author](https://www.planetmi
 
 `Vegetate` : Setblock grass relative to a percentage
 
+
+### Commands:
+
+#### Functions:
+`/function vtp:menu`: Displays brush options and how to get them
+
+`/function vtp:choice_tree` : Choose the desired tree
+
+`/function vtp:set_material` : Set the material
+
+`/function vtp:set_mask` : Set the mask
+
+`/function vtp:uninstall`: Remove scoreboard and plot
+
+`/function vtp:fixwater`: Filled with water a closed area of 30 * 30 around you
+
+#### Triggers:
+
+`/trigger brushRad set` : Set the Radius of the brush
+
+`/trigger gravel_percent set` :Set the percentage of gravel brush
+
+`/trigger vegetate_percent set` : Set the percentage of vegetate brush
+
+`/trigger sphere set [Radius]`: Generates a sphere of the given radius centered on you
+
+`/trigger hsphere set [Radius]`: Generates an empty sphere of the given radius centered on you
+
+`/trigger disk set [Radius]`: Generates a disk of the given radius centered on you
+
+`/trigger circle set [Radius]`: Generates a circle of the given radius centered on you
+
+
 ### Settings:
 
 Fast paintbrush: The paintbrush is faster but it takes into account that only one block for the mask and the material is that of the middle
@@ -55,8 +75,7 @@ You can create stencils either using BlingEdit.
 
 Install BlingEdit on your world Link [here](https://www.reddit.com/r/BlingEdit/comments/9pdd2w/subreddit_plugin_list/)
 
-Select a area click on Plugin and click again on VTP - Create Stencils
-
+Select a area and click on Plugin and click again on VTP - Create Stencils
 A block structure appears under your feet. Name the stencils.
 
 
