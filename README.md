@@ -6,7 +6,7 @@ It's a fork of Vanilla Terraforming Pack ([Original author](https://www.planetmi
 ## Utilisation
 
 ### Commands:
-`/function vtp:menu`: Displays brush options and how to get them
+`/function vtp:menu`: Displays brush options and how to get them\n
 `/function vtp:fixwater`: Filled with water a closed area of 30 * 30 around you
 
 `/trigger sphere set [Radius]`: Generates a sphere of the given radius centered on you
