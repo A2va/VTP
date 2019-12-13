@@ -49,6 +49,7 @@ execute as @s[tag=lift,scores={brushRad=7}] at @s unless block ^ ^ ^1 #raytracer
 execute as @s[tag=paintbrush,scores={brushRad=7}] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:brushsize/paintbrush_r7
 execute as @s[tag=gravel,scores={brushRad=7}] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:brushsize/gravel_r7
 
+execute as @s[tag=test] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:brush_sphere/gen_sphere
 
 #Tree
 execute if score @a[scores={click_vtp=1..},tag=VTP,limit=1] ChoiceTree matches 1 as @s[tag=tree] at @s unless block ^ ^ ^1 #raytracer:transparent run function raytracer:tree/acacia

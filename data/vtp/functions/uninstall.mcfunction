@@ -17,7 +17,6 @@ function raytracer:uninstall
 function utils:uninstall
 function circle:uninstall
 function stencils:uninstall
-#Raytracer
 
 
 tellraw @s ["",{"text":"Deleting the scoreboard","color":"dark_red","bold":true}]

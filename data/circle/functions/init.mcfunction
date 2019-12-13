@@ -32,4 +32,4 @@ bossbar add minecraft:percentbar "Percent"
 bossbar set minecraft:percentbar visible false
 bossbar set minecraft:percentbar players @a
 
-gamerule maxCommandChainLength 65536
+gamerule maxCommandChainLength 2147483647

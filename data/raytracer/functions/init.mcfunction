@@ -1,5 +1,5 @@
 
-
+scoreboard objectives add test dummy
 #Raytracer
 scoreboard objectives add click_vtp minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add rayTimer dummy
