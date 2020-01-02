@@ -1,5 +1,5 @@
 
-scoreboard objectives add test dummy
+
 #Raytracer
 scoreboard objectives add click_vtp minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add rayTimer dummy
@@ -10,11 +10,13 @@ scoreboard objectives add PlayerPosY dummy
 scoreboard objectives add PlayerPosZ dummy
 scoreboard objectives add waterI dummy
 scoreboard objectives add blockCount dummy
+
+scoreboard objectives add gravel_per2 dummy
 scoreboard objectives add gravel_loop dummy
 scoreboard objectives add gravel_loop_c dummy
 scoreboard objectives add gravel_percent trigger
 
-
+scoreboard objectives add vegetate_per2 dummy
 scoreboard objectives add vegetate_loop dummy
 scoreboard objectives add vegetate_loop_c dummy 
 scoreboard objectives add vegetate_percent trigger 
@@ -85,6 +87,9 @@ execute if score forceload Chunk matches 1 run summon area_effect_cloud 8 254 -8
 
 execute as @a run scoreboard players operation @s brushRad = @s brushRad
 
+scoreboard players set @a[scores={paintbrush_fast=0}] paintbrush_fast 0
 scoreboard players set @a[scores={brushRad=0}] brushRad 3
+scoreboard players set @a[scores={vegetate_percent=0}] vegetate_percent 50
+scoreboard players set @a[scores={gravel_percent=0}] gravel_percent 50
 scoreboard players set @a[scores={ChoiceTree=0}] ChoiceTree 12
 gamerule sendCommandFeedback false
