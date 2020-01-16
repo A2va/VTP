@@ -46,8 +46,7 @@ scoreboard players set @a click_vtp 0
 kill @e[type=armor_stand,name=ray]
 
 #Tp Plot and Back
-execute positioned 8 255.5 -8 as @a[tag=TpOption,distance=..15] run tag @s remove TpOption 
-execute positioned 8 255.5 -8 as @a[tag=TpOption,distance=15..] at @s run function raytracer:tp/tp_plot
+execute as @a[tag=TpOption] run function raytracer:tp/tp_plot
 execute as @a[tag=TpBack] at @s run function raytracer:tp/tp_back
 
 #Enable trigger
