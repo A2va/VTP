@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:carrot_on_a_stick",
+          "nbt": "{display:{Name:'{\"text\":\"Stencils\",\"color\":\"gray\"}'}}"
+        }
+      }
+    }
+  }
