@@ -1,7 +1,7 @@
 {
   "replace": true,
   "values": [
-     "raytracer:init",
+     "raycasting:init",
 	   "circle:init",
 	   "utils:init",
      "stencils:init"

@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "raytracer:main",
+    "raycasting:main",
 	  "circle:main",
     "stencils:main"
   ]

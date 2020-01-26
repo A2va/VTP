@@ -13,7 +13,7 @@ tag @a remove VTP
 tellraw @s ["",{"text":"Deleting the plot mask and material","color":"dark_red","bold":true}]
 #Remove scoreboard
 
-function raytracer:uninstall
+function raycasting:uninstall
 function utils:uninstall
 function circle:uninstall
 function stencils:uninstall

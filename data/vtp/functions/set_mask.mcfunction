@@ -1,1 +1,1 @@
-function raytracer:set_plot/set_mask
+function raycasting:set_plot/set_mask
