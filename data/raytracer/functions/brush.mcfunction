@@ -1,54 +1,54 @@
-execute if entity @s[scores={brushRad=1}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/vegetate_r1
-execute if entity @s[scores={brushRad=2}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/vegetate_r2
-execute if entity @s[scores={brushRad=3}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/vegetate_r3
-execute if entity @s[scores={brushRad=5}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/vegetate_r5
-execute if entity @s[scores={brushRad=7}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/vegetate_r7
+execute if entity @s[predicate=raytracer:vegetate,scores={brushRad=1}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/vegetate_r1
+execute if entity @s[predicate=raytracer:vegetate,scores={brushRad=2}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/vegetate_r2
+execute if entity @s[predicate=raytracer:vegetate,scores={brushRad=3}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/vegetate_r3
+execute if entity @s[predicate=raytracer:vegetate,scores={brushRad=5}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/vegetate_r5
+execute if entity @s[predicate=raytracer:vegetate,scores={brushRad=7}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/vegetate_r7
 
 
-execute if entity @s[scores={brushRad=1}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/push_r1
-execute if entity @s[scores={brushRad=1}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/pull_r1
-execute if entity @s[scores={brushRad=1}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r1
-execute if entity @s[scores={brushRad=1}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r1
-execute if entity @s[scores={brushRad=1}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r1
-execute if entity @s[scores={brushRad=1}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/paintbrush_r1
-execute if entity @s[scores={brushRad=1}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/gravel_r1
+execute if entity @s[predicate=raytracer:push,scores={brushRad=1}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/push_r1
+execute if entity @s[predicate=raytracer:pull,scores={brushRad=1}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/pull_r1
+execute if entity @s[predicate=raytracer:smooth,scores={brushRad=1}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r1
+execute if entity @s[predicate=raytracer:melt,scores={brushRad=1}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r1
+execute if entity @s[predicate=raytracer:lift,scores={brushRad=1}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r1
+execute if entity @s[predicate=raytracer:paintbrush,scores={brushRad=1}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/paintbrush_r1
+execute if entity @s[predicate=raytracer:gravel,scores={brushRad=1}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/gravel_r1
 
-execute if entity @s[scores={brushRad=2}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/push_r2
-execute if entity @s[scores={brushRad=2}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/pull_r2
-execute if entity @s[scores={brushRad=2}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r2
-execute if entity @s[scores={brushRad=2}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r2
-execute if entity @s[scores={brushRad=2}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r2
-execute if entity @s[scores={brushRad=2}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/paintbrush_r2
-execute if entity @s[scores={brushRad=2}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/gravel_r2
-
-
-execute if entity @s[scores={brushRad=3}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/push_r3
-execute if entity @s[scores={brushRad=3}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/pull_r3
-execute if entity @s[scores={brushRad=3}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r3
-execute if entity @s[scores={brushRad=3}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r3
-execute if entity @s[scores={brushRad=3}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r3
-execute if entity @s[scores={brushRad=3}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/paintbrush_r3
-execute if entity @s[scores={brushRad=3}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/gravel_r3
+execute if entity @s[predicate=raytracer:push,scores={brushRad=2}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/push_r2
+execute if entity @s[predicate=raytracer:pull,scores={brushRad=2}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/pull_r2
+execute if entity @s[predicate=raytracer:smooth,scores={brushRad=2}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r2
+execute if entity @s[predicate=raytracer:melt,scores={brushRad=2}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r2
+execute if entity @s[predicate=raytracer:lift,scores={brushRad=2}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r2
+execute if entity @s[predicate=raytracer:paintbrush,scores={brushRad=2}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/paintbrush_r2
+execute if entity @s[predicate=raytracer:gravel,scores={brushRad=2}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/gravel_r2
 
 
-execute if entity @s[scores={brushRad=5}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/push_r5
-execute if entity @s[scores={brushRad=5}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/pull_r5
-execute if entity @s[scores={brushRad=5}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r5
-execute if entity @s[scores={brushRad=5}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r5
-execute if entity @s[scores={brushRad=5}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r5
-execute if entity @s[scores={brushRad=5}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/paintbrush_r5
-execute if entity @s[scores={brushRad=5}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/gravel_r5
+execute if entity @s[predicate=raytracer:push,scores={brushRad=3}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/push_r3
+execute if entity @s[predicate=raytracer:pull,scores={brushRad=3}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/pull_r3
+execute if entity @s[predicate=raytracer:smooth,scores={brushRad=3}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r3
+execute if entity @s[predicate=raytracer:melt,scores={brushRad=3}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r3
+execute if entity @s[predicate=raytracer:lift,scores={brushRad=3}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r3
+execute if entity @s[predicate=raytracer:paintbrush,scores={brushRad=3}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/paintbrush_r3
+execute if entity @s[predicate=raytracer:gravel,scores={brushRad=3}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/gravel_r3
 
 
-execute if entity @s[scores={brushRad=7}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/push_r7
-execute if entity @s[scores={brushRad=7}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/pull_r7
-execute if entity @s[scores={brushRad=7}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r7
-execute if entity @s[scores={brushRad=7}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r7
-execute if entity @s[scores={brushRad=7}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r7
-execute if entity @s[scores={brushRad=7}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/paintbrush_r7
-execute if entity @s[scores={brushRad=7}] at @s unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/gravel_r7
+execute if entity @s[predicate=raytracer:push,scores={brushRad=5}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/push_r5
+execute if entity @s[predicate=raytracer:pull,scores={brushRad=5}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/pull_r5
+execute if entity @s[predicate=raytracer:smooth,scores={brushRad=5}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r5
+execute if entity @s[predicate=raytracer:melt,scores={brushRad=5}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r5
+execute if entity @s[predicate=raytracer:lift,scores={brushRad=5}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r5
+execute if entity @s[predicate=raytracer:paintbrush,scores={brushRad=5}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/paintbrush_r5
+execute if entity @s[predicate=raytracer:gravel,scores={brushRad=5}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/gravel_r5
 
-#execute if @s[tag=test] at @s unless block  ~ ~ ~ #raytracer:transparent run function raytracer:brush_sphere/gen_sphere
+
+execute if entity @s[predicate=raytracer:push,scores={brushRad=7}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/push_r7
+execute if entity @s[predicate=raytracer:pull,scores={brushRad=7}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/pull_r7
+execute if entity @s[predicate=raytracer:smooth,scores={brushRad=7}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r7
+execute if entity @s[predicate=raytracer:melt,scores={brushRad=7}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r7
+execute if entity @s[predicate=raytracer:lift,scores={brushRad=7}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/smooth_r7
+execute if entity @s[predicate=raytracer:paintbrush,scores={brushRad=7}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/paintbrush_r7
+execute if entity @s[predicate=raytracer:gravel,scores={brushRad=7}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:brushsize/gravel_r7
+
+#execute if @s[tag=test] unless block  ~ ~ ~ #raytracer:transparent run function raytracer:brush_sphere/gen_sphere
 
 #Tree
 execute if entity @s[scores={ChoiceTree=1}] unless block ~ ~ ~ #raytracer:transparent run function raytracer:tree/acacia

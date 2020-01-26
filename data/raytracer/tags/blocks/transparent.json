@@ -115,7 +115,7 @@
     "minecraft:dragon_head",
     "minecraft:lever",
     "minecraft:stone_pressure_plate",
-	"minecraft:light_weighted_pressure_plate",
+	  "minecraft:light_weighted_pressure_plate",
     "minecraft:heavy_weighted_pressure_plate",
     "minecraft:redstone_torch",
     "minecraft:oak_fence_gate",
@@ -163,6 +163,6 @@
 	"#minecraft:corals",
 	"#minecraft:walls",
   "#minecraft:rails",
-  "#raytracer:water",
+  "#raytracer:water"
   ]
 }
