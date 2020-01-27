@@ -1,3 +1,4 @@
+
 give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Clean\",\"color\":\"gray\"}"}}
 give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Push\",\"color\":\"gray\"}"}}
 give @s minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Pull\",\"color\":\"gray\"}"}}

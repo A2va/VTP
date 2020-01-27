@@ -6,7 +6,7 @@ setblock 11 255 -8 air
 fill 11 253 -2 5 254 -14 air
 
 #Remove tag
-tag @a remove up
+tag @a remove top
 tag @a remove ground
 tag @a remove VTP
 

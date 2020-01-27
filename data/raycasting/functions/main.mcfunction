@@ -2,12 +2,12 @@
 execute as @a[scores={click_vtp=1..},tag=VTP,predicate=raycasting:brush] at @s anchored eyes positioned ^ ^ ^0.1 anchored feet run function raycasting:raycasting
 
 #Tools Toggle
-execute if score ToggleTools Settings matches 1 as @a[tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Push\",\"color\":\"gray\"}"}}}}] run scoreboard players set @s tools 1
-execute if score ToggleTools Settings matches 1 as @a[tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Pull\",\"color\":\"gray\"}"}}}}] run scoreboard players set @s tools 2
-execute if score ToggleTools Settings matches 1 as @a[tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Melt\",\"color\":\"gray\"}"}}}}] run scoreboard players set @s tools 3
-execute if score ToggleTools Settings matches 1 as @a[tag=VTP,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1,display:{Name:"{\"text\":\"Lift\",\"color\":\"gray\"}"}}}}] run scoreboard players set @s tools 4
-execute if score ToggleTools Settings matches 1 as @a[tag=VTP] at @s unless score @s tools = @s tools_old run function raycasting:tools_toggle/tools_toggle
-execute if score ToggleTools Settings matches 1 as @a[tag=VTP] run scoreboard players operation @s tools_old = @s tools
+execute as @a[scores={ToggleTools=1..},tag=VTP,predicate=raycasting:push] run scoreboard players set @s tools 1
+execute as @a[scores={ToggleTools=1..},tag=VTP,predicate=raycasting:pull] run scoreboard players set @s tools 2
+execute as @a[scores={ToggleTools=1..},tag=VTP,predicate=raycasting:melt] run scoreboard players set @s tools 3
+execute as @a[scores={ToggleTools=1..},tag=VTP,predicate=raycasting:lift] run scoreboard players set @s tools 4
+execute as @a[scores={ToggleTools=1..},tag=VTP] at @s unless score @s tools = @s tools_old run function raycasting:tools_toggle/tools_toggle
+execute as @a[scores={ToggleTools=1..},tag=VTP] run scoreboard players operation @s tools_old = @s tools
 
 
 #Set Material and Mask
