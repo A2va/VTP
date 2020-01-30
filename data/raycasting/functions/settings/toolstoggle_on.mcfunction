@@ -1,4 +1,4 @@
-scoreboard players set @s Settings 1
+scoreboard players set @s ToggleTools 1
 title @s actionbar ["",{"text":"Tools Toggle on","color":"dark_aqua"}]
 execute as @s[predicate=raycasting:push] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Pull\",\"color\":\"gray\"}"}}
 execute as @s[predicate=raycasting:pull] run replaceitem entity @s weapon.offhand minecraft:carrot_on_a_stick{Unbreakable:1,display:{Name:"{\"text\":\"Push\",\"color\":\"gray\"}"}}

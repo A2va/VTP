@@ -31,6 +31,7 @@ execute as @e[type=area_effect_cloud,tag=vegetate] run scoreboard players add Br
 
 scoreboard players set hundred vegetate_loop 100
 scoreboard players set @s vegetate_per2 100
+scoreboard players set @s vegetate_loop_c 0
 
 scoreboard players operation @s vegetate_loop = BrushR1 vegetate_loop
 scoreboard players operation @s vegetate_per2 -= @s vegetate_percent

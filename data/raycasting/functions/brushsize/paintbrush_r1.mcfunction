@@ -1,4 +1,3 @@
-#summon area_effect_cloud ~ ~1 ~ {Duration:2147483647}
 summon area_effect_cloud ~-1 ~-1 ~-1 {Tags:["paintbrush"],Duration:2147483647}
 summon area_effect_cloud ~-1 ~-1 ~0 {Tags:["paintbrush"],Duration:2147483647}
 summon area_effect_cloud ~-1 ~-1 ~1 {Tags:["paintbrush"],Duration:2147483647}

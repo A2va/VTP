@@ -1,16 +1,36 @@
+summon area_effect_cloud ~-1 ~-1 ~-1 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~-1 ~-1 ~0 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~-1 ~-1 ~1 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~-1 ~0 ~-1 {Tags:["gravel"],Duration:2147483647}
 summon area_effect_cloud ~-1 ~0 ~0 {Tags:["gravel"],Duration:2147483647}
 summon area_effect_cloud ~-1 ~0 ~1 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~-1 ~1 ~-1 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~-1 ~1 ~0 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~-1 ~1 ~1 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~0 ~-1 ~-1 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~0 ~-1 ~0 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~0 ~-1 ~1 {Tags:["gravel"],Duration:2147483647}
 summon area_effect_cloud ~0 ~0 ~-1 {Tags:["gravel"],Duration:2147483647}
 summon area_effect_cloud ~0 ~0 ~0 {Tags:["gravel"],Duration:2147483647}
 summon area_effect_cloud ~0 ~0 ~1 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~0 ~1 ~-1 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~0 ~1 ~0 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~0 ~1 ~1 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~1 ~-1 ~-1 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~1 ~-1 ~0 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~1 ~-1 ~1 {Tags:["gravel"],Duration:2147483647}
 summon area_effect_cloud ~1 ~0 ~-1 {Tags:["gravel"],Duration:2147483647}
 summon area_effect_cloud ~1 ~0 ~0 {Tags:["gravel"],Duration:2147483647}
 summon area_effect_cloud ~1 ~0 ~1 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~1 ~1 ~-1 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~1 ~1 ~0 {Tags:["gravel"],Duration:2147483647}
+summon area_effect_cloud ~1 ~1 ~1 {Tags:["gravel"],Duration:2147483647}
 
 execute as @e[type=area_effect_cloud,tag=gravel] run scoreboard players add BrushR1 gravel_loop 1
 
 scoreboard players set hundred gravel_loop 100
 scoreboard players set @s gravel_per2 100
+scoreboard players set @s gravel_loop_c 0
 
 scoreboard players operation @s gravel_loop = BrushR1 gravel_loop
 scoreboard players operation @s gravel_per2 -= @s gravel_percent

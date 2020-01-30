@@ -4,18 +4,23 @@
 scoreboard objectives add click_vtp minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add rayTimer dummy
 scoreboard objectives add smooth dummy
+#Radius
 scoreboard objectives add brushRad trigger
+scoreboard objectives add shapeRad trigger
+#Position
 scoreboard objectives add PlayerPosX dummy
 scoreboard objectives add PlayerPosY dummy
 scoreboard objectives add PlayerPosZ dummy
-scoreboard objectives add waterI dummy
-scoreboard objectives add blockCount dummy
 
+#Rad
+scoreboard objectives add brushRad trigger
+scoreboard objectives add shapeRad trigger
+#Gravel
 scoreboard objectives add gravel_per2 dummy
 scoreboard objectives add gravel_loop dummy
 scoreboard objectives add gravel_loop_c dummy
 scoreboard objectives add gravel_percent trigger
-
+#Vegetate
 scoreboard objectives add vegetate_per2 dummy
 scoreboard objectives add vegetate_loop dummy
 scoreboard objectives add vegetate_loop_c dummy 
@@ -25,25 +30,22 @@ scoreboard objectives add vegetate_percent trigger
 #Settings
 scoreboard objectives add paintbrush_fast dummy
 scoreboard objectives add ToggleTools dummy
-scoreboard objectives add Settings dummy
-scoreboard players set paintbrush_fast Settings 0
-scoreboard players set ToggleTools Settings 0
+scoreboard objectives add raycastShape dummy
 
 #Tools Toggle
 scoreboard objectives add tools dummy
 scoreboard objectives add tools_old dummy
-
-
 #Chunk
 scoreboard objectives add Chunk dummy
-
-
 #Set plot
 scoreboard objectives add SetBlock_detect dummy
 scoreboard objectives add plot dummy
-
 #Tree
 scoreboard objectives add ChoiceTree dummy
+#Other
+scoreboard objectives add waterI dummy
+scoreboard objectives add blockCount dummy
+
 
 scoreboard objectives add Tree dummy
 scoreboard players set Nacacia Tree 44

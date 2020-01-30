@@ -141,8 +141,8 @@
 	  "#minecraft:walls",
     "#minecraft:rails",
     "#minecraft:shulker_boxes",
-    "#minecraft:behives",
-    "#minecraft:flowers"
-    "#raycasting:water",
+    "#minecraft:beehives",
+    "#minecraft:flowers",
+    "#raycasting:water"
   ]
 }
