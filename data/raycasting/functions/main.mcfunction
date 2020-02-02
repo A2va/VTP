@@ -1,6 +1,6 @@
 #raycasting
 execute as @a[scores={click_vtp=1..},tag=VTP,predicate=raycasting:brush] at @s anchored eyes positioned ^ ^ ^0.1 anchored feet run function raycasting:raycasting
-
+execute as @a[scores={click_vtp=1..},tag=VTP,predicate=raycasting:shape] at @s anchored eyes positioned ^ ^ ^0.1 anchored feet run function raycasting:raycasting_shape
 #Tools Toggle
 execute as @a[scores={ToggleTools=1..},tag=VTP,predicate=raycasting:push] run scoreboard players set @s tools 1
 execute as @a[scores={ToggleTools=1..},tag=VTP,predicate=raycasting:pull] run scoreboard players set @s tools 2
@@ -22,6 +22,7 @@ execute as @a[tag=TpBack] at @s run function raycasting:tp/tp_back
 scoreboard players enable @a[tag=VTP] vegetate_percent
 scoreboard players enable @a[tag=VTP] gravel_percent
 scoreboard players enable @a[tag=VTP] brushRad
+scoreboard players enable @a[tag=VTP] shapeRad
 
 #Fixwater
 execute as @e[type=area_effect_cloud,tag=fixwaterend] at @s run function raycasting:fixwater/fixwaterend

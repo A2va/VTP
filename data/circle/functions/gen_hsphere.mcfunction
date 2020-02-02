@@ -1,7 +1,7 @@
 summon area_effect_cloud ~ ~ ~ {Tags:["sphereGen","X+"],Duration:2147483647}
 summon area_effect_cloud ~ ~ ~ {Tags:["debugChunk"],Duration:2147483647}
 
-scoreboard players operation @e[type=area_effect_cloud,tag=sphereGen,sort=nearest,limit=1] Rad = @s hsphere
+scoreboard players operation @e[type=area_effect_cloud,tag=sphereGen,sort=nearest,limit=1] Rad = @s shapeRad
 
 bossbar set minecraft:percentbar visible true
 

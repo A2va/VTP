@@ -6,8 +6,8 @@ summon area_effect_cloud ~ ~ ~ {Tags:["circleGen","Z-"],Duration:2147483647}
 summon area_effect_cloud ~ ~ ~ {Tags:["debugChunk"],Duration:2147483647}
 
 
-scoreboard players operation @e[type=area_effect_cloud,tag=circleGen,sort=nearest,limit=4] Rad = @s circle
-execute as @e[type=area_effect_cloud,tag=circleGen,sort=nearest,limit=4] run scoreboard players operation @s tempRad = @s Rad
+scoreboard players operation @e[type=area_effect_cloud,tag=circleGen,sort=nearest,limit=4] Rad = @s shapeRad
+execute as @e[type=area_effect_cloud,tag=circleaGen,sort=nearest,limit=4] run scoreboard players operation @s tempRad = @s Rad
 
 
 bossbar set minecraft:percentbar visible true
