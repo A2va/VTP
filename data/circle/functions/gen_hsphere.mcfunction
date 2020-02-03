@@ -42,7 +42,6 @@ execute as @e[type=area_effect_cloud,tag=sphereGen,sort=nearest,limit=1] run fun
 tellraw @a ["",{"text":"Completed","color":"gold"}]
 tellraw @a ["",{"text":"Block Count: "},{"score":{"name":"blockCount","objective":"blockCount"}}]
 
-playsound minecraft:block.note.pling master @a ~ ~ ~ 1 1 1
 
 bossbar set minecraft:percentbar visible false
 bossbar set minecraft:percentbar value 0
@@ -55,4 +54,4 @@ scoreboard players set percentDisk percent_vtp 0
 kill @e[type=area_effect_cloud,tag=sphereGen]
 kill @e[type=area_effect_cloud,tag=debugChunk]
 
-execute as @s at @s run function circle:tp_up/tp_hsphere
+#execute as @s at @s run function circle:tp_up/tp_hsphere

@@ -6,5 +6,5 @@ execute if entity @s[predicate=raycasting:clean,scores={brushRad=7}] run functio
 
 execute unless block ~ ~ ~ #raycasting:transparent run function raycasting:brush
 
-execute if entity @s[distance=..256] if block ~ ~ ~ #raycasting:transparent positioned ^ ^ ^0.1 run function raycasting:raycasting
+execute if entity @s[distance=..256.5] if block ~ ~ ~ #raycasting:transparent positioned ^ ^ ^0.1 run function raycasting:raycasting
 scoreboard players set @s click_vtp 0

@@ -7,7 +7,7 @@ summon area_effect_cloud ~ ~ ~ {Tags:["debugChunk"],Duration:2147483647}
 
 
 scoreboard players operation @e[type=area_effect_cloud,tag=circleGen,sort=nearest,limit=4] Rad = @s shapeRad
-execute as @e[type=area_effect_cloud,tag=circleaGen,sort=nearest,limit=4] run scoreboard players operation @s tempRad = @s Rad
+execute as @e[type=area_effect_cloud,tag=circleGen,sort=nearest,limit=4] run scoreboard players operation @s tempRad = @s Rad
 
 
 bossbar set minecraft:percentbar visible true
@@ -42,7 +42,7 @@ tellraw @a ["",{"text":"Completed","color":"gold"}]
 tellraw @a ["",{"text":"Block Count: "},{"score":{"name":"blockCount","objective":"blockCount"}}]
 
 
-playsound minecraft:block.note.pling master @a ~ ~ ~ 1 1 1
+
 
 bossbar set minecraft:percentbar visible false
 bossbar set minecraft:percentbar value 0
@@ -54,4 +54,4 @@ scoreboard players set percentCircle percent_vtp 0
 kill @e[type=area_effect_cloud,tag=circleGen]
 kill @e[type=area_effect_cloud,tag=debugChunk]
 
-execute as @s at @s run function circle:tp_up/tp_disk
+#execute as @s at @s run function circle:tp_up/tp_disk
