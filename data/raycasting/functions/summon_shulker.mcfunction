@@ -1,2 +1,0 @@
-execute unless entity @e[type=shulker,tag=shapeShulker] run summon shulker ~ ~ ~ {Tags:["shapeShulker"],NoAI:1b,Invulnerable:1b,Silent:1b,Glowing:1b,NoGravity:1b}
-function raycasting:raycasting_shulker

@@ -2,7 +2,6 @@
   "replace": true,
   "values": [
      "raycasting:init",
-	   "circle:init",
 	   "utils:init",
      "stencils:init"
 

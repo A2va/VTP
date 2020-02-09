@@ -92,7 +92,7 @@
         "equipment": {
           "mainhand": {
             "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{display:{Name:'{\"text\":\"Stencils\",\"color\":\"gray\"}'}}"
+            "nbt": "{display:{Name:'{\"text\":\"Vegetate\",\"color\":\"gray\"}'}}"
           }
         }
       }
@@ -116,7 +116,7 @@
         "equipment": {
           "mainhand": {
             "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{display:{Name:'{\"text\":\"Vegetate\",\"color\":\"gray\"}'}}"
+            "nbt": "{display:{Name:'{\"text\":\"Stencils\",\"color\":\"gray\"}'}}"
           }
         }
       }

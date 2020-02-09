@@ -1,0 +1,113 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{display:{Name:'{\"text\":\"Clean\",\"color\":\"gray\"}'}}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{display:{Name:'{\"text\":\"Gravel\",\"color\":\"gray\"}'}}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{display:{Name:'{\"text\":\"Push\",\"color\":\"gray\"}'}}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{display:{Name:'{\"text\":\"Pull\",\"color\":\"gray\"}'}}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{display:{Name:'{\"text\":\"Melt\",\"color\":\"gray\"}'}}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{display:{Name:'{\"text\":\"Lift\",\"color\":\"gray\"}'}}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{display:{Name:'{\"text\":\"Smooth\",\"color\":\"gray\"}'}}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{display:{Name:'{\"text\":\"Vegetate\",\"color\":\"gray\"}'}}"
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{display:{Name:'{\"text\":\"Paintbrush\",\"color\":\"gray\"}'}}"
+          }
+        }
+      }
+    }
+  ]
+}

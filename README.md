@@ -48,17 +48,7 @@ It's a fork of Vanilla Terraforming Pack ([Original author](https://www.planetmi
 
 `/trigger brushRad set` : Set the Radius of the brush
 
-`/trigger gravel_percent set` :Set the percentage of gravel brush
-
-`/trigger vegetate_percent set` : Set the percentage of vegetate brush
-
-`/trigger sphere set [Radius]`: Generates a sphere of the given radius centered on you
-
-`/trigger hsphere set [Radius]`: Generates an empty sphere of the given radius centered on you
-
-`/trigger disk set [Radius]`: Generates a disk of the given radius centered on you
-
-`/trigger circle set [Radius]`: Generates a circle of the given radius centered on you
+`/trigger shapeRad set` : Set the Radius of the shape
 
 
 ### Settings:

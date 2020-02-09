@@ -58,6 +58,40 @@ scoreboard players set Njungle Tree 44
 scoreboard players set Noak_custom Tree 44
 scoreboard players set Njungle_custom Tree 100
 
+#Shape
+
+scoreboard objectives add Rad dummy
+scoreboard objectives add tempRad dummy
+
+scoreboard objectives add circlePos1 dummy
+scoreboard objectives add circlePos2 dummy
+scoreboard objectives add circlePos3 dummy
+
+scoreboard objectives add circlePos1sqr dummy
+scoreboard objectives add circlePos2sqr dummy
+scoreboard objectives add circlePos3sqr dummy
+
+scoreboard objectives add Radsqr dummy
+
+scoreboard objectives add operation dummy
+scoreboard objectives add HsphereRad dummy
+
+
+scoreboard objectives add percent_vtp dummy
+scoreboard players set 100 percent_vtp 100
+scoreboard players set 4 percent_vtp 4
+
+
+scoreboard objectives add teleport_at dummy
+scoreboard players set One teleport_at 1
+
+bossbar add minecraft:percentbar "Percent"
+bossbar set minecraft:percentbar visible false
+bossbar set minecraft:percentbar players @a
+
+gamerule maxCommandChainLength 2147483647
+
+
 
 
 kill @e[type=armor_stand,tag=option]

@@ -1,7 +1,7 @@
 #raycasting
 execute as @a[scores={click_vtp=1..},tag=VTP,predicate=raycasting:brush] at @s anchored eyes positioned ^ ^ ^0.1 anchored feet run function raycasting:raycasting
 execute as @a[scores={click_vtp=1..},tag=VTP,predicate=raycasting:shape] at @s anchored eyes positioned ^ ^ ^0.1 anchored feet run function raycasting:raycasting_shape
-execute as @a[tag=VTP,predicate=raycasting:shape] at @s anchored eyes positioned ^ ^ ^0.1 anchored feet run function raycasting:summon_shulker
+
 #Tools Toggle
 execute as @a[scores={ToggleTools=1..},tag=VTP,predicate=raycasting:push] run scoreboard players set @s tools 1
 execute as @a[scores={ToggleTools=1..},tag=VTP,predicate=raycasting:pull] run scoreboard players set @s tools 2
