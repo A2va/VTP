@@ -26,6 +26,5 @@ execute if score rand% rand matches 9 run setblock ~ ~ ~ minecraft:structure_blo
 execute if score rand% rand matches 10 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", posX: -15, mode: "LOAD", posY: 0, sizeX: 32, posZ: 14, name: "raycasting:birch/custom/birch_2",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 execute if score rand% rand matches 11 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", posX: -16, mode: "LOAD", posY: 0, sizeX: 32, posZ: 15, name: "raycasting:birch/custom/birch_3",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 
-
-
 execute run setblock ~ ~1 ~ redstone_block
+execute if block ~ ~1 ~ redstone_block run setblock ~ ~1 ~ air

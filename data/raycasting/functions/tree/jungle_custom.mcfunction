@@ -114,5 +114,5 @@ execute if score rand% rand matches 98 run setblock ~ ~ ~ minecraft:structure_bl
 execute if score rand% rand matches 99 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", posX: -13, mode: "LOAD", posY: 0, sizeX: 32, posZ: 12, name: "raycasting:jungle/custom/jungle_m_19",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 execute if score rand% rand matches 100 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", posX: -13, mode: "LOAD", posY: 0, sizeX: 32, posZ: 12, name: "raycasting:jungle/custom/jungle_m_20",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 
-
+execute if block ~ ~1 ~ redstone_block run setblock ~ ~1 ~ air
 execute run setblock ~ ~1 ~ redstone_block

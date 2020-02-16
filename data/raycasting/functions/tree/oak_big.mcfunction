@@ -58,7 +58,5 @@ execute if score rand% rand matches 41 run setblock ~ ~ ~ minecraft:structure_bl
 execute if score rand% rand matches 42 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", posX:  -15 , mode: "LOAD", posY: 0, sizeX: 32, posZ: 15, name: "raycasting:oak/big/oak_big_10",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 execute if score rand% rand matches 43 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", posX:  -15 , mode: "LOAD", posY: 0, sizeX: 32, posZ: 15, name: "raycasting:oak/big/oak_big_11",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 
-
-
-
 execute run setblock ~ ~1 ~ redstone_block
+execute if block ~ ~1 ~ redstone_block run setblock ~ ~1 ~ air

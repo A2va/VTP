@@ -10,7 +10,7 @@ scoreboard players operation rand% rand %= Noak Tree
 #For COUNTERCLOCKWISE_90  => posZ(NONE) -> posX(COUNTERCLOCKWISE_90)
 #                            posX(NONE) -> posZ(COUNTERCLOCKWISE_90) positif
 
-execute if score rand% rand matches 0 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", posX: -14, mode: "LOAD", posY: 0, sizeX: 32, posZ: -15, name: "raycasting:oak/big/oak_big_1",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
+execute if score rand% rand matches 0 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", posX: -16, mode: "LOAD", posY: 0, sizeX: 32, posZ: -16, name: "raycasting:oak/big/oak_big_1",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 execute if score rand% rand matches 1 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", posX: -14, mode: "LOAD", posY: 0, sizeX: 32, posZ: -15, name: "raycasting:oak/small/oak_small_2",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 execute if score rand% rand matches 2 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", posX: -14, mode: "LOAD", posY: 0, sizeX: 32, posZ: -15, name: "raycasting:oak/small/oak_small_3",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 execute if score rand% rand matches 3 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "NONE", posX: -14, mode: "LOAD", posY: 0, sizeX: 32, posZ: -15, name: "raycasting:oak/small/oak_small_4",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
@@ -39,11 +39,11 @@ execute if score rand% rand matches 23 run setblock ~ ~ ~ minecraft:structure_bl
 execute if score rand% rand matches 24 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", posX:  15 , mode: "LOAD", posY: 0, sizeX: 32, posZ: 15, name: "raycasting:oak/big/oak_big_3",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 execute if score rand% rand matches 25 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", posX:  14 , mode: "LOAD", posY: 0, sizeX: 32, posZ: 15, name: "raycasting:oak/small/oak_small_4",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 execute if score rand% rand matches 26 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", posX:  15 , mode: "LOAD", posY: 0, sizeX: 32, posZ: 15, name: "raycasting:oak/big/oak_big_5",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
-execute if score rand% rand matches 27 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", posX:  15 , mode: "LOAD", posY: 0, sizeX: 32, posZ: 15, name: "raycasting:oak/small/oak_small_6",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
+execute if score rand% rand matches 27 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", posX:  14 , mode: "LOAD", posY: 0, sizeX: 32, posZ: 15, name: "raycasting:oak/small/oak_small_6",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 execute if score rand% rand matches 28 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", posX:  14 , mode: "LOAD", posY: 0, sizeX: 32, posZ: 15, name: "raycasting:oak/small/oak_small_7",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 execute if score rand% rand matches 29 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", posX:  14 , mode: "LOAD", posY: 0, sizeX: 32, posZ: 15, name: "raycasting:oak/small/oak_small_8",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 execute if score rand% rand matches 30 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", posX:  14 , mode: "LOAD", posY: 0, sizeX: 32, posZ: 15, name: "raycasting:oak/small/oak_small_9",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
-execute if score rand% rand matches 31 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", posX:  14 , mode: "LOAD", posY: 0, sizeX: 32, posZ: 15, name: "raycasting:oak/big/oak_big_10",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
+execute if score rand% rand matches 31 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", posX:  15 , mode: "LOAD", posY: 0, sizeX: 32, posZ: 15, name: "raycasting:oak/big/oak_big_10",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 execute if score rand% rand matches 32 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "CLOCKWISE_180", posX:  14 , mode: "LOAD", posY: 0, sizeX: 32, posZ: 15, name: "raycasting:oak/small/oak_small_11",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 
 execute if score rand% rand matches 33 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", posX:  -15 , mode: "LOAD", posY: 0, sizeX: 32, posZ: 14, name: "raycasting:oak/small/oak_small_1",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
@@ -58,7 +58,5 @@ execute if score rand% rand matches 41 run setblock ~ ~ ~ minecraft:structure_bl
 execute if score rand% rand matches 42 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", posX:  -15 , mode: "LOAD", posY: 0, sizeX: 32, posZ: 14, name: "raycasting:oak/small/oak_small_10",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 execute if score rand% rand matches 43 run setblock ~ ~ ~ minecraft:structure_block{mirror: "NONE", rotation: "COUNTERCLOCKWISE_90", posX:  -15 , mode: "LOAD", posY: 0, sizeX: 32, posZ: 15, name: "raycasting:oak/big/oak_big_11",sizeY: 32, sizeZ: 32, showboundingbox: 0b}
 
-
-
-
 execute run setblock ~ ~1 ~ redstone_block
+execute if block ~ ~1 ~ redstone_block run setblock ~ ~1 ~ air

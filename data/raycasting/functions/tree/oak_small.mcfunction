@@ -60,3 +60,4 @@ execute if score rand% rand matches 43 run setblock ~ ~ ~ minecraft:structure_bl
 
 
 execute run setblock ~ ~1 ~ redstone_block
+execute if block ~ ~1 ~ redstone_block run setblock ~ ~1 ~ air

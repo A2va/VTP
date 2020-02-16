@@ -8,5 +8,5 @@ execute unless block ~ ~ ~ #raycasting:transparent if predicate raycasting:brush
 
 execute if entity @s[distance=..256.5] if block ~ ~ ~ #raycasting:transparent positioned ^ ^ ^0.1 run function raycasting:raycasting
 
-execute unless block ~ ~ ~ #raycasting:transparent if predicate raycasting:treesten run function raycasting:treesten
+execute unless block ~ ~ ~ #raycasting:transparent positioned ~ ~1 ~ if predicate raycasting:tree run function raycasting:tree
 scoreboard players set @s click_vtp 0
