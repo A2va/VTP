@@ -34,6 +34,8 @@ execute if score Global structure_size matches 0..2 run tellraw @a ["",{"text":"
 
 execute if score Global structure_pos matches 3 if score Global structure_size matches 3 run setblock ~ ~ ~ structure_block{name:"stencils:stencilsx/y",rotation:"NONE",mirror:"NONE",mode:"SAVE",ignoreEntities:1b}
 
+execute if score Global structure_pos matches 3 if score Global structure_size matches 3 run scoreboard players add Global structure_posY 1
+
 execute if score Global structure_pos matches 3 if score Global structure_size matches 3 run execute store result block ~ ~ ~ posX double 1 run scoreboard players get Global structure_posX
 execute if score Global structure_pos matches 3 if score Global structure_size matches 3 run execute store result block ~ ~ ~ posY double 1 run scoreboard players get Global structure_posY
 execute if score Global structure_pos matches 3 if score Global structure_size matches 3 run execute store result block ~ ~ ~ posZ double 1 run scoreboard players get Global structure_posZ

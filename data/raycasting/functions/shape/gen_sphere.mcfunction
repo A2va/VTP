@@ -50,4 +50,3 @@ kill @e[type=area_effect_cloud,tag=sphereGen]
 kill @e[type=area_effect_cloud,tag=debugChunk]
 
 
-#execute as @s at @s run function raycasting:shape/tp_up/tp_sphere

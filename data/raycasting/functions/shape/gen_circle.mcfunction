@@ -54,4 +54,4 @@ scoreboard players set percentCircle percent_vtp 0
 kill @e[type=area_effect_cloud,tag=circleGen]
 kill @e[type=area_effect_cloud,tag=debugChunk]
 
-#execute as @s at @s run function raycasting:shape/tp_up/tp_disk
+

@@ -1,7 +1,12 @@
 # VTP
 
 It's a fork of Vanilla Terraforming Pack ([Original author](https://www.planetminecraft.com/mod/vanilla-terraforming-pack-datapack-4124905/)). 
+The datapack run only in Overworld.
 
+## Road Map
+
+* Add depth to paintbrush
+* Terraforming on Nether and End 
 
 ## Utilisation
 
@@ -28,6 +33,13 @@ It's a fork of Vanilla Terraforming Pack ([Original author](https://www.planetmi
 
 `Vegetate` : Setblock grass relative to a percentage
 
+`Sphere` : Create a sphere
+
+`Hollow Sphere` : Create a hollow sphere
+
+`Disk` : Create a disk
+
+`Circle` : Create a circle
 
 ### Commands:
 
@@ -57,6 +69,8 @@ Fast paintbrush: The paintbrush is faster but it takes into account that only on
 
 Toggle Tools: Allows to have in the left and right hand the opposite brushes (ex: Melt and Lift). You can press F to change the brush
 
+Raycasting Shape: Choose the raycasting you want for normal, 5, 10 or 15 block shapes
+
 ### Stencils:
 
 You can create stencils either using BlingEdit.
@@ -75,6 +89,6 @@ X is the channel on stencils
 Y is the number of stencils
 
 
-## Warning!!
+## Recommandations
 
-The large brush can induce lag especially by putting the percentage of brush vegetate and gravel
+A high radius can be particularly lagging even if it has been improved in the last two updates
