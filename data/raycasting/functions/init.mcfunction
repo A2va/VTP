@@ -11,7 +11,7 @@ scoreboard objectives add shapeRad trigger
 scoreboard objectives add PlayerPosX dummy
 scoreboard objectives add PlayerPosY dummy
 scoreboard objectives add PlayerPosZ dummy
-
+scoreboard objectives add PlayerDim dummy
 #Gravel
 scoreboard objectives add gravel_per2 dummy
 scoreboard objectives add gravel_loop dummy
@@ -33,7 +33,10 @@ scoreboard objectives add raycastShape dummy
 scoreboard objectives add tools dummy
 scoreboard objectives add tools_old dummy
 #Chunk
-scoreboard objectives add Chunk dummy
+scoreboard objectives add Forceload dummy
+scoreboard players set ChunkOv Forceload 0
+scoreboard players set ChunkNe Forceload 0
+scoreboard players set ChunkEn Forceload 0
 #Set plot
 scoreboard objectives add SetBlock_detect dummy
 scoreboard objectives add plot dummy
@@ -88,19 +91,26 @@ kill @e[type=armor_stand,tag=option]
 kill @e[type=area_effect_cloud]
 
 function raycasting:welcome
-execute store result score forceload Chunk run forceload query 0 -1
-execute if score forceload Chunk matches 0 run tellraw @a ["",{"text":"[I]","color":"gold"},{"text":"Chunk 0 -1 wasn't loaded. Use ","color":"none"},{"text":"/forceload add 0 -1","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/forceload add 0 -1"}},{"text":"\nAtfer reload the datapack","color":"none","underlined":false}]
+execute in minecraft:overworld store result score ChunkOv ChunkOv run forceload query 0 -1
+execute in minecraft:the_nether store result score ChunkNe ChunkNe run forceload query 0 -1
+execute in minecraft:the_end store result score ChunkEn ChunkNe run forceload query 0 -1
 
-#{"command":"tellraw @a %s","jobject":[{"text":"[I]","color":"gold"},{"text":"Chunk 0 -1 wasn't loaded. Use "},{"text":"/forceload add 0 -1","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/forceload add 0 -1"}},{"text":"\\nAtfer reload the datapack"}],"jtemplate":"tellraw"}
-execute if score forceload Chunk matches 1 run fill 11 253 -2 5 254 -14 white_concrete keep
-execute if score forceload Chunk matches 1 run fill 6 254 -13 10 254 -9 air replace white_concrete
-execute if score forceload Chunk matches 1 run fill 6 254 -7 10 254 -3 air replace white_concrete
+execute in minecraft:overworld if score ChunkOv Forceload matches 0 run forceload add 0 -1
+execute in minecraft:the_nether if score ChunkNe Forceload matches 0 run forceload add 0 -1
+execute in minecraft:the_end if score ChunkEn Forceload matches 0 run forceload add 0 -1
 
-execute if score forceload Chunk matches 1 run setblock 11 255 -8 oak_sign[rotation=4]{Text4: "{\"color\":\"gold\",\"text\":\"\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\"}", Text3: "null", Text2: "{\"color\":\"dark_blue\",\"text\":\"TP Back\"}", Text1: "{\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"tag @s add TpBack\"},\"text\":\"\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\"}"}
+#execute if score forceload Forceload matches 0 run tellraw @a ["",{"text":"[I]","color":"gold"},{"text":"Forceload 0 -1 wasn't loaded. Use ","color":"none"},{"text":"/execute in minecraft:overwolrd run forceload add 0 -1","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/execute in minecraft:overwolrd run forceload add 0 -1"}},{"text":"\nAtfer reload the datapack","color":"none","underlined":false}]
+#{"command":"tellraw @a %s","jobject":[{"text":"[I]","color":"gold"},{"text":"Forceload 0 -1 wasn't loaded. Use "},{"text":"/execute in minecraft:overwolrd run forceload add 0 -1","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/execute in minecraft:overwolrd run forceload add 0 -1"}},{"text":"\\nAtfer reload the datapack"}],"jtemplate":"tellraw"}
 
-execute if score forceload Chunk matches 1 run summon armor_stand 8 256 -5 {CustomNameVisible:1b,CustomName:"{\"text\":\"Mask\",\"color\":\"dark_blue\"}",Marker:1b,Invisible:1b,NoGravity:1b,Tags:[option]}
-execute if score forceload Chunk matches 1 run summon armor_stand 8 256 -11 {CustomNameVisible:1b,CustomName:"{\"text\":\"Material\",\"color\":\"dark_blue\"}",Marker:1b,Invisible:1b,NoGravity:1b,Tags:[option]}
-execute if score forceload Chunk matches 1 run summon area_effect_cloud 8 254 -8 {Tags:["option","randMaterial"],Duration:2147483647}
+execute in minecraft:overworld if score ChunkOv Forceload matches 1 run fill 11 253 -2 5 254 -14 white_concrete keep
+execute in minecraft:overworld if score ChunkOv Forceload matches 1 run fill 6 254 -13 10 254 -9 air replace white_concrete
+execute in minecraft:overworld if score ChunkOv Forceload matches 1 run fill 6 254 -7 10 254 -3 air replace white_concrete
+
+execute in minecraft:overworld if score ChunkOv Forceload matches 1 run setblock 11 255 -8 oak_sign[rotation=4]{Text4: "{\"color\":\"gold\",\"text\":\"\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\"}", Text3: "null", Text2: "{\"color\":\"dark_blue\",\"text\":\"TP Back\"}", Text1: "{\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"tag @s add TpBack\"},\"text\":\"\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\\u003d\"}"}
+
+execute in minecraft:overworld if score ChunkOv Forceload matches 1 run summon armor_stand 8 256 -5 {CustomNameVisible:1b,CustomName:"{\"text\":\"Mask\",\"color\":\"dark_blue\"}",Marker:1b,Invisible:1b,NoGravity:1b,Tags:[option]}
+execute in minecraft:overworld if score ChunkOv Forceload matches 1 run summon armor_stand 8 256 -11 {CustomNameVisible:1b,CustomName:"{\"text\":\"Material\",\"color\":\"dark_blue\"}",Marker:1b,Invisible:1b,NoGravity:1b,Tags:[option]}
+execute in minecraft:overworld if score ChunkOv Forceload matches 1 run summon area_effect_cloud 8 254 -8 {Tags:["option","randMaterial"],Duration:2147483647}
 
 scoreboard players set @a[scores={raycastShape=0}] raycastShape 0
 scoreboard players set @a[scores={ToggleTools=0}] ToggleTools 0

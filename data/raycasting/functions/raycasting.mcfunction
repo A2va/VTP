@@ -4,7 +4,7 @@ execute if entity @s[predicate=raycasting:clean,scores={brushRad=3}] run functio
 execute if entity @s[predicate=raycasting:clean,scores={brushRad=5}] run function raycasting:brushsize/clean_r5
 execute if entity @s[predicate=raycasting:clean,scores={brushRad=7}] run function raycasting:brushsize/clean_r7
 
-execute unless block ~ ~ ~ #raycasting:transparent if predicate raycasting:brush_2 run function raycasting:brush
+execute unless block ~ ~ ~ #raycasting:transparent if predicate raycasting:brush run function raycasting:brush
 
 execute if entity @s[distance=..256.5] if block ~ ~ ~ #raycasting:transparent positioned ^ ^ ^0.1 run function raycasting:raycasting
 

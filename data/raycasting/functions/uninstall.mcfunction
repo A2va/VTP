@@ -9,7 +9,7 @@ scoreboard objectives remove shapeRad
 scoreboard objectives remove PlayerPosX
 scoreboard objectives remove PlayerPosY
 scoreboard objectives remove PlayerPosZ
-
+scoreboard objectives remove PlayerDim 
 #Gravel
 scoreboard objectives remove gravel_per2
 scoreboard objectives remove gravel_loop
@@ -29,7 +29,8 @@ scoreboard objectives remove raycastShape
 #Tools Toggle
 scoreboard objectives remove tools
 scoreboard objectives remove tools_old
-
+#Chunk
+scoreboard objectives add Forceload dummy
 #Set plot
 scoreboard objectives remove SetBlock_detect
 scoreboard objectives remove plot

@@ -1,5 +1,5 @@
 #raycasting
-execute as @a[scores={click_vtp=1..},tag=VTP,predicate=raycasting:brush] at @s anchored eyes positioned ^ ^ ^0.1 anchored feet run function raycasting:raycasting
+execute as @a[scores={click_vtp=1..},tag=VTP,predicate=raycasting:tools] at @s anchored eyes positioned ^ ^ ^0.1 anchored feet run function raycasting:raycasting
 execute as @a[scores={click_vtp=1..},tag=VTP,predicate=raycasting:shape] at @s anchored eyes positioned ^ ^ ^0.1 anchored feet run function raycasting:raycasting_shape
 
 #Tools Toggle
