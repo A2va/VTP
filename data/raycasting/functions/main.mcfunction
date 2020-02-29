@@ -16,8 +16,13 @@ execute as @a[tag=VTP] at @s if score @s SetBlock_detect matches 1 unless block 
 
 
 #Tp Plot and Back
-execute as @a[tag=TpOption] run function raycasting:tp/tp_plot
+execute as @a[tag=TpOption] at @s run function raycasting:tp/tp_plot
 execute as @a[tag=TpBack] at @s run function raycasting:tp/tp_back
+
+execute as @a[tag=TpOverworld] at @s run function raycasting:tp/tp_overworld
+execute as @a[tag=TpNether] at @s run function raycasting:tp/tp_nether
+execute as @a[tag=TpEnd] at @s run function raycasting:tp/tp_end
+
 
 #Enable trigger
 scoreboard players enable @a[tag=VTP] vegetate_percent

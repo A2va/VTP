@@ -33,5 +33,5 @@ execute in minecraft:the_end store result score ChunkEn ChunkNe run forceload qu
 execute in minecraft:overworld if score ChunkOv Forceload matches 1 run forceload remove 0 -1
 execute in minecraft:the_nether if score ChunkNe Forceload matches 1 run forceload remove 0 -1
 execute in minecraft:the_end if score ChunkEn Forceload matches 1 run forceload remove 0 -1
-#execute if score forceload ChunkOv matches 1 run tellraw @a ["",{"text":"[I] ","color":"gold"},{"text":"Chunk 0,-1 is loaded. Remove the load with ( ","color":"none"},{"text":"/execute in minecraft:overwolrd run forceload remove 0 -1"","color":"aqua","underlined":true,"clickEvent":{"action":"suggest_command","value":"/execute in minecraft:overwolrd run forceload remove 0 -1""}},{"text":")","color":"none","underlined":false}]
+
 scoreboard objectives remove Forceload
