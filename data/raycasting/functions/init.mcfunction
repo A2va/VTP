@@ -32,6 +32,8 @@ scoreboard objectives add vegetate_percent trigger
 scoreboard objectives add paintbrush_fast dummy
 scoreboard objectives add ToggleTools dummy
 scoreboard objectives add raycastShape dummy
+scoreboard objectives add Settings dummy
+scoreboard players set CopyPlot_onChangeDim Settings 1
 
 #Tools Toggle
 scoreboard objectives add tools dummy
