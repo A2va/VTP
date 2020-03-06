@@ -5,6 +5,9 @@ scoreboard objectives remove smooth
 #Radius
 scoreboard objectives remove brushRad
 scoreboard objectives remove shapeRad
+#Depth
+scoreboard objectives remove Detph 
+scoreboard objectives remove DetphCount 
 #Position
 scoreboard objectives remove PlayerPosX
 scoreboard objectives remove PlayerPosY

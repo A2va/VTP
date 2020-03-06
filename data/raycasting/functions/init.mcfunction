@@ -7,6 +7,10 @@ scoreboard objectives add smooth dummy
 #Radius
 scoreboard objectives add brushRad trigger
 scoreboard objectives add shapeRad trigger
+#Depth
+scoreboard objectives add Detph trigger
+scoreboard objectives add DetphCount dummy
+
 #Position
 scoreboard objectives add PlayerPosX dummy
 scoreboard objectives add PlayerPosY dummy

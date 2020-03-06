@@ -1,5 +1,4 @@
-
-
+scoreboard players set @s DetphCount 1
 execute if score @s raycastShape matches 0 unless block ~ ~ ~ #raycasting:transparent run function raycasting:shape
 
 execute if score @s raycastShape matches 1 if entity @s[distance=..5.5] positioned ^ ^ ^0.1 run function raycasting:raycasting_shape

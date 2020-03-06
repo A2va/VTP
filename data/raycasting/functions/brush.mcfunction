@@ -1,3 +1,4 @@
+scoreboard players set @s DetphCount 1
 #Push
 execute if entity @s[predicate=raycasting:push,scores={brushRad=1}] run function raycasting:brushsize/push_r1
 execute if entity @s[predicate=raycasting:push,scores={brushRad=2}] run function raycasting:brushsize/push_r2

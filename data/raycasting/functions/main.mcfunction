@@ -29,7 +29,7 @@ scoreboard players enable @a[tag=VTP] vegetate_percent
 scoreboard players enable @a[tag=VTP] gravel_percent
 scoreboard players enable @a[tag=VTP] brushRad
 scoreboard players enable @a[tag=VTP] shapeRad
-
+scoreboard players enable @a[tag=VTP] Detph
 #Fixwater
 execute as @e[type=area_effect_cloud,tag=fixwaterend] at @s run function raycasting:fixwater/fixwaterend
 kill @e[type=area_effect_cloud,tag=fixwaterend]

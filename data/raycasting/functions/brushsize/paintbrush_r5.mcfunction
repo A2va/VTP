@@ -906,3 +906,5 @@ execute if entity @s[tag=top] if score @s paintbrush_fast matches 1 as @e[type=a
 setblock 0 255 0 air
 
 kill @e[type=area_effect_cloud,tag=paintbrush]
+
+execute if score @s DetphCount < @s Detph positioned ~ ~-1 ~ run function raycasting:brushsize/paintbrush_r5
