@@ -24,11 +24,6 @@ scoreboard objectives remove vegetate_loop
 scoreboard objectives remove vegetate_loop_c 
 scoreboard objectives remove vegetate_percent 
 
-#Settings
-scoreboard objectives remove paintbrush_fast
-scoreboard objectives remove ToggleTools
-scoreboard objectives remove raycastShape
-
 #Tools Toggle
 scoreboard objectives remove tools
 scoreboard objectives remove tools_old
