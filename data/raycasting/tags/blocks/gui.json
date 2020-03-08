@@ -1,0 +1,25 @@
+{
+    "replace": true,
+    "values": [
+        "#minecraft:anvil",
+        "minecraft:barrel",
+        "minecraft:fletching_table",
+        "minecraft:smithing_table",
+        "minecraft:cartography_table",
+        "minecraft:furnace",
+        "minecraft:loom",
+        "minecraft:smoker",
+        "minecraft:grindstone",
+        "minecraft:lectern",
+        "minecraft:crafting_table",
+        "minecraft:blast_furnace",
+        "minecraft:brewing_stand",
+        "minecraft:chest",
+        "minecraft:ender_chest",
+        "minecraft:trapped_chest",
+        "minecraft:beacon",
+        "minecraft:enchanting_table",
+        "minecraft:stonecutter"
+    ]
+
+}

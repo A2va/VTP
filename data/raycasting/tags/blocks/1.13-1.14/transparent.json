@@ -1,0 +1,18 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:bamboo",
+        "minecraft:bamboo_sapling",
+        "minecraft:sweet_berry_bush",
+        "minecraft:campfire",
+        "minecraft:bell",
+        "minecraft:lantern",
+        "minecraft:cave_air",
+        "minecraft:void_air",
+        "minecraft:pumpkin",
+        "minecraft:carved_pumpkin",
+        "minecraft:conduit",
+        "minecraft:turtle_egg"
+    ]
+
+}

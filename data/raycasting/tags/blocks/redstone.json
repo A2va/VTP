@@ -1,0 +1,34 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:dispenser",
+        "minecraft:note_block",
+        "minecraft:sticky_piston",
+        "minecraft:piston",
+        "minecraft:tnt",
+        "minecraft:redstone_lamp",
+        "minecraft:redstone_block",
+        "minecraft:hopper",
+        "minecraft:dropper",
+        "minecraft:observer",
+        "minecraft:tripwire_hook",
+        "minecraft:daylight_detector",
+        "minecraft:repeater",
+        "minecraft:comparator",
+        "minecraft:redstone_wire",
+        "minecraft:rail",
+        "minecraft:lever",
+        "minecraft:stone_pressure_plate",
+        "minecraft:light_weighted_pressure_plate",
+        "minecraft:heavy_weighted_pressure_plate",
+        "minecraft:redstone_torch",
+        "minecraft:redstone_wall_torch",
+        "minecraft:target",
+        "minecraft:piston_head",
+        "minecraft:moving_piston",
+        "minecraft:tripwire",
+        "#minecraft:rails",
+        "minecraft:jukebox"
+    ]
+
+}

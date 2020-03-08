@@ -1,0 +1,13 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:ancient_debris",
+        "minecraft:basalt",
+        "minecraft:netherite_block",
+        "minecraft:crimson_nylium",
+        "minecraft:warped_nylium",
+        "minecraft:soul_soil",
+        "minecraft:crying_obsidian"
+    ]
+
+}
