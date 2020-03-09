@@ -1,4 +1,3 @@
-
 fill ~-16 ~-16 ~-16 ~16 ~ ~16 structure_void replace water
 fill ~-15 ~-15 ~-15 ~15 ~ ~15 water replace structure_void
 

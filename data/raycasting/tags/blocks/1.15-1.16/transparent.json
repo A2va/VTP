@@ -16,8 +16,7 @@
         "minecraft:crimson_stem",
         "minecraft:warped_stem",
         "minecraft:nether_wart_block",
-        "minecraft:warped_wart_block",
-        "#minecraft:beehives"
+        "minecraft:warped_wart_block"
     ]
 
 }
