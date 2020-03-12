@@ -12,7 +12,6 @@ scoreboard objectives remove DetphCount
 scoreboard objectives remove PlayerPosX
 scoreboard objectives remove PlayerPosY
 scoreboard objectives remove PlayerPosZ
-scoreboard objectives remove PlayerDim 
 #Gravel
 scoreboard objectives remove gravel_per2
 scoreboard objectives remove gravel_loop
