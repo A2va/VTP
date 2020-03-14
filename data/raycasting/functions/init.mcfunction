@@ -1,5 +1,10 @@
 
 
+#Position
+scoreboard objectives add PlayerPosX dummy
+scoreboard objectives add PlayerPosY dummy
+scoreboard objectives add PlayerPosZ dummy
+scoreboard objectives add PlayerDim dummy
 #Raycasting
 scoreboard objectives add click_vtp minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add rayTimer dummy
@@ -10,10 +15,7 @@ scoreboard objectives add shapeRad trigger
 #Depth
 scoreboard objectives add Detph trigger
 scoreboard objectives add DetphCount dummy
-#Position
-scoreboard objectives add PlayerPosX dummy
-scoreboard objectives add PlayerPosY dummy
-scoreboard objectives add PlayerPosZ dummy
+
 #Gravel
 scoreboard objectives add gravel_per2 dummy
 scoreboard objectives add gravel_loop dummy
