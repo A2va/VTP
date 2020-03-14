@@ -31,7 +31,7 @@ scoreboard players enable @a brushRad
 scoreboard players enable @a shapeRad
 scoreboard players enable @a Detph
 #Fixwater
-execute as @e[type=area_effect_cloud,tag=fixwaterend] at @s run function raycasting:fixwater/fixwaterend
+execute as @e[type=area_effect_cloud,tag=fixwaterend] at @s run function utils:fixwater/fixwaterend
 kill @e[type=area_effect_cloud,tag=fixwaterend]
 
 
