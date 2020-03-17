@@ -86,7 +86,13 @@ bossbar set minecraft:percentbar players @a
 gamerule maxCommandChainLength 2147483647
 kill @e[type=armor_stand,tag=option]
 kill @e[type=area_effect_cloud]
+execute in minecraft:overworld store result score ChunkOv Forceload run forceload query 0 -1
+execute in minecraft:the_nether store result score ChunkNe Forceload run forceload query 0 -1
+execute in minecraft:the_end store result score ChunkEn Forceload run forceload query 0 -1
 
+execute in minecraft:overworld if score ChunkOv Forceload matches 0 run forceload add 0 -1
+execute in minecraft:the_nether if score ChunkNe Forceload matches 0 run forceload add 0 -1
+execute in minecraft:the_end if score ChunkEn Forceload matches 0 run forceload add 0 -1
 function raycasting:welcome
 
 scoreboard players set @a[scores={raycastShape=0}] raycastShape 0

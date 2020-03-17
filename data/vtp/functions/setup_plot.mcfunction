@@ -1,10 +1,4 @@
-execute in minecraft:overworld store result score ChunkOv Forceload run forceload query 0 -1
-execute in minecraft:the_nether store result score ChunkNe Forceload run forceload query 0 -1
-execute in minecraft:the_end store result score ChunkEn Forceload run forceload query 0 -1
 
-execute in minecraft:overworld if score ChunkOv Forceload matches 0 run forceload add 0 -1
-execute in minecraft:the_nether if score ChunkNe Forceload matches 0 run forceload add 0 -1
-execute in minecraft:the_end if score ChunkEn Forceload matches 0 run forceload add 0 -1
 #Setup Plot Overworld
 execute in minecraft:overworld if score ChunkOv Forceload matches 1 run fill 11 253 -2 5 254 -14 white_concrete keep
 execute in minecraft:overworld if score ChunkOv Forceload matches 1 run fill 6 254 -13 10 254 -9 air replace white_concrete

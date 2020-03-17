@@ -9,11 +9,9 @@ execute if entity @s[predicate=raycasting:push,scores={brushRad=7}] run function
 #Pull
 execute if entity @s[predicate=raycasting:pull,scores={brushRad=1}] run function raycasting:brushsize/pull_r1
 execute if entity @s[predicate=raycasting:pull,scores={brushRad=2}] run function raycasting:brushsize/pull_r2
-execute if entity @s[predicate=raycasting:push,scores={brushRad=3}] run function raycasting:brushsize/push_r3
 execute if entity @s[predicate=raycasting:pull,scores={brushRad=3}] run function raycasting:brushsize/pull_r3
 execute if entity @s[predicate=raycasting:pull,scores={brushRad=5}] run function raycasting:brushsize/pull_r5
-execute if entity @s[predicate=raycasting:push,scores={brushRad=7}] run function raycasting:brushsize/push_r7
-execute if entity @s[predicate=raycasting:pull,scores={brushRad=7}] run function raycasting:brushsize/pull_r7
+execute if entity @s[predicate=raycasting:pull,scores={brushRad=7}] run function raycasting:brushsize/push_r7
 
 #Vegetate
 execute if entity @s[predicate=raycasting:vegetate,scores={brushRad=1}] run function raycasting:brushsize/vegetate_r1
