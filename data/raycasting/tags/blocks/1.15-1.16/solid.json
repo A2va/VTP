@@ -3,11 +3,14 @@
     "values": [
         "minecraft:ancient_debris",
         "minecraft:basalt",
+        "minecraft:polished_basalt",
         "minecraft:netherite_block",
         "minecraft:crimson_nylium",
         "minecraft:warped_nylium",
         "minecraft:soul_soil",
-        "minecraft:crying_obsidian"
+        "minecraft:crying_obsidian",
+        "minecraft:nether_gold_ore",
+        "minecraft:shroomlight"
     ]
 
 }

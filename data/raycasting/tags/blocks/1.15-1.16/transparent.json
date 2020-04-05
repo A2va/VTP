@@ -6,17 +6,22 @@
         "minecraft:crimson_roots",
         "minecraft:warped_roots",
         "minecraft:nether_sprouts",
+        "minecraft:nether_sprouts",
         "minecraft:soul_fire_lantern",
         "minecraft:soul_fire_torch",
         "minecraft:soul_fire_wall_torch",
         "minecraft:weeping_vines_plant",
         "minecraft:weeping_vines",
+        "minecraft:twisting_vines",
+        "minecraft:twisting_vines_plant",
         "minecraft:stripped_warped_stem",
         "minecraft:stripped_crimson_stem",
         "minecraft:crimson_stem",
         "minecraft:warped_stem",
         "minecraft:nether_wart_block",
-        "minecraft:warped_wart_block"
+        "minecraft:warped_wart_block",
+        "minecraft:respawn_anchor",
+        "minecraft:lodestone"
     ]
 
 }
