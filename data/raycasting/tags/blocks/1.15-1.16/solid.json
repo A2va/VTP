@@ -10,7 +10,15 @@
         "minecraft:soul_soil",
         "minecraft:crying_obsidian",
         "minecraft:nether_gold_ore",
-        "minecraft:shroomlight"
+        "minecraft:gilded_blackstone",
+        "minecraft:shroomlight",
+        "minecraft:quartz_bricks",
+        "minecraft:blackstone",
+        "minecraft:polished_blackstone",
+        "minecraft:chiseled_polished_blackstone",
+        "minecraft:polished_blackstone_bricks",
+        "minecraft:cracked_polished_blackstone_bricks",
+        "minecraft:chiseled_nether_bricks"
     ]
 
 }
