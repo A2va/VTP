@@ -1,7 +1,7 @@
 # VTP
 
 It's a fork of Vanilla Terraforming Pack ([Original author](https://www.planetminecraft.com/mod/vanilla-terraforming-pack-datapack-4124905/)). 
-The datapack run only in Overworld.
+The datapack run only in Overworld
 
 ## Road Map
 
@@ -80,7 +80,7 @@ You can create stencils either using BlingEdit.
 Install BlingEdit on your world Link [here](https://www.reddit.com/r/BlingEdit/comments/9pdd2w/subreddit_plugin_list/)
 
 Select a area and click on Plugin and click again on VTP - Create Stencils
-A block structure appears under your feet. Name the stencils.
+A block structure appears under your feet. Name the stencils
 
 
 #### Name the stencils
