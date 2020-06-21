@@ -71,12 +71,6 @@
     "minecraft:zombie_head",
     "minecraft:creeper_head",
     "minecraft:dragon_head",
-    "minecraft:oak_fence_gate",
-    "minecraft:spruce_fence_gate",
-    "minecraft:birch_fence_gate",
-    "minecraft:jungle_fence_gate",
-    "minecraft:acacia_fence_gate",
-    "minecraft:dark_oak_fence_gate",
     "minecraft:sugar_cane",
     "minecraft:nether_wart",
     "minecraft:cake",
@@ -107,6 +101,7 @@
     "#raycasting:gui",
     "#raycasting:redstone",
     "#minecraft:beehives",
+    "#minecraft:fence_gates",
     "#raycasting:1.13-1.14/transparent",
     "#raycasting:1.15-1.16/transparent"
   ]

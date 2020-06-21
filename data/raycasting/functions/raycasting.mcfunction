@@ -10,4 +10,3 @@ execute if entity @s[distance=..256.5] if block ~ ~ ~ #raycasting:transparent po
 
 execute unless block ~ ~ ~ #raycasting:transparent positioned ~ ~1 ~ if predicate raycasting:tree run function raycasting:tree
 scoreboard players set @s click_vtp 0
-  

@@ -23,7 +23,11 @@
         "minecraft:warped_wart_block",
         "minecraft:respawn_anchor",
         "minecraft:lodestone",
-        "minecraft:chain"
+        "minecraft:chain",
+        "minecraft:warped_hyphae",
+        "minecraft:crimson_hyphae",
+        "minecraft:stripped_warped_hyphae",
+        "minecraft:stripped_crimson_hyphae"
     ]
 
 }

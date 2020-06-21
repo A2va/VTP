@@ -25,6 +25,10 @@ Get Items
   Gravel --> /function raytracer:getitem/gravel
   Vegetate --> /function raytracer:getitem/vegetate
 Tree Brush option
+
+//Tree NBT
+//https://github.com/almic/VanillaTrees
+
   Oak:
   All-->/function raytracer:treemode/oak
   Small-->/function raytracer:treemode/oak_small
